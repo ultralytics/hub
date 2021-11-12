@@ -25,10 +25,10 @@ jobs:
             - ✅ Reduce changes to the absolute **minimum** required for your bug fix or feature addition. _"It is not daily increase but daily decrease, hack away the unessential. The closer to the source, the less wastage there is."_  -Bruce Lee
 
           issue-message: |
-            👋 Hello @${{ github.actor }}, thank you for raising an issue about [Ultralytics HUB](https://ultralytics.com/hub) 🚀! Please visit our ⭐️ [Ultralytics HUB Tutorial](https://github.com/ultralytics/hub/TUTORIAL.md) to get started.
+            👋 Hello @${{ github.actor }}, thank you for raising an issue about [Ultralytics HUB](https://ultralytics.com/hub) 🚀! Please visit https://ultralytics.com/hub to learn more, and see our ⭐️ [HUB Guidelines](https://github.com/ultralytics/hub) to quickly get started uploading datasets and training YOLOv5 models.
 
             If this is a 🐛 Bug Report, please provide screenshots and steps to recreate your problem to help us get started working on a fix.
 
             If this is a ❓ Question, please provide as much information as possible, including dataset, model, environment details etc. so that we might provide the most helpful response.
 
-            We stride to respond to all issues as promptly as possible. Thank you for your patience!
+            We try to respond to all issues as promptly as possible. Thank you for your patience!
