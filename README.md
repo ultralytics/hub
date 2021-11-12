@@ -38,7 +38,7 @@ After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and cl
 
 If you are a new Ultralytics HUB user and have questions or comments for Ultralytics, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this [ultralytics/hub](https://github.com/ultralytics/hub) repo and let us know what we can do to improve your experience on Ultralytics HUB 😃!
 
-<p align="center"><img width="800" src="https://user-images.githubusercontent.com/26833433/141507735-d6b5c018-c7c6-4a6c-961f-364a8eb4b5af.png" title="Raise an Issue" /></p>
+<p align="center"><img width="900" src="https://user-images.githubusercontent.com/26833433/141508090-9d0fee01-e3c5-40e4-a762-7617bfff5d2e.png" title="Raise an Issue" /></p>
 
 
 <br>
