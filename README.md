@@ -8,5 +8,11 @@ If you are a new Ultralytics HUB user and have questions or comments for Ultraly
 
 <img width="930" alt="Screenshot 2021-11-12 at 16 42 41" src="https://user-images.githubusercontent.com/26833433/141493990-7cd392de-579a-42ab-8e3e-a0bfb44cd179.png">
 
-## Dataset Format
+## Dataset Guidelines
 
+Ultralytics HUB datasets are just like YOLOv5 🚀 datasets, they use the same structure and the same label formats to keep everything simple. 
+
+When you load a file to Ultralytics HUB, make sure to **place your dataset yaml inside the dataset root directory** as in the example shown below, and then zip for upload to https://hub.ultralytics.com/. Your **dataset yaml and directory** should also share the same name. For example, if your dataset is called coco6, then you should have a coco6.yaml inside your coco6/ directory, which should zip to create coco6.zip for upload.
+
+The example [coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip) dataset in this repository can be downloaded and unzipped to see exactly how to structure your custom dataset.
+<img width="972" alt="Screenshot 2021-11-12 at 17 38 29" src="https://user-images.githubusercontent.com/26833433/141502652-e4b0477c-6c2a-41b3-b21a-b3d1444cdda7.png">
