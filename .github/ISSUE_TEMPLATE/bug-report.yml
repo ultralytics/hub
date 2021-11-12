@@ -63,9 +63,9 @@ body:
         When asking a question, people will be better able to provide help if you provide code that they can easily understand and use to **reproduce** the problem.
         This is referred to by community members as creating a [minimal reproducible example](https://stackoverflow.com/help/minimal-reproducible-example).
       placeholder: |
-        ```
-        # Code to reproduce your issue here
-        ```
+        Steps to reproduce the problem:
+        1. Login to Hub
+        2. Click Datasets
     validations:
       required: false
 
