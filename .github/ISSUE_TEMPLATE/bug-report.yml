@@ -63,9 +63,10 @@ body:
         When asking a question, people will be better able to provide help if you provide code that they can easily understand and use to **reproduce** the problem.
         This is referred to by community members as creating a [minimal reproducible example](https://stackoverflow.com/help/minimal-reproducible-example).
       placeholder: |
-        Steps to reproduce the problem:
+        Steps to reproduce the problem, i.e.:
         1. Login to Hub
         2. Click Datasets
+        3. ...
     validations:
       required: false
 
