@@ -36,13 +36,12 @@ After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and cl
 
 ## ❓ Issues
 
-If you are a new Ultralytics HUB user and have questions or comments for Ultralytics, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this [ultralytics/hub](https://github.com/ultralytics/hub) repo and let us know what we can do to make your AI life better 😃!
+If you are a new Ultralytics HUB user and have questions or comments for Ultralytics, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this [ultralytics/hub](https://github.com/ultralytics/hub) repo and let us know what we can do to improve your experience on Ultralytics HUB 😃!
 
-<img width="930" alt="Screenshot 2021-11-12 at 16 42 41" src="https://user-images.githubusercontent.com/26833433/141493990-7cd392de-579a-42ab-8e3e-a0bfb44cd179.png">
+<p align="center"><img width="800" src="https://user-images.githubusercontent.com/26833433/141507735-d6b5c018-c7c6-4a6c-961f-364a8eb4b5af.png" title="Raise an Issue" /></p>
 
 
 <br>
-
 <div align="center">
     <a href="https://github.com/ultralytics">
         <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-github.png" width="3%"/>
