@@ -2,11 +2,6 @@
 
 👋 Hello from the Ultralytics Team! We've been working hard these last few months to launch [Ultralytics HUB](https://ultralytics.com/hub), a new web tool for training and deploying all your YOLOv5 🚀 models from one spot!
 
-## ❓ Issues
-
-If you are a new Ultralytics HUB user and have questions or comments for Ultralytics, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this [ultralytics/hub](https://github.com/ultralytics/hub) repo and let us know what we can do to make your AI life better 😃!
-
-<img width="930" alt="Screenshot 2021-11-12 at 16 42 41" src="https://user-images.githubusercontent.com/26833433/141493990-7cd392de-579a-42ab-8e3e-a0bfb44cd179.png">
 
 ## Dataset Guidelines
 
@@ -24,3 +19,10 @@ The example [coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip
 After zipping sign in to HUB at https://hub.ultralytics.com and click on the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset!
 
 <img width="1363" alt="Screenshot 2021-11-12 at 17 47 39" src="https://user-images.githubusercontent.com/26833433/141504055-cf2cb4bf-6045-4957-bf23-d4d2c8a94fae.png">
+
+
+## ❓ Issues
+
+If you are a new Ultralytics HUB user and have questions or comments for Ultralytics, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this [ultralytics/hub](https://github.com/ultralytics/hub) repo and let us know what we can do to make your AI life better 😃!
+
+<img width="930" alt="Screenshot 2021-11-12 at 16 42 41" src="https://user-images.githubusercontent.com/26833433/141493990-7cd392de-579a-42ab-8e3e-a0bfb44cd179.png">
