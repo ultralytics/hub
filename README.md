@@ -1,6 +1,6 @@
 ## Ultralytics HUB 😃
 
-Hello from the Ultralytics Team! We've been working hard these last few months to launch [Ultralytics HUB](https://ultralytics.com/hub), a new web tool for training and deploying all your YOLOv5 🚀 models from one spot!
+👋 Hello from the Ultralytics Team! We've been working hard these last few months to launch [Ultralytics HUB](https://ultralytics.com/hub), a new web tool for training and deploying all your YOLOv5 🚀 models from one spot!
 
 ## Issues
 
