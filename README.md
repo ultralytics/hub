@@ -7,7 +7,7 @@
 
 Ultralytics HUB datasets are just like YOLOv5 🚀 datasets, they use the same structure and the same label formats to keep everything simple. 
 
-When you load a file to Ultralytics HUB, make sure to **place your dataset yaml inside the dataset root directory** as in the example shown below, and then zip for upload to https://hub.ultralytics.com/. Your **dataset yaml and directory** should also share the same name. For example, if your dataset is called coco6, then you should have a coco6.yaml inside your coco6/ directory, which should zip to create coco6.zip for upload:
+When you upload a dataset to Ultralytics HUB, make sure to **place your dataset yaml inside the dataset root directory** as in the example shown below, and then zip for upload to https://hub.ultralytics.com/. Your **dataset yaml and directory** should also share the same name. For example, if your dataset is called coco6, then you should have a coco6.yaml inside your coco6/ directory, which should zip to create coco6.zip for upload:
 
 ```bash
 zip -r coco6.zip coco6
