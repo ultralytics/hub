@@ -16,6 +16,19 @@ zip -r coco6.zip coco6
 The example [coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip) dataset in this repository can be downloaded and unzipped to see exactly how to structure your custom dataset.
 <p align="center"><img width="800" src="https://user-images.githubusercontent.com/26833433/141502652-e4b0477c-6c2a-41b3-b21a-b3d1444cdda7.png" title="COCO6" /></p>
 
+The dataset yaml is the same standard YOLOv5 yaml format:
+```yaml
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path:  # dataset root dir (leave empty for HUB)
+train: images/train  # train images (relative to 'path') 8 images
+val: images/val  # val images (relative to 'path') 8 images
+test:  # test images (optional)
+
+# Classes
+nc: 80  # number of classes
+names: [ 'person', 'bicycle', 'car', ...]
+```
+
 After zipping sign in to HUB at https://hub.ultralytics.com and click on the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset!
 
 <img width="1200" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/141504055-cf2cb4bf-6045-4957-bf23-d4d2c8a94fae.png">
