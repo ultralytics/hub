@@ -1,21 +1,21 @@
 name: 🚀 Feature Request
-description: Suggest a YOLOv5 idea
+description: Suggest a HUB idea
 # title: " "
 labels: [enhancement]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for submitting a YOLOv5 🚀 Feature Request!
+        Thank you for submitting an Ultralytics HUB 🚀 Feature Request!
 
   - type: checkboxes
     attributes:
       label: Search before asking
       description: >
-        Please search the [issues](https://github.com/ultralytics/yolov5/issues) to see if a similar feature request already exists.
+        Please search the [issues](https://github.com/ultralytics/hub/issues) to see if a similar feature request already exists.
       options:
         - label: >
-            I have searched the YOLOv5 [issues](https://github.com/ultralytics/yolov5/issues) and found no similar feature requests.
+            I have searched the HUB [issues](https://github.com/ultralytics/hub/issues) and found no similar feature requests.
           required: true
 
   - type: textarea
@@ -23,7 +23,7 @@ body:
       label: Description
       description: A short description of your feature.
       placeholder: |
-        What new feature would you like to see in YOLOv5?
+        What new feature would you like to see in HUB?
     validations:
       required: true
 
@@ -44,7 +44,7 @@ body:
     attributes:
       label: Are you willing to submit a PR?
       description: >
-        (Optional) We encourage you to submit a [Pull Request](https://github.com/ultralytics/yolov5/pulls) (PR) to help improve YOLOv5 for everyone, especially if you have a good understanding of how to implement a fix or feature.
-        See the YOLOv5 [Contributing Guide](https://github.com/ultralytics/yolov5/blob/master/CONTRIBUTING.md) to get started.
+        (Optional) We encourage you to submit a [Pull Request](https://github.com/ultralytics/hub/pulls) (PR) to help improve HUB for everyone, especially if you have a good understanding of how to implement a fix or feature.
+        See the HUB [Contributing Guide](https://github.com/ultralytics/hub/blob/master/CONTRIBUTING.md) to get started.
       options:
         - label: Yes I'd like to help by submitting a PR!

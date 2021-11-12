@@ -1,39 +1,37 @@
 name: 🐛 Bug Report
 # title: " "
-description: Problems with YOLOv5
+description: Problems with HUB
 labels: [bug, triage]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for submitting a YOLOv5 🐛 Bug Report!
+        Thank you for submitting an Ultralytics HUB 🐛 Bug Report!
 
   - type: checkboxes
     attributes:
       label: Search before asking
       description: >
-        Please search the [issues](https://github.com/ultralytics/yolov5/issues) to see if a similar bug report already exists.
+        Please search the [issues](https://github.com/ultralytics/hub/issues) to see if a similar bug report already exists.
       options:
         - label: >
-            I have searched the YOLOv5 [issues](https://github.com/ultralytics/yolov5/issues) and found no similar bug report.
+            I have searched the HUB [issues](https://github.com/ultralytics/hub/issues) and found no similar bug report.
           required: true
 
   - type: dropdown
     attributes:
-      label: YOLOv5 Component
+      label: HUB Component
       description: |
-        Please select the part of YOLOv5 where you found the bug.
+        Please select the part of the HUB where you found the bug.
       multiple: true
       options:
-        - "Training"
-        - "Validation"
-        - "Detection"
-        - "Export"
-        - "PyTorch Hub"
-        - "Multi-GPU"
-        - "Evolution"
-        - "Integrations"
-        - "Other"
+        - "Signin"
+        - "Datasets"
+        - "Models"
+        - "Projects"
+        - "Settings"
+        - "API Key"
+
     validations:
       required: false
 
@@ -51,9 +49,10 @@ body:
       label: Environment
       description: Please specify the software and hardware you used to produce the bug.
       placeholder: |
-        - YOLO: YOLOv5 🚀 v6.0-67-g60e42e1 torch 1.9.0+cu111 CUDA:0 (A100-SXM4-40GB, 40536MiB)
-        - OS: Ubuntu 20.04
-        - Python: 3.9.0
+        - Computer: iMac (Retina 5K, 27-inch, Late 2020)
+        - OS: MacOS 11.6.1
+        - Browser: Chrome Version 95.0.4638.69 (Official Build) (x86_64)
+
     validations:
       required: false
 
@@ -79,7 +78,7 @@ body:
     attributes:
       label: Are you willing to submit a PR?
       description: >
-        (Optional) We encourage you to submit a [Pull Request](https://github.com/ultralytics/yolov5/pulls) (PR) to help improve YOLOv5 for everyone, especially if you have a good understanding of how to implement a fix or feature.
-        See the YOLOv5 [Contributing Guide](https://github.com/ultralytics/yolov5/blob/master/CONTRIBUTING.md) to get started.
+        (Optional) We encourage you to submit a [Pull Request](https://github.com/ultralytics/hub/pulls) (PR) to help improve HUB for everyone, especially if you have a good understanding of how to implement a fix or feature.
+        See the HUB [Contributing Guide](https://github.com/ultralytics/hub/blob/master/CONTRIBUTING.md) to get started.
       options:
         - label: Yes I'd like to help by submitting a PR!

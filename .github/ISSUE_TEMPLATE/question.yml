@@ -1,21 +1,21 @@
 name: ❓ Question
-description: Ask a YOLOv5 question
+description: Ask a HUB question
 # title: " "
 labels: [question]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for asking a YOLOv5 ❓ Question!
+        Thank you for asking an Ultralytics HUB ❓ Question!
 
   - type: checkboxes
     attributes:
       label: Search before asking
       description: >
-        Please search the [issues](https://github.com/ultralytics/yolov5/issues) and [discussions](https://github.com/ultralytics/yolov5/discussions) to see if a similar question already exists.
+        Please search the [issues](https://github.com/ultralytics/hub/issues) and [discussions](https://github.com/ultralytics/hub/discussions) to see if a similar question already exists.
       options:
         - label: >
-            I have searched the YOLOv5 [issues](https://github.com/ultralytics/yolov5/issues) and [discussions](https://github.com/ultralytics/yolov5/discussions) and found no similar questions.
+            I have searched the HUB [issues](https://github.com/ultralytics/hub/issues) and [discussions](https://github.com/ultralytics/hub/discussions) and found no similar questions.
           required: true
 
   - type: textarea
