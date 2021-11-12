@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for asking an Ultralytics HUB ❓ Question!
+        Thank you for asking an [Ultralytics HUB](https://ultralytics.com/hub) ❓ Question!
 
   - type: checkboxes
     attributes:
