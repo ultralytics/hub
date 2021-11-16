@@ -1,4 +1,7 @@
-## Ultralytics HUB
+<a align="center" href="https://ultralytics.com" target="_blank">
+<img width="1024", src="https://user-images.githubusercontent.com/26833433/142024981-979d6214-1520-4c3b-b29b-1bdb3355229d.png"></a>
+<br>
+<br>
 
 👋 Hello from the Ultralytics Team! We've been working hard these last few months to launch [Ultralytics HUB](https://ultralytics.com/hub), a new web tool for training and deploying all your YOLOv5 🚀 models from one spot!
 
