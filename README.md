@@ -1,6 +1,31 @@
 <a align="center" href="https://ultralytics.com" target="_blank">
 <img width="1024", src="https://user-images.githubusercontent.com/26833433/142024981-979d6214-1520-4c3b-b29b-1bdb3355229d.png"></a>
-<br>
+<br><br>
+<div align="center">
+   <a href="https://github.com/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-github.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a href="https://www.linkedin.com/company/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-linkedin.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a href="https://twitter.com/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-twitter.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a href="https://youtube.com/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-youtube.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a href="https://www.facebook.com/ultralytics">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-facebook.png" width="2%"/>
+   </a>
+   <img width="2%" />
+   <a href="https://www.instagram.com/ultralytics/">
+   <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-instagram.png" width="2%"/>
+   </a>
+</div>
 <br>
 
 👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to launch [Ultralytics HUB](https://ultralytics.com/hub), a new web tool for training and deploying all your YOLOv5 🚀 models from one spot!
