@@ -74,12 +74,3 @@ body:
     attributes:
       label: Additional
       description: Anything else you would like to share?
-
-  - type: checkboxes
-    attributes:
-      label: Are you willing to submit a PR?
-      description: >
-        (Optional) We encourage you to submit a [Pull Request](https://github.com/ultralytics/hub/pulls) (PR) to help improve HUB for everyone, especially if you have a good understanding of how to implement a fix or feature.
-        See the HUB [Contributing Guide](https://github.com/ultralytics/hub/blob/master/CONTRIBUTING.md) to get started.
-      options:
-        - label: Yes I'd like to help by submitting a PR!
