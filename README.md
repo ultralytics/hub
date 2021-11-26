@@ -61,9 +61,10 @@ After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and cl
 
 <img width="1200" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/141504055-cf2cb4bf-6045-4957-bf23-d4d2c8a94fae.png">
 
+
 ## 2. Train a Model
 
-TODO
+Connect to the Ultralytics HUB notebook and signin using your Ultralytics API key to begin training your model. <a href="https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 
 ## ❓ Issues
