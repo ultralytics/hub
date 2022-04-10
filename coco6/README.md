@@ -1,14 +1,14 @@
 ## COCO6 Dataset
 
-Ultralytics [COCO6](https://github.com/ultralytics/hub/blob/master/coco6.zip) is an example small tutorial dataset composed of the first 6 images in Microsoft [COCO](https://github.com/ultralytics/yolov5/blob/master/data/coco.yaml) train2017. 3 images are used for training and 3 for validation. The intention of COCO6 is to provide an example for structuring custom YOLOv5 datasets and to provide a sanity check for YOLOv5 trainings with `python train.py --data coco6.yaml`.
+Ultralytics [COCO6](https://github.com/ultralytics/hub/tree/master/coco6) is an example small tutorial dataset composed of the first 6 images in Microsoft [COCO](https://github.com/ultralytics/yolov5/blob/master/data/coco.yaml) train2017. 3 images are used for training and 3 for validation. The intention of COCO6 is to provide an example for structuring custom YOLOv5 datasets and to provide a sanity check for YOLOv5 trainings with `python train.py --data coco6.yaml`.
 
 
 ### 1.1 Create dataset.yaml
 
-[coco6.yaml](https://github.com/ultralytics/hub/blob/master/coco6.zip), shown below, is the dataset config file that defines 1) the dataset root directory `path` and relative paths to `train` / `val` / `test` image directories (or *.txt files with image paths), 2) the number of classes `nc` and 3) a list of class `names`:
+[coco6.yaml](https://github.com/ultralytics/hub/blob/master/coco6/coco6.yaml), shown below, is the dataset config file that defines 1) the dataset root directory `path` and relative paths to `train` / `val` / `test` image directories (or *.txt files with image paths), 2) the number of classes `nc` and 3) a list of class `names`:
 ```yaml
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: ../datasets/coco6 # dataset root dir
+path: # dataset root dir
 train: images/train  # train images (relative to 'path') 3 images
 val: images/val  # val images (relative to 'path') 3 images
 test:  # test images (optional)
