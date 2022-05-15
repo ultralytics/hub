@@ -70,7 +70,7 @@ jobs:
           sys.path.append(str(Path('yolov5').resolve()))
           sys.path.append(str(Path('.').resolve()))
           
-          print(Path('yolov5').resolve().isdir(), Path('.').resolve().isdir())
+          print(Path('yolov5').resolve().is_dir(), Path('.').resolve().is_dir())
 
           print(sys.path)
           
