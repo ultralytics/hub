@@ -1,0 +1,75 @@
+name: CI CPU testing
+
+on: # https://help.github.com/en/actions/reference/events-that-trigger-workflows
+  push:
+    branches: [master]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [master]
+  schedule:
+    - cron: '0 0 * * *'  # Runs at 00:00 UTC every day
+
+jobs:
+  cpu-tests:
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: [3.9]
+
+    # Timeout: https://stackoverflow.com/a/59076067/4521646
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Note: This uses an internal pip API and may not always work
+      # https://github.com/actions/cache/blob/master/examples.md#multiple-oss-in-a-workflow
+      - name: Get pip cache
+        id: pip-cache
+        run: |
+          python -c "from pip._internal.locations import USER_CACHE_DIR; print('::set-output name=dir::' + USER_CACHE_DIR)"
+
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-${{ matrix.python-version }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.python-version }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ultralytics
+          # python setup.py install
+          python --version
+          pip --version
+          pip list
+        shell: bash
+
+      - name: Tests workflow
+        env:
+          ULTRALYTICS_HUB_APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
+        run: |
+          import os
+          import sys
+          from pathlib import Path
+          
+          APIKEY = os.environ['ULTRALYTICS_HUB_APIKEY']
+          
+          #os.system('mkdir yolov5/')
+          #os.system('touch yolov5/__init__.py')
+          #sys.path.append(str(Path('yolov5').resolve()))
+          
+          import ultralytics
+
+          ultralytics.checks()
+          ultralytics.starts(APIKEY)
+
+        shell: python
