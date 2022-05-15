@@ -70,6 +70,6 @@ jobs:
           import ultralytics
 
           ultralytics.checks()
-          ultralytics.starts(APIKEY)
+          ultralytics.start(APIKEY)
 
         shell: python
