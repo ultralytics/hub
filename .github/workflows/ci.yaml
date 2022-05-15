@@ -63,9 +63,9 @@ jobs:
           
           APIKEY = os.environ['ULTRALYTICS_HUB_APIKEY']
           
-          #os.system('mkdir yolov5/')
-          #os.system('touch yolov5/__init__.py')
-          #sys.path.append(str(Path('yolov5').resolve()))
+          os.system('git clone https://github.com/ultralytics/yolov5')
+          os.system('touch yolov5/__init__.py')
+          sys.path.append(str(Path('yolov5').resolve()))
           
           import ultralytics
 
