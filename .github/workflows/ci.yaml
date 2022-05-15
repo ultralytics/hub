@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install ultralytics
+          pip install -r https://raw.githubusercontent.com/ultralytics/yolov5/master/requirements.txt ultralytics
           # python setup.py install
           python --version
           pip --version
@@ -64,13 +64,13 @@ jobs:
           APIKEY = os.environ['ULTRALYTICS_HUB_APIKEY']
           os.system('export PYTHONPATH="$PWD"')  # to run '$ python *.py' files in subdirectories
           
-          #os.system('export PYTHONPATH="$PWD/yolov5"')
-          #os.system('git clone https://github.com/ultralytics/yolov5')
-          #os.system('touch yolov5/__init__.py')
-          #sys.path.append(str(Path('yolov5').resolve()))
-          #sys.path.append(str(Path('.').resolve()))
-          #print(Path('yolov5').resolve().is_dir(), Path('.').resolve().is_dir())
-          #print(sys.path)
+          os.system('export PYTHONPATH="$PWD/yolov5"')
+          os.system('git clone https://github.com/ultralytics/yolov5')
+          os.system('touch yolov5/__init__.py')
+          sys.path.append(str(Path('yolov5').resolve()))
+          sys.path.append(str(Path('.').resolve()))
+          print(Path('yolov5').resolve().is_dir(), Path('.').resolve().is_dir())
+          print(sys.path)
           
           import ultralytics
 
