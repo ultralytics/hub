@@ -1,4 +1,4 @@
-name: CI CPU testing
+name: CI CPU
 
 on: # https://help.github.com/en/actions/reference/events-that-trigger-workflows
   push:
@@ -57,11 +57,14 @@ jobs:
         env:
           APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
         run: |
+          # TODO: delete this section on ultralytics>=0.0.24
           import os
           import sys
-          import ultralytics
           from pathlib import Path
           sys.path.append(str(Path('.').resolve()))  # required to find yolov5 module
+          # TODO: delete this section on ultralytics>=0.0.24
+          
+          import ultralytics
           ultralytics.checks()
           ultralytics.start(os.environ['APIKEY'])
         shell: python
