@@ -66,6 +66,9 @@ jobs:
           os.system('git clone https://github.com/ultralytics/yolov5')
           os.system('touch yolov5/__init__.py')
           sys.path.append(str(Path('yolov5').resolve()))
+          os.system('export PYTHONPATH="$PWD"')  # to run '$ python *.py' files in subdirectories
+          os.system('export PYTHONPATH="$PWD/yolov5"')
+          print(sys.path)
           
           import ultralytics
 
