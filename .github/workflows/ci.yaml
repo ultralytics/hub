@@ -57,6 +57,9 @@ jobs:
         env:
           APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
         run: |
+        
+          git clone https://github.com/ultralytics/yolov5 -b master
+        
           # TODO: delete this section on ultralytics>=0.0.24
           import os
           import sys
