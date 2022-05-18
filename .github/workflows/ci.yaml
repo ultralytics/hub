@@ -51,15 +51,14 @@ jobs:
           python --version
           pip --version
           pip list
+          
+          git clone https://github.com/ultralytics/yolov5 -b master
         shell: bash
 
       - name: Tests workflow
         env:
           APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
-        run: |
-        
-          git clone https://github.com/ultralytics/yolov5 -b master
-        
+        run: |        
           # TODO: delete this section on ultralytics>=0.0.24
           import os
           import sys
