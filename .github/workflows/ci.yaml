@@ -52,7 +52,7 @@ jobs:
           pip --version
           pip list
           
-          git clone https://github.com/ultralytics/yolov5 -b master
+          git clone https://github.com/glenn-jocher/yolov5 -b hub/test-download
           pip install -r yolov5/requirements.txt
         shell: bash
 
