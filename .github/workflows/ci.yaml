@@ -53,6 +53,7 @@ jobs:
           pip list
           
           git clone https://github.com/ultralytics/yolov5 -b master
+          pip install -r yolov5/requirements.txt
         shell: bash
 
       - name: Tests workflow
