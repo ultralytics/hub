@@ -61,6 +61,7 @@ jobs:
           APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
         run: |        
           # sys.path.append(str(Path('.').resolve()))  # to find yolov5 module, moved into pip package          
+          import os
           import ultralytics
           ultralytics.checks()
           ultralytics.start(os.environ['APIKEY'])
