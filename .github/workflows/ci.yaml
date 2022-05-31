@@ -1,0 +1,56 @@
+# Ultralytics HUB Continuous Integration (CI) GitHub Actions tests
+
+name: HUB CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: '0 0 * * *'  # runs at 00:00 UTC every day
+
+jobs:
+  Tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python-version: [3.9]
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Get cache dir
+        # https://github.com/actions/cache/blob/master/examples.md#multiple-oss-in-a-workflow
+        id: pip-cache
+        run: echo "::set-output name=dir::$(pip cache dir)"
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-${{ matrix.python-version }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: ${{ runner.os }}-${{ matrix.python-version }}-pip-
+      - name: Install requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install ultralytics
+          # python setup.py install
+          python --version
+          pip --version
+          pip list
+          # git clone https://github.com/glenn-jocher/yolov5 -b master
+          # pip install -r yolov5/requirements.txt
+      - name: Run tests
+        shell: python
+        env:
+          APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
+        run: |        
+          # sys.path.append(str(Path('.').resolve()))  # to find yolov5 module, moved into pip package          
+          import os
+          import ultralytics
+          ultralytics.checks()
+          ultralytics.start(os.environ['APIKEY'])

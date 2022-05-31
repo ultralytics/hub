@@ -25,6 +25,11 @@
    <a href="https://www.instagram.com/ultralytics/">
    <img src="https://github.com/ultralytics/yolov5/releases/download/v1.0/logo-social-instagram.png" width="2%"/>
    </a>
+   
+   <br>
+   <br>
+   <a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml"><img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a>
+   
 </div>
 <br>
 
