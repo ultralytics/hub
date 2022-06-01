@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [macos-latest]
         python-version: [3.9]
     timeout-minutes: 60
     steps:
@@ -53,10 +53,4 @@ jobs:
           import os
           import ultralytics
           ultralytics.checks()
-          
-          key = os.environ['APIKEY']
-          print(key)
-          print(type(key))
-          print(len(key))
-          
-          # ultralytics.start(api_key)
+          ultralytics.start(api_key)
