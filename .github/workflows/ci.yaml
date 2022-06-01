@@ -52,5 +52,6 @@ jobs:
           # sys.path.append(str(Path('.').resolve()))  # to find yolov5 module, moved into pip package          
           import os
           import ultralytics
+          apikey = os.environ['APIKEY']
           ultralytics.checks()
-          ultralytics.start(api_key)
+          ultralytics.start(apikey)
