@@ -53,4 +53,8 @@ jobs:
           import os
           import ultralytics
           ultralytics.checks()
-          ultralytics.start(os.environ['APIKEY'])
+          
+          api_key = os.environ['APIKEY']
+          print(api_key)
+          
+          # ultralytics.start(api_key)
