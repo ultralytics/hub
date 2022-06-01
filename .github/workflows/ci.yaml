@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest]
+        os: [ubuntu-latest]
         python-version: [3.9]
     timeout-minutes: 60
     steps:
@@ -46,13 +46,11 @@ jobs:
           # pip install -r yolov5/requirements.txt
       - name: Run tests
         shell: python
-        # env:
-        #   APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
+        env:
+          APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
         run: |        
           # sys.path.append(str(Path('.').resolve()))  # to find yolov5 module, moved into pip package          
           import os
           import ultralytics
-          #apikey = os.environ['APIKEY']
-          apikey = 'ac0ab020186aeb50cc4c2a5272de17f58bbd2c05b5.JJ9neHU5M2rT36hyE4Lr'
           ultralytics.checks()
-          ultralytics.start(apikey)
+          ultralytics.start(os.environ['APIKEY'])
