@@ -54,7 +54,9 @@ jobs:
           import ultralytics
           ultralytics.checks()
           
-          api_key = os.environ['APIKEY']
-          print(api_key)
+          key = os.environ['APIKEY']
+          print(key)
+          print(type(key))
+          print(len(key))
           
           # ultralytics.start(api_key)
