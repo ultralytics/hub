@@ -64,19 +64,17 @@ names: [ 'person', 'bicycle', 'car', ...]
 
 After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and click on the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
 
-<img width="1200" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/141504055-cf2cb4bf-6045-4957-bf23-d4d2c8a94fae.png">
+<img width="1200" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/178108348-6d69efb9-4bce-43d7-9b06-0eb93664442b.png">
 
 
 ## 2. Train a Model
 
-Connect to the Ultralytics HUB notebook and signin using your Ultralytics API key to begin training your model. <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+Connect to the Ultralytics HUB notebook and use your model API key to begin training! <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 
 ## ❓ Issues
 
 If you are a new Ultralytics HUB user and have questions or comments, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this [ultralytics/hub](https://github.com/ultralytics/hub) repo and let us know what we can do to make your life better 😃!
-
-<p align="center"><img width="900" src="https://user-images.githubusercontent.com/26833433/141508090-9d0fee01-e3c5-40e4-a762-7617bfff5d2e.png" title="Raise an Issue" /></p>
 
 
 <br>
