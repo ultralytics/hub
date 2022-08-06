@@ -1,5 +1,5 @@
 <a align="center" href="https://ultralytics.com" target="_blank">
-<img width="1024", src="https://user-images.githubusercontent.com/26833433/142024981-979d6214-1520-4c3b-b29b-1bdb3355229d.png"></a>
+<img width="1024" src="https://user-images.githubusercontent.com/26833433/142024981-979d6214-1520-4c3b-b29b-1bdb3355229d.png"></a>
 <br>
 <br>
 <div align="center">
