@@ -67,6 +67,14 @@ jobs:
           key = os.environ['APIKEY']
           ultralytics.reset_model(key)  # reset trained model
           ultralytics.start(key)  # train model
+      - name: Test HUB training 2
+        shell: python
+        run: |        
+          import os
+          import ultralytics
+          key = os.environ['APIKEY']
+          ultralytics.reset_model(key)  # reset trained model
+          ultralytics.start(key)  # train model
       - name: Test HUB export
         if: github.event_name == 'schedule'
         shell: python
