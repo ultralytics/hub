@@ -36,14 +36,12 @@ jobs:
           restore-keys: ${{ runner.os }}-${{ matrix.python-version }}-pip-
       - name: Install requirements
         run: |
-          python -m pip install --upgrade pip
-          pip install -U ultralytics
+          python -m pip install --upgrade pip wheel
+          pip install -U ultralytics --extra-index-url https://download.pytorch.org/whl/cpu
           # python setup.py install
           python --version
           pip --version
           pip list
-          # git clone https://github.com/glenn-jocher/yolov5 -b master
-          # pip install -r yolov5/requirements.txt
       - name: Check environment
         run: |
           echo "RUNNER_OS is ${{ runner.os }}"
@@ -64,14 +62,6 @@ jobs:
           import os
           import ultralytics
           ultralytics.checks()
-          key = os.environ['APIKEY']
-          ultralytics.reset_model(key)  # reset trained model
-          ultralytics.start(key)  # train model
-      - name: Test HUB training 2
-        shell: python
-        run: |        
-          import os
-          import ultralytics
           key = os.environ['APIKEY']
           ultralytics.reset_model(key)  # reset trained model
           ultralytics.start(key)  # train model
