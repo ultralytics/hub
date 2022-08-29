@@ -67,3 +67,17 @@ jobs:
           key = os.environ['APIKEY']
           ultralytics.reset_model(key)  # reset trained model
           ultralytics.start(key)  # train model
+      - name: Test HUB export
+        if: github.event_name == 'schedule'
+        shell: python
+        env:
+          APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
+        run: |        
+          import time
+          import ultralytics
+          ultralytics.checks()
+          key = os.environ['APIKEY']
+          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model'):
+              print(f'Testing {f}...')
+              ultralytics.export_model(key, format=f)
+              time.sleep(60)
