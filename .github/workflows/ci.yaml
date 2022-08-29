@@ -44,7 +44,19 @@ jobs:
           pip list
           # git clone https://github.com/glenn-jocher/yolov5 -b master
           # pip install -r yolov5/requirements.txt
-      - name: Run tests
+      - name: Check environment
+        run: |
+          python -c "import ultralytics; ultralytics.checks()"
+          echo "RUNNER_OS is ${{ runner.os }}"
+          echo "GITHUB_EVENT_NAME is ${{ github.event_name }}"
+          echo "GITHUB_WORKFLOW is ${{ github.workflow }}"
+          echo "GITHUB_ACTOR is ${{ github.actor }}"
+          echo "GITHUB_REPOSITORY is ${{ github.repository }}"
+          echo "GITHUB_REPOSITORY_OWNER is ${{ github.repository_owner }}"
+          python --version
+          pip --version
+          pip list
+      - name: Test HUB training
         shell: python
         env:
           APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
