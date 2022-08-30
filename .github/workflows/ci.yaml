@@ -36,15 +36,20 @@ jobs:
           restore-keys: ${{ runner.os }}-${{ matrix.python-version }}-pip-
       - name: Install requirements
         run: |
-          python -m pip install --upgrade pip
-          pip install -U ultralytics
-          # python setup.py install
+          python -m pip install --upgrade pip wheel
+          pip install -U ultralytics --extra-index-url https://download.pytorch.org/whl/cpu
+      - name: Check environment
+        run: |
+          echo "RUNNER_OS is ${{ runner.os }}"
+          echo "GITHUB_EVENT_NAME is ${{ github.event_name }}"
+          echo "GITHUB_WORKFLOW is ${{ github.workflow }}"
+          echo "GITHUB_ACTOR is ${{ github.actor }}"
+          echo "GITHUB_REPOSITORY is ${{ github.repository }}"
+          echo "GITHUB_REPOSITORY_OWNER is ${{ github.repository_owner }}"
           python --version
           pip --version
           pip list
-          # git clone https://github.com/glenn-jocher/yolov5 -b master
-          # pip install -r yolov5/requirements.txt
-      - name: Run tests
+      - name: Test HUB training
         shell: python
         env:
           APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
@@ -56,3 +61,18 @@ jobs:
           key = os.environ['APIKEY']
           ultralytics.reset_model(key)  # reset trained model
           ultralytics.start(key)  # train model
+      - name: Test HUB export
+        if: github.event_name == 'schedule'
+        shell: python
+        env:
+          APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
+        run: |        
+          import os
+          import time
+          import ultralytics
+          ultralytics.checks()
+          key = os.environ['APIKEY']
+          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model'):
+              print(f'Testing {f}...')
+              ultralytics.export_model(key, format=f)
+              time.sleep(60)
