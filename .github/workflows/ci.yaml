@@ -75,4 +75,6 @@ jobs:
           for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model'):
               print(f'Testing {f}...')
               ultralytics.export_model(key, format=f)
-              time.sleep(60)
+              time.sleep(300)
+              dict = ultralytics.get_export(key, format=f)
+              assert dict['success'], f'{f} export success=False'
