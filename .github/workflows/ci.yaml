@@ -72,9 +72,13 @@ jobs:
           import ultralytics
           ultralytics.checks()
           key = os.environ['APIKEY']
-          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model'):
-              print(f'Testing {f}...')
+          success = []
+          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
+                    'ultralytics_tflite', 'ultralytics_coreml'):
+              print(f'Starting {f} export... ', end='')
               ultralytics.export_model(key, format=f)
-              time.sleep(300)
+              time.sleep(300)  # wait for export to complete
               dict = ultralytics.get_export(key, format=f)
-              assert dict['success'], f'{f} export success=False'
+              success.append(dict['success'])
+              print('done ✅' if success[-1] else 'failed ❌')
+          assert all(success)
