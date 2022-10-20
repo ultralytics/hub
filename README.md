@@ -37,7 +37,7 @@
 
 Ultralytics HUB datasets are just like YOLOv5 🚀 datasets, they use the same structure and the same label formats to keep everything simple. 
 
-When you upload a dataset to Ultralytics HUB, make sure to **place your dataset yaml inside the dataset root directory** as in the example shown below, and then zip for upload to https://hub.ultralytics.com/. Your **dataset yaml, directory and zip** should all share the same name. For example, if your dataset is called 'coco6' as in our example [ultralytics/hub/coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip), then you should have a coco6.yaml inside your coco6/ directory, which should zip to create coco6.zip for upload:
+When you upload a dataset to Ultralytics HUB, make sure to **place your dataset YAML inside the dataset root directory** as in the example shown below, and then zip for upload to https://hub.ultralytics.com/. Your **dataset YAML, directory and zip** should all share the same name. For example, if your dataset is called 'coco6' as in our example [ultralytics/hub/coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip), then you should have a coco6.yaml inside your coco6/ directory, which should zip to create coco6.zip for upload:
 
 ```bash
 zip -r coco6.zip coco6
@@ -46,7 +46,7 @@ zip -r coco6.zip coco6
 The example [coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip) dataset in this repository can be downloaded and unzipped to see exactly how to structure your custom dataset.
 <p align="center"><img width="800" src="https://user-images.githubusercontent.com/26833433/141502652-e4b0477c-6c2a-41b3-b21a-b3d1444cdda7.png" title="COCO6" /></p>
 
-The dataset yaml is the same standard YOLOv5 yaml format. See the [YOLOv5 Train Custom Data tutorial](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) for full details.
+The dataset YAML is the same standard YOLOv5 YAML format. See the [YOLOv5 Train Custom Data tutorial](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) for full details.
 ```yaml
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
 path:  # dataset root dir (leave empty for HUB)
@@ -55,8 +55,12 @@ val: images/val  # val images (relative to 'path') 8 images
 test:  # test images (optional)
 
 # Classes
-nc: 80  # number of classes
-names: [ 'person', 'bicycle', 'car', ...]
+names:
+  0: person
+  1: bicycle
+  2: car
+  3: motorcycle
+  ...
 ```
 
 After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and click on the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
