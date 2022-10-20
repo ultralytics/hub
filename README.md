@@ -71,7 +71,7 @@ Connect to the Ultralytics HUB notebook and use your model API key to begin trai
 
 ## ❓ Issues
 
-If you are a new Ultralytics HUB user and have questions or comments, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this [ultralytics/hub](https://github.com/ultralytics/hub) repo and let us know what we can do to make your life better 😃!
+If you are a new [Ultralytics HUB](https://ultralytics.com/hub) user and have questions or comments, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this repo and let us know what we can do to make your life better 😃!
 
 
 <br>
