@@ -33,7 +33,7 @@
 👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to launch [Ultralytics HUB](https://ultralytics.com/hub), a new web tool for training and deploying all your YOLOv5 🚀 models from one spot!
 
 
-## 1. Create a Dataset
+## 1. Upload a Dataset
 
 Ultralytics HUB datasets are just like YOLOv5 🚀 datasets, they use the same structure and the same label formats to keep everything simple. 
 
