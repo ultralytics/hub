@@ -75,10 +75,13 @@ jobs:
           success = []
           for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
                     'ultralytics_tflite', 'ultralytics_coreml'):
-              print(f'Starting {f} export... ', end='')
-              ultralytics.export_model(key, format=f)
-              time.sleep(300)  # wait for export to complete
-              dict = ultralytics.get_export(key, format=f)
-              success.append(dict['success'])
-              print('done ✅' if success[-1] else 'failed ❌')
+              try:
+                  print(f'Starting {f} export... ', end='')
+                  ultralytics.export_model(key, format=f)
+                  time.sleep(300)  # wait for export to complete
+                  success.append(ultralytics.get_export(key, format=f)['success'])
+                  print('done ✅' if success[-1] else 'Error ❌')
+              except Exception as e:
+                  success.append(False)
+                  print(f'Error ❌ {f} export {e}')
           assert all(success)
