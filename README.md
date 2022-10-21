@@ -1,4 +1,4 @@
-<a align="center" href="https://ultralytics.com" target="_blank">
+<a align="center" href="https://hub.ultralytics.com" target="_blank">
 <img width="1024" src="https://user-images.githubusercontent.com/107626595/197213161-406e48c9-480d-4084-b90f-fe7b79341a19.png"></a>
 <br>
 <br>
