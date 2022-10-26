@@ -75,9 +75,7 @@ Connect to the Ultralytics HUB notebook and use your model API key to begin trai
 
 ## 3. Deploy to Real World
 
-Export your model to 13 different formats, including TensorFlow, OpenVINO, ONNX, CoreML, Paddle, and others. 
-
-See your models directly on your mobile device by downloading the Ultralytics App!
+Export your model to 13 different formats, including TensorFlow, ONNX, OpenVINO, CoreML, Paddle and many others. Run models directly on your mobile device by downloading the [Ultralytics App](https://ultralytics.com/app_install)!
 
 <a align="center" href="https://ultralytics.com/app_install" target="_blank">
 <img width="1200" alt="Ultralytics mobile app" src="https://user-images.githubusercontent.com/26833433/198139156-924f56da-4d18-49d0-932d-5a815022f4fa.png">
