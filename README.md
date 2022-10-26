@@ -73,7 +73,7 @@ After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and cl
 Connect to the Ultralytics HUB notebook and use your model API key to begin training! <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 
-## 3. Export a Model
+## 3. Deploy to Real World
 
 Export your model to 13 different formats, including TensorFlow, OpenVINO, ONNX, CoreML, Paddle, and others. 
 
