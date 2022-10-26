@@ -80,7 +80,7 @@ Export your model to 13 different formats, including TensorFlow, OpenVINO, ONNX,
 See your models directly on your mobile device by downloading the Ultralytics App!
 
 <a align="center" href="https://ultralytics.com/app_install" target="_blank">
-<img width="1200" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/107626595/198128098-40bc74ba-84b9-457b-a17f-1032edf399be.png">
+<img width="1200" alt="Ultralytics mobile app" src="https://user-images.githubusercontent.com/107626595/198128098-40bc74ba-84b9-457b-a17f-1032edf399be.png">
 
 
 ## ❓ Issues
