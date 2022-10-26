@@ -73,6 +73,16 @@ After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and cl
 Connect to the Ultralytics HUB notebook and use your model API key to begin training! <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 
+## 3. Export a Model
+
+Export your model to 13 different formats, including TensorFlow, OpenVINO, ONNX, CoreML, Paddle, and others. 
+
+See your models directly on your mobile device by downloading the Ultralytics App!
+
+<a align="center" href="https://ultralytics.com/app_install" target="_blank">
+<img width="1200" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/107626595/198128098-40bc74ba-84b9-457b-a17f-1032edf399be.png">
+
+
 ## ❓ Issues
 
 If you are a new [Ultralytics HUB](https://ultralytics.com/hub) user and have questions or comments, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this repo and let us know what we can do to make your life better 😃!
