@@ -1,5 +1,5 @@
 <a align="center" href="https://hub.ultralytics.com" target="_blank">
-<img width="1024" src="https://user-images.githubusercontent.com/107626595/197213161-406e48c9-480d-4084-b90f-fe7b79341a19.png"></a>
+<img width="100%" src="https://user-images.githubusercontent.com/107626595/198593785-1463295f-cd43-4dbc-9b96-b6733c5720bf.png"></a>
 <br>
 <br>
 <div align="center">
@@ -44,7 +44,9 @@ zip -r coco6.zip coco6
 ```
 
 The example [coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip) dataset in this repository can be downloaded and unzipped to see exactly how to structure your custom dataset.
-<p align="center"><img width="800" src="https://user-images.githubusercontent.com/26833433/141502652-e4b0477c-6c2a-41b3-b21a-b3d1444cdda7.png" title="COCO6" /></p>
+
+<p align="center"><img width="80%" src="https://user-images.githubusercontent.com/26833433/198611465-912f8673-c83f-471e-85a4-9d070f750f16.png" title="COCO6" /></p>
+
 
 The dataset YAML is the same standard YOLOv5 YAML format. See the [YOLOv5 Train Custom Data tutorial](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) for full details.
 ```yaml
@@ -63,9 +65,9 @@ names:
   ...
 ```
 
-After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and click on the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
+After zipping your dataset, sign in to [Ultralytics HUB](https://hub.ultralytics.com) and click the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
 
-<img width="1200" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/197070967-3c4bd293-62d9-4abc-937f-d5f176931a59.png">
+<img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/198611715-540c9856-49d7-4069-a2fd-7c9eb70e772e.png">
 
 
 ## 2. Train a Model
@@ -78,7 +80,7 @@ Connect to the Ultralytics HUB notebook and use your model API key to begin trai
 Export your model to 13 different formats, including TensorFlow, ONNX, OpenVINO, CoreML, Paddle and many others. Run models directly on your mobile device by downloading the [Ultralytics App](https://ultralytics.com/app_install)!
 
 <a align="center" href="https://ultralytics.com/app_install" target="_blank">
-<img width="1200" alt="Ultralytics mobile app" src="https://user-images.githubusercontent.com/26833433/198139156-924f56da-4d18-49d0-932d-5a815022f4fa.png">
+<img width="100%" alt="Ultralytics mobile app" src="https://user-images.githubusercontent.com/26833433/198139156-924f56da-4d18-49d0-932d-5a815022f4fa.png">
 
 
 ## ❓ Issues
