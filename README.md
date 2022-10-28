@@ -63,7 +63,7 @@ names:
   ...
 ```
 
-After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and click on the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
+After zipping your dataset, sign in to [Ultralytics HUB](https://hub.ultralytics.com) and click the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
 
 <img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/107626595/198592835-71e1cffc-0a20-46df-babd-b62d340d7622.png">
 
