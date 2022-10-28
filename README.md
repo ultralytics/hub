@@ -44,7 +44,9 @@ zip -r coco6.zip coco6
 ```
 
 The example [coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip) dataset in this repository can be downloaded and unzipped to see exactly how to structure your custom dataset.
-<p align="center"><img width="80%" src="https://user-images.githubusercontent.com/107626595/198592487-9dd52d91-5d13-4dbd-a167-4a6e2508774f.png" title="COCO6" /></p>
+
+<p align="center"><img width="80%" src="https://user-images.githubusercontent.com/26833433/198611465-912f8673-c83f-471e-85a4-9d070f750f16.png" title="COCO6" /></p>
+
 
 The dataset YAML is the same standard YOLOv5 YAML format. See the [YOLOv5 Train Custom Data tutorial](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) for full details.
 ```yaml
@@ -65,7 +67,7 @@ names:
 
 After zipping your dataset, sign in to [Ultralytics HUB](https://hub.ultralytics.com) and click the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
 
-<img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/107626595/198592835-71e1cffc-0a20-46df-babd-b62d340d7622.png">
+<img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/198611715-540c9856-49d7-4069-a2fd-7c9eb70e772e.png">
 
 
 ## 2. Train a Model
