@@ -1,5 +1,5 @@
 <a align="center" href="https://hub.ultralytics.com" target="_blank">
-<img width="1024" src="https://user-images.githubusercontent.com/107626595/198593785-1463295f-cd43-4dbc-9b96-b6733c5720bf.png"></a>
+<img width="100%" src="https://user-images.githubusercontent.com/107626595/198593785-1463295f-cd43-4dbc-9b96-b6733c5720bf.png"></a>
 <br>
 <br>
 <div align="center">
@@ -44,7 +44,7 @@ zip -r coco6.zip coco6
 ```
 
 The example [coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip) dataset in this repository can be downloaded and unzipped to see exactly how to structure your custom dataset.
-<p align="center"><img width="800" src="https://user-images.githubusercontent.com/107626595/198592487-9dd52d91-5d13-4dbd-a167-4a6e2508774f.png" title="COCO6" /></p>
+<p align="center"><img width="80%" src="https://user-images.githubusercontent.com/107626595/198592487-9dd52d91-5d13-4dbd-a167-4a6e2508774f.png" title="COCO6" /></p>
 
 The dataset YAML is the same standard YOLOv5 YAML format. See the [YOLOv5 Train Custom Data tutorial](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) for full details.
 ```yaml
@@ -65,7 +65,7 @@ names:
 
 After zipping your dataset, sign in to HUB at https://hub.ultralytics.com and click on the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
 
-<img width="1200" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/107626595/198592835-71e1cffc-0a20-46df-babd-b62d340d7622.png">
+<img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/107626595/198592835-71e1cffc-0a20-46df-babd-b62d340d7622.png">
 
 
 ## 2. Train a Model
@@ -78,7 +78,7 @@ Connect to the Ultralytics HUB notebook and use your model API key to begin trai
 Export your model to 13 different formats, including TensorFlow, ONNX, OpenVINO, CoreML, Paddle and many others. Run models directly on your mobile device by downloading the [Ultralytics App](https://ultralytics.com/app_install)!
 
 <a align="center" href="https://ultralytics.com/app_install" target="_blank">
-<img width="1200" alt="Ultralytics mobile app" src="https://user-images.githubusercontent.com/26833433/198139156-924f56da-4d18-49d0-932d-5a815022f4fa.png">
+<img width="100%" alt="Ultralytics mobile app" src="https://user-images.githubusercontent.com/26833433/198139156-924f56da-4d18-49d0-932d-5a815022f4fa.png">
 
 
 ## ❓ Issues
