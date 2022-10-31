@@ -50,6 +50,7 @@ jobs:
           pip --version
           pip list
       - name: Test HUB training
+        continue-on-error: false
         shell: python
         env:
           APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
