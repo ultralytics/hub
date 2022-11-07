@@ -1,4 +1,4 @@
-<a align="center" href="https://hub.ultralytics.com" target="_blank">
+<a align="center" href="https://bit.ly/ultralytics_hub" target="_blank">
 <img width="100%" src="https://user-images.githubusercontent.com/107626595/198593785-1463295f-cd43-4dbc-9b96-b6733c5720bf.png"></a>
 <br>
 <br>
@@ -30,7 +30,7 @@
 </div>
 <br>
 
-👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to launch [Ultralytics HUB](https://ultralytics.com/hub), a new web tool for training and deploying all your YOLOv5 🚀 models from one spot!
+👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to launch [Ultralytics HUB](https://bit.ly/ultralytics_hub), a new web tool for training and deploying all your YOLOv5 🚀 models from one spot!
 
 
 ## 1. Upload a Dataset
@@ -65,7 +65,7 @@ names:
   ...
 ```
 
-After zipping your dataset, sign in to [Ultralytics HUB](https://hub.ultralytics.com) and click the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
+After zipping your dataset, sign in to [Ultralytics HUB](https://bit.ly/ultralytics_hub) and click the Datasets tab. Click 'Upload Dataset' to upload, scan and visualize your new dataset before training new YOLOv5 models on it!
 
 <img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/198611715-540c9856-49d7-4069-a2fd-7c9eb70e772e.png">
 
@@ -85,7 +85,7 @@ Export your model to 13 different formats, including TensorFlow, ONNX, OpenVINO,
 
 ## ❓ Issues
 
-If you are a new [Ultralytics HUB](https://ultralytics.com/hub) user and have questions or comments, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this repo and let us know what we can do to make your life better 😃!
+If you are a new [Ultralytics HUB](https://bit.ly/ultralytics_hub) user and have questions or comments, you are in the right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in the [Issues](https://github.com/ultralytics/hub/issues) tab in this repo and let us know what we can do to make your life better 😃!
 
 
 <br>
