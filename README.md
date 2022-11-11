@@ -1,5 +1,5 @@
 <a align="center" href="https://bit.ly/ultralytics_hub" target="_blank">
-<img width="100%" src="https://user-images.githubusercontent.com/107626595/198593785-1463295f-cd43-4dbc-9b96-b6733c5720bf.png"></a>
+<img width="100%" src="https://github.com/ultralytics/assets/raw/master/im/ultralytics-hub.png"></a>
 <br>
 <br>
 <div align="center">
@@ -45,8 +45,7 @@ zip -r coco6.zip coco6
 
 The example [coco6.zip](https://github.com/ultralytics/hub/blob/master/coco6.zip) dataset in this repository can be downloaded and unzipped to see exactly how to structure your custom dataset.
 
-<p align="center"><img width="80%" src="https://user-images.githubusercontent.com/26833433/198611465-912f8673-c83f-471e-85a4-9d070f750f16.png" title="COCO6" /></p>
-
+<p align="center"><img width="80%" src="https://user-images.githubusercontent.com/26833433/201424843-20fa081b-ad4b-4d6c-a095-e810775908d8.png" title="COCO6" /></p>
 
 The dataset YAML is the same standard YOLOv5 YAML format. See the [YOLOv5 Train Custom Data tutorial](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data) for full details.
 ```yaml
