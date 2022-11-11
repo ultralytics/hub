@@ -1,5 +1,5 @@
 <a align="center" href="https://bit.ly/ultralytics_hub" target="_blank">
-<img width="100%" src="https://user-images.githubusercontent.com/107626595/198593785-1463295f-cd43-4dbc-9b96-b6733c5720bf.png"></a>
+<img width="100%" src="https://github.com/ultralytics/assets/raw/master/im/ultralytics-hub.png"></a>
 <br>
 <br>
 <div align="center">
