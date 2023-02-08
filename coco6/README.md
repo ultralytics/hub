@@ -113,7 +113,7 @@ After using a tool like [Roboflow Annotate](https://roboflow.com/annotate?ref=ul
 
 - One row per object
 - Each row is `class x_center y_center width height` format.
-- Box coordinates must be in **normalized xywh** format (from 0 - 1). If your boxes are in pixels, divide `x_center` and `width` by image width, and `y_center` and `height` by image height.
+- Box coordinates must be in **normalized xywh** format (from 0.0 to 1.0). If your boxes are in pixels, divide `x_center` and `width` by image width, and `y_center` and `height` by image height.
 - Class numbers are zero-indexed (start from 0).
 
 <p align="center"><img width="700" src="https://user-images.githubusercontent.com/26833433/91506361-c7965000-e886-11ea-8291-c72b98c25eec.jpg"></p>
