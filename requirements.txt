@@ -1,0 +1,5 @@
+# Ultralytics requirements
+# Usage: pip install -r requirements.txt
+
+# Base ----------------------------------------
+ultralytics>=8.0
