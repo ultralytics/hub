@@ -1,3 +1,5 @@
+# Ultralytics YOLO 🚀, GPL-3.0 license
+
 name: Greetings
 
 on:
@@ -14,20 +16,17 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           pr-message: |
-            👋 Hello @${{ github.actor }}, thank you for submitting a 🚀 PR! To allow your work to be integrated as seamlessly as possible, we advise you to:
-            - ✅ Verify your PR is **up-to-date with upstream/master.** If your PR is behind upstream/master an automatic [GitHub actions](https://github.com/ultralytics/hub/blob/master/.github/workflows/rebase.yml) rebase may be attempted by including the /rebase command in a comment body, or by running the following code, replacing 'feature' with the name of your local branch:
-            ```bash
-            git remote add upstream https://github.com/ultralytics/hub.git
-            git fetch upstream
-            git checkout feature  # <----- replace 'feature' with local branch name
-            git merge upstream/master
-            git push -u origin -f
-            ```
+            👋 Hello @${{ github.actor }}, thank you for submitting a YOLO 🚀 PR! To allow your work to be integrated as seamlessly as possible, we advise you to:
+
+            - ✅ Verify your PR is **up-to-date** with `ultralytics/hub` `master` branch. If your PR is behind you can update your code by clicking the 'Update branch' button or by running `git pull` and `git merge main` locally.
             - ✅ Verify all Continuous Integration (CI) **checks are passing**.
-            - ✅ Reduce changes to the absolute **minimum** required for your bug fix or feature addition. _"It is not daily increase but daily decrease, hack away the unessential. The closer to the source, the less wastage there is."_  -Bruce Lee
+            - ✅ Update [Docs](https://docs.ultralytics.com) for any new or updated features.
+            - ✅ Reduce changes to the absolute **minimum** required for your bug fix or feature addition. _"It is not daily increase but daily decrease, hack away the unessential. The closer to the source, the less wastage there is."_  — Bruce Lee
+
+            See our [Contributing Guide](https://github.com/ultralytics/ultralytics/blob/main/CONTRIBUTING.md) for details and let us know if you have any questions!
 
           issue-message: |
-            👋 Hello @${{ github.actor }}, thank you for raising an issue about [Ultralytics HUB](https://ultralytics.com/hub) 🚀! Please visit https://ultralytics.com/hub to learn more, and see our ⭐️ [HUB Guidelines](https://github.com/ultralytics/hub) to quickly get started uploading datasets and training YOLOv5 models.
+            👋 Hello @${{ github.actor }}, thank you for raising an issue about [Ultralytics HUB](https://ultralytics.com/hub) 🚀! Please visit our [HUB Docs](docs.ultralytics.com) to learn more, and see our ⭐️ [HUB Guidelines](https://github.com/ultralytics/hub) to quickly get started uploading datasets and training YOLO models.
 
             If this is a 🐛 Bug Report, please provide screenshots and steps to recreate your problem to help us get started working on a fix.
 
