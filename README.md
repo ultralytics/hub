@@ -9,9 +9,11 @@
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 </div>
 <br>
+
 👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to
 launch [Ultralytics HUB](https://bit.ly/ultralytics_hub), a new web tool for training and deploying all your YOLOv5 🚀
 models from one spot!
+
 <br>
 <div align="center">
   <a href="https://github.com/ultralytics" style="text-decoration:none;">
