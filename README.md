@@ -3,6 +3,18 @@
 <br>
 <br>
 <div align="center">
+  <a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml">
+    <img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a>
+  <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+</div>
+<br>
+
+👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to
+launch [Ultralytics HUB](https://bit.ly/ultralytics_hub), a new web tool for training and deploying all your YOLOv5 🚀
+models from one spot!
+
+<div align="center">
   <a href="https://github.com/ultralytics" style="text-decoration:none;">
     <img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="2%" alt="" /></a>
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="" />
@@ -20,18 +32,7 @@
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%" alt="" />
   <a href="https://www.instagram.com/ultralytics/" style="text-decoration:none;">
     <img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-instagram.png" width="2%" alt="" /></a>
-  <br>
-  <br>
-  <a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml">
-    <img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a>
-  <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> 
 </div>
-<br>
-
-👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to
-launch [Ultralytics HUB](https://bit.ly/ultralytics_hub), a new web tool for training and deploying all your YOLOv5 🚀
-models from one spot!
 
 ## 1. Upload a Dataset
 
