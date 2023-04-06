@@ -28,7 +28,7 @@ jobs:
       - name: Install requirements
         run: |
           python -m pip install --upgrade pip wheel
-          pip install ultralytics==0.0.44 --extra-index-url https://download.pytorch.org/whl/cpu
+          pip install ultralytics --extra-index-url https://download.pytorch.org/whl/cpu
       - name: Check environment
         run: |
           echo "RUNNER_OS is ${{ runner.os }}"
@@ -46,13 +46,17 @@ jobs:
         env:
           APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
         run: |        
-          # sys.path.append(str(Path('.').resolve()))  # to find yolov5 module, moved into pip package          
           import os
-          import ultralytics
-          ultralytics.checks()
+          from pathlib import Path
+          from ultralytics import YOLO, hub
+          from ultralytics.yolo.utils import USER_CONFIG_DIR
+          Path(USER_CONFIG_DIR / 'settings.yaml').unlink()
           key = os.environ['APIKEY']
-          ultralytics.reset_model(key)  # reset trained model
-          ultralytics.start(key)  # train model
+          hub.reset_model(key)
+          key, model_id = key.split('_')
+          hub.login(key)
+          model = YOLO('https://hub.ultralytics.com/models/' + model_id)
+          model.train()
       - name: Test HUB export
         if: github.event_name == 'schedule'
         shell: python
