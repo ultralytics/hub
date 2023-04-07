@@ -44,16 +44,17 @@ jobs:
         continue-on-error: false
         shell: python
         env:
-          APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
+          API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
+          MODEL_ID: ${{ secrets.ULTRALYTICS_HUB_MODEL_ID }}
         run: |        
           import os
           from pathlib import Path
           from ultralytics import YOLO, hub
           from ultralytics.yolo.utils import USER_CONFIG_DIR
           Path(USER_CONFIG_DIR / 'settings.yaml').unlink()
-          key = os.environ['APIKEY']
-          hub.reset_model(key)
-          key, model_id = key.split('_')
+          key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
+          combined_key = f'{key}_{model_id}'
+          hub.reset_model(combined_key)
           hub.login(key)
           model = YOLO('https://hub.ultralytics.com/models/' + model_id)
           model.train()
@@ -61,21 +62,23 @@ jobs:
         if: github.event_name == 'schedule'
         shell: python
         env:
-          APIKEY: ${{ secrets.ULTRALYTICS_HUB_APIKEY }}
+          API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
+          MODEL_ID: ${{ secrets.ULTRALYTICS_HUB_MODEL_ID }}
         run: |        
           import os
           import time
-          import ultralytics
-          ultralytics.checks()
-          key = os.environ['APIKEY']
+          from ultralytics import YOLO, checks, hub
+          checks()
+          key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
+          combined_key = f'{key}_{model_id}'
           success = []
           for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
                     'ultralytics_tflite', 'ultralytics_coreml'):
               try:
                   print(f'Starting {f} export... ', end='')
-                  ultralytics.export_model(key, format=f)
+                  hub.export_model(combined_key, format=f)
                   time.sleep(300)  # wait for export to complete
-                  success.append(ultralytics.get_export(key, format=f)['success'])
+                  success.append(hub.get_export(combined_key, format=f)['success'])
                   print('done ✅' if success[-1] else 'Error ❌')
               except Exception as e:
                   success.append(False)
