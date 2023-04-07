@@ -59,7 +59,7 @@ jobs:
           model = YOLO('https://hub.ultralytics.com/models/' + model_id)
           model.train()
       - name: Test HUB export
-        if: github.event_name == 'schedule'
+        # if: github.event_name == 'schedule'
         shell: python
         env:
           API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
