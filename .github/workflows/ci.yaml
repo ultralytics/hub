@@ -68,7 +68,7 @@ jobs:
           api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
           hub.login(api_key)
           success = []
-          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
+          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs', 'paddle',
                     'ultralytics_tflite', 'ultralytics_coreml'):
               try:
                   print(f'Starting {f} export... ', end='')
