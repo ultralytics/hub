@@ -82,7 +82,7 @@ Click 'Upload Dataset' to upload, scan and visualize your new dataset before tra
 
 ## 2. Train a Model
 
-Connect to the Ultralytics HUB notebook and use your model API key to begin training! 
+Connect to the Ultralytics HUB notebook and use your model API key to begin training!
 
 <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb" target="_blank">
 <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
@@ -90,8 +90,8 @@ Connect to the Ultralytics HUB notebook and use your model API key to begin trai
 ## 3. Deploy to Real World
 
 Export your model to 13 different formats, including TensorFlow, ONNX, OpenVINO, CoreML, Paddle and many others. Run
-models directly on your [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) or 
-[Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) mobile device by downloading 
+models directly on your [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) or
+[Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) mobile device by downloading
 the [Ultralytics App](https://ultralytics.com/app_install)!
 
 ## ❓ Issues
@@ -100,7 +100,6 @@ If you are a new [Ultralytics HUB](https://bit.ly/ultralytics_hub) user and have
 right place! Please click the [New Issue](https://github.com/ultralytics/hub/issues/new/choose) button in
 the [Issues](https://github.com/ultralytics/hub/issues) tab in this repo and let us know what we can do to make your
 life better 😃!
-
 
 <br>
 <div align="center">
