@@ -46,7 +46,7 @@ jobs:
         env:
           API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
           MODEL_ID: ${{ secrets.ULTRALYTICS_HUB_MODEL_ID }}
-        run: |        
+        run: |
           import os
           from ultralytics import YOLO, hub
           api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
@@ -60,7 +60,7 @@ jobs:
         env:
           API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
           MODEL_ID: ${{ secrets.ULTRALYTICS_HUB_MODEL_ID }}
-        run: |        
+        run: |
           import os
           import time
           from ultralytics import YOLO, checks, hub

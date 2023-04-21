@@ -2,10 +2,9 @@
 
 Ultralytics [COCO6](https://github.com/ultralytics/hub/tree/master/coco6) is an example small tutorial dataset composed of the first 6 images in Microsoft [COCO](https://github.com/ultralytics/yolov5/blob/master/data/coco.yaml) train2017. 3 images are used for training and 3 for validation. The intention of COCO6 is to provide an example for structuring custom YOLOv5 datasets and to provide a sanity check for YOLOv5 trainings with `python train.py --data coco6.yaml`.
 
-
 ### 1.1 Create dataset.yaml
 
-[coco6.yaml](https://github.com/ultralytics/hub/blob/master/coco6/coco6.yaml), shown below, is the dataset config file that defines 1) the dataset root directory `path` and relative paths to `train` / `val` / `test` image directories (or *.txt files with image paths), 2) the number of classes `nc` and 3) a list of class `names`:
+[coco6.yaml](https://github.com/ultralytics/hub/blob/master/coco6/coco6.yaml), shown below, is the dataset config file that defines 1) the dataset root directory `path` and relative paths to `train` / `val` / `test` image directories (or \*.txt files with image paths), 2) the number of classes `nc` and 3) a list of class `names`:
 
 ```yaml
 # COCO6 dataset https://github.com/ultralytics/hub (first 6 images from COCO train2017)
@@ -106,7 +105,6 @@ names:
   79: toothbrush
 ```
 
-
 ### 1.2 Create Labels
 
 After using a tool like [Roboflow Annotate](https://roboflow.com/annotate?ref=ultralytics) to label your images, export your labels to **YOLO format**, with one `*.txt` file per image (if no objects in image, no `*.txt` file is required). The `*.txt` file specifications are:
@@ -121,7 +119,6 @@ After using a tool like [Roboflow Annotate](https://roboflow.com/annotate?ref=ul
 The label file corresponding to the above image contains 2 persons (class `0`) and a tie (class `27`):
 
 <p align="center"><img width="428" src="https://user-images.githubusercontent.com/26833433/112467037-d2568c00-8d66-11eb-8796-55402ac0d62f.png"></p>
-
 
 ### 1.3 Organize Directories
 
@@ -148,7 +145,6 @@ datasets/coco6/labels/im0.txt  # label
 ```
 
 <p align="center"><img width="800" src="https://user-images.githubusercontent.com/26833433/141502652-e4b0477c-6c2a-41b3-b21a-b3d1444cdda7.png" title="COCO6" /></p>
-
 
 ## Support
 
