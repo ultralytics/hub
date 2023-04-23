@@ -52,8 +52,8 @@ jobs:
           api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
           hub.login(api_key)
           hub.reset_model(model_id)
-          model = YOLO('https://hub.incorrect.ultralytics.com/models/' + model_id)
-          model.train()
+          model = YOLO('https://hub.ultralytics.com/models/' + model_id)
+          model2.train2()
       - name: Test HUB export
         if: github.event_name == 'schedule'
         shell: python
@@ -80,13 +80,15 @@ jobs:
                   success.append(False)
                   print(f'Error ❌ {f} export {e}')
           assert all(success)
-      - name: Notify Slack on failure
-        if: failure()  # && github.event_name == 'schedule'
-        uses: 8398a7/action-slack@v3
+      - name: Notify on failure
+        if: failure()
+        id: slack
+        uses: slackapi/slack-github-action@v1.23.0
         with:
-          status: ${{ job.status }}
-          fields: repo,commit,author,eventName,workflow,job
+          payload: |
+            {
+              "text": "GitHub Action build result: ${{ job.status }}\nRepository: ${{ github.repository }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nEvent: ${{ github.event_name }}\nURL: ${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+            }
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_YOLO }}
-        secrets:
-          - SLACK_WEBHOOK_URL
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
