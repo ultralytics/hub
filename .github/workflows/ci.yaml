@@ -87,7 +87,12 @@ jobs:
         with:
           payload: |
             {
-              "text": "<!channel> GitHub CI error for action '${{ github.workflow }}' ❌\n\n*Repository:* https://github.com/${{ github.repository }}\n*Action:* https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}\n*Author:* ${{ github.actor }}\n*Event:* ${{ github.event_name }}\n*Job Status:* ${{ job.status }}\n"
+              "text": "<!channel> GitHub Actions error notification for ${{ github.workflow }} ❌\n\n
+              *Repository:* https://github.com/${{ github.repository }}
+              *Action:* https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+              *Author:* ${{ github.actor }}
+              *Event:* ${{ github.event_name }}
+              *Job Status:* ${{ job.status }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_YOLO }}
