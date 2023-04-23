@@ -8,7 +8,7 @@ on:
   pull_request:
     branches: [master]
   schedule:
-    - cron: '0 2 * * *'  # runs at 02:00 UTC every day
+    - cron: '0 2/8 * * *'  # runs at 02:00 UTC every day
 
 jobs:
   Tests:
