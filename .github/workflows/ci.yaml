@@ -53,7 +53,7 @@ jobs:
           hub.login(api_key)
           hub.reset_model(model_id)
           model = YOLO('https://hub.ultralytics.com/models/' + model_id)
-          model2.train2()
+          model.train()
       - name: Test HUB export
         if: github.event_name == 'schedule'
         shell: python
@@ -81,7 +81,7 @@ jobs:
                   print(f'Error ❌ {f} export {e}')
           assert all(success)
       - name: Notify on failure
-        if: failure()
+        if: failure() && github.event_name == 'schedule'
         id: slack
         uses: slackapi/slack-github-action@v1.23.0
         with:
