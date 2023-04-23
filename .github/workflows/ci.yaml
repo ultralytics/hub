@@ -87,7 +87,7 @@ jobs:
         with:
           payload: |
             {
-              "text": "GitHub Action build result: ${{ job.status }}\nRepository: ${{ github.repository }}\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nEvent: ${{ github.event_name }}\nURL: ${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+              "text": "@channel GitHub CI Failure ❌ notification\n\n${{ job.status }}\n*Repository:* ${{ github.repository }} (<https://github.com/${{ github.repository }}|Link>)\nAction URL: <https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|Link>\nCommit: ${{ github.sha }}\nAuthor: ${{ github.actor }}\nEvent: ${{ github.event_name }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_YOLO }}
