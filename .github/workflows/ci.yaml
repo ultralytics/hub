@@ -81,7 +81,7 @@ jobs:
                   print(f'Error ❌ {f} export {e}')
           assert all(success)
       - name: Notify on failure
-        if: failure() && github.event_name == 'schedule'
+        if: failure() # && github.event_name == 'schedule'
         uses: slackapi/slack-github-action@v1.23.0
         with:
           payload: |
