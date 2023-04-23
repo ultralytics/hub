@@ -46,7 +46,7 @@ jobs:
         env:
           API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
           MODEL_ID: ${{ secrets.ULTRALYTICS_HUB_MODEL_ID }}
-        run: |        
+        run: |
           import os
           from ultralytics import YOLO, hub
           api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
@@ -60,7 +60,7 @@ jobs:
         env:
           API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
           MODEL_ID: ${{ secrets.ULTRALYTICS_HUB_MODEL_ID }}
-        run: |        
+        run: |
           import os
           import time
           from ultralytics import YOLO, checks, hub
@@ -80,3 +80,15 @@ jobs:
                   success.append(False)
                   print(f'Error ❌ {f} export {e}')
           assert all(success)
+      - name: Notify on failure
+        if: failure() && github.event_name == 'schedule'
+        id: slack
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "text": "<!channel> GitHub Actions error for ${{ github.workflow }} ❌\n\n\n*Repository:* https://github.com/${{ github.repository }}\n*Action:* https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}\n*Author:* ${{ github.actor }}\n*Event:* ${{ github.event_name }}\n*Job Status:* ${{ job.status }}\n"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_HUBWEB }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
