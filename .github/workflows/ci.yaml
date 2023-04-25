@@ -7,8 +7,9 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  workflow_dispatch:
   schedule:
-    - cron: '0 2/8 * * *'  # runs every 8 hours, starting at 02:00 UTC
+    - cron: '0 2 * * *'  # runs every 8 hours, starting at 02:00 UTC
 
 
 jobs:
@@ -56,7 +57,7 @@ jobs:
           model = YOLO('https://hub.ultralytics.com/models/' + model_id)
           model.train()
       - name: Test HUB export
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         shell: python
         env:
           API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
@@ -69,17 +70,24 @@ jobs:
           api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
           hub.login(api_key)
           success = []
-          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs', 'paddle',
-                    'ultralytics_tflite', 'ultralytics_coreml'):
-              try:
-                  print(f'Starting {f} export... ', end='')
-                  hub.export_model(model_id, format=f)
-                  time.sleep(300)  # wait for export to complete
-                  success.append(hub.get_export(model_id, format=f)['success'])
-                  print('done ✅' if success[-1] else 'Error ❌')
-              except Exception as e:
-                  success.append(False)
-                  print(f'Error ❌ {f} export {e}')
+          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
+                    'paddle', 'ultralytics_tflite', 'ultralytics_coreml'):
+              backoff_times = [60, 120, 240, 480]  # exponential backoff waits in seconds
+              for wait_time in backoff_times:
+                  try:
+                      print(f'Starting {f} export... ', end='')
+                      hub.export_model(model_id, format=f)
+                      time.sleep(wait_time)  # wait for export to complete
+                      success.append(hub.get_export(model_id, format=f)['success'])
+                      print('done ✅' if success[-1] else 'Error ❌')
+                      break  # exit the loop if no exception is raised
+                  except Exception as e:
+                      if wait_time == backoff_times[-1]:  # if it's the last backoff time
+                          success.append(False)
+                          print(f'Error ❌ {f} export {e}')
+                      else:
+                          print(f'Retrying {f} export in {wait_time // 60} minutes due to error: {e}')
+                          time.sleep(wait_time)
           assert all(success)
       - name: Notify on failure
         if: failure() && github.event_name == 'schedule'
