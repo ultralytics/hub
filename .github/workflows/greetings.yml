@@ -23,7 +23,7 @@ jobs:
             - ✅ Update [Docs](https://docs.ultralytics.com) for any new or updated features.
             - ✅ Reduce changes to the absolute **minimum** required for your bug fix or feature addition. _"It is not daily increase but daily decrease, hack away the unessential. The closer to the source, the less wastage there is."_  — Bruce Lee
 
-            See our [Contributing Guide](https://github.com/ultralytics/ultralytics/blob/main/CONTRIBUTING.md) for details and let us know if you have any questions!
+            See our [Contributing Guide](https://docs.ultralytics.com/help/contributing) for details and let us know if you have any questions!
 
           issue-message: |
             👋 Hello @${{ github.actor }}, thank you for raising an issue about [Ultralytics HUB](https://ultralytics.com/hub) 🚀! Please visit our [HUB Docs](docs.ultralytics.com) to learn more, and see our ⭐️ [HUB Guidelines](https://github.com/ultralytics/hub) to quickly get started uploading datasets and training YOLO models.
