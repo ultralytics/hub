@@ -17,7 +17,10 @@ jobs:
 
       - name: Download and install lychee
         run: |
-          pkg install lychee
+          LYCHEE_URL=$(curl -s https://api.github.com/repos/lycheeverse/lychee/releases/latest | grep -oP '"browser_download_url": "\K.*x86_64-unknown-linux-gnu.tar.gz')
+          curl -L $LYCHEE_URL -o lychee.tar.gz
+          tar xzf lychee.tar.gz
+          sudo mv lychee /usr/local/bin
 
       - name: Test Markdown and HTML links with retry
         uses: nick-invision/retry@v2
