@@ -10,7 +10,7 @@
 </div>
 <br>
 
-👋 Hello from the [Ultralytics](https://ultralytics2.com/) Team! We've been working hard these last few months to
+👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to
 launch [Ultralytics HUB](https://bit.ly/ultralytics_hub), a new web tool for training and deploying all your YOLOv5 and YOLOv8 🚀
 models from one spot!
 
