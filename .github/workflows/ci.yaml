@@ -95,12 +95,8 @@ jobs:
     needs: [Tests] # Add job names that you want to check for failure
     if: always() # This ensures the job runs even if previous jobs fail
     steps:
-      - name: Print variables
-        run: |
-          echo "needs.Tests.result: ${{ needs.Tests.result }}"
-          echo "github.event_name: ${{ github.event_name }}"
       - name: Check for failure and notify
-        if: ${{ needs.Tests.result == 'failure' }} && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push')
+        if: needs.Tests.result == 'failure' && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push')
         uses: slackapi/slack-github-action@v1.23.0
         with:
           payload: |
