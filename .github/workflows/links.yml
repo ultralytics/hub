@@ -1,6 +1,3 @@
-# Ultralytics YOLO 🚀, AGPL-3.0 license
-# YOLO Continuous Integration (CI) GitHub Actions tests
-
 name: Check Broken links
 
 on:
@@ -18,21 +15,23 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Test Markdown and HTML links
-        uses: lycheeverse/lychee-action@v1.6.1
+      - name: Test Markdown and HTML links with retry
+        uses: nick-invision/retry@v2
         with:
-          fail: true
-          # accept 429(Instagram, 'too many requests'), 999(LinkedIn, 'unknown status code'), Timeout(Twitter)
-          args: --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          timeout_minutes: 10
+          max_attempts: 2
+          command: |
+            npx lycheeverse/lychee-action@v1.7.0 --fail --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
+          env:
+            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Test Markdown, HTML, YAML, Python and Notebook links
+      - name: Test Markdown, HTML, YAML, Python and Notebook links with retry
         if: github.event_name == 'workflow_dispatch'
-        uses: lycheeverse/lychee-action@v1.6.1
+        uses: nick-invision/retry@v2
         with:
-          fail: true
-          # accept 429(Instagram, 'too many requests'), 999(LinkedIn, 'unknown status code'), Timeout(Twitter)
-          args: --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          timeout_minutes: 10
+          max_attempts: 2
+          command: |
+            npx lycheeverse/lychee-action@v1.7.0 --fail --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
+          env:
+            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
