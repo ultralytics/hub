@@ -1,5 +1,6 @@
 # Ultralytics YOLO 🚀, AGPL-3.0 license
-# YOLO Continuous Integration (CI) GitHub Actions tests
+# YOLO Continuous Integration (CI) GitHub Actions tests broken link checker
+# Accept 429(Instagram, 'too many requests'), 999(LinkedIn, 'unknown status code'), Timeout(Twitter)
 
 name: Check Broken links
 
@@ -29,6 +30,7 @@ jobs:
         uses: nick-invision/retry@v2
         with:
           timeout_minutes: 5
+          delay_seconds: 30
           max_attempts: 3
           command: lychee --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
 
@@ -37,5 +39,6 @@ jobs:
         uses: nick-invision/retry@v2
         with:
           timeout_minutes: 5
+          delay_seconds: 30
           max_attempts: 3
           command: lychee --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
