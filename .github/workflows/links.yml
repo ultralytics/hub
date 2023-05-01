@@ -21,7 +21,7 @@ jobs:
           timeout_minutes: 10
           max_attempts: 2
           command: >
-            docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee --fail --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
+            docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
 
       - name: Test Markdown, HTML, YAML, Python and Notebook links with retry
         if: github.event_name == 'workflow_dispatch'
@@ -30,4 +30,4 @@ jobs:
           timeout_minutes: 10
           max_attempts: 2
           command: >
-            docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee --fail --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
+            docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
