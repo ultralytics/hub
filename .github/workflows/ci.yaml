@@ -55,7 +55,7 @@ jobs:
           hub.login(api_key)
           hub.reset_model(model_id)
           model = YOLO('https://hub.ultralytics.com/models/' + model_id)
-          model.train()
+          model.train2()
       - name: Test HUB export
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         shell: python
