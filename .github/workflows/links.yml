@@ -2,9 +2,9 @@ name: Check Broken links
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'  # runs at 00:00 UTC every day
@@ -15,13 +15,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Download and install lychee
+        run: |
+          curl -sL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-gnu.tar.gz -o lychee.tar.gz
+          tar xzf lychee.tar.gz
+          sudo mv lychee /usr/local/bin
+
       - name: Test Markdown and HTML links with retry
         uses: nick-invision/retry@v2
         with:
           timeout_minutes: 10
           max_attempts: 2
-          command: >
-            docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
+          command: lychee --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
 
       - name: Test Markdown, HTML, YAML, Python and Notebook links with retry
         if: github.event_name == 'workflow_dispatch'
@@ -29,5 +34,4 @@ jobs:
         with:
           timeout_minutes: 10
           max_attempts: 2
-          command: >
-            docker run --rm -v "${PWD}:/workspace" lycheeverse/lychee --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
+          command: lychee --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
