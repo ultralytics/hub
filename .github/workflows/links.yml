@@ -1,3 +1,6 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# YOLO Continuous Integration (CI) GitHub Actions tests
+
 name: Check Broken links
 
 on:
