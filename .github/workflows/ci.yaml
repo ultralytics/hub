@@ -96,7 +96,7 @@ jobs:
     if: always() # This ensures the job runs even if previous jobs fail
     steps:
       - name: Print variables
-        run: | 
+        run: |
           echo "needs.Tests.result: ${{ needs.Tests.result }}"
           echo "github.event_name: ${{ github.event_name }}"
       - name: Check for failure and notify
