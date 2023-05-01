@@ -21,7 +21,7 @@ jobs:
           timeout_minutes: 10
           max_attempts: 2
           command: |
-            npx lycheeverse/lychee-action@v1.7.0 --fail --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
+            npx lychee@0.7.0 --fail --accept 429,999 --exclude-loopback --exclude twitter.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html'
           env:
             GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -32,6 +32,6 @@ jobs:
           timeout_minutes: 10
           max_attempts: 2
           command: |
-            npx lycheeverse/lychee-action@v1.7.0 --fail --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
+            npx lychee@0.7.0 --fail --accept 429,999 --exclude-loopback --exclude twitter.com,url.com --exclude-path '**/ci.yaml' --exclude-mail './**/*.md' './**/*.html' './**/*.yml' './**/*.yaml' './**/*.py' './**/*.ipynb'
           env:
             GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
