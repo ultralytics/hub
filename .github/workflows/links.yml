@@ -17,9 +17,7 @@ jobs:
 
       - name: Download and install lychee
         run: |
-          curl -sL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-gnu.tar.gz -o lychee.tar.gz
-          tar xzf lychee.tar.gz
-          sudo mv lychee /usr/local/bin
+          pkg install lychee
 
       - name: Test Markdown and HTML links with retry
         uses: nick-invision/retry@v2
