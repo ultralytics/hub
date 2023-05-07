@@ -54,7 +54,7 @@ example [ultralytics/hub/example_datasets/coco8.zip](https://github.com/ultralyt
 zip -r coco8.zip coco8
 ```
 
-The [example_datasets/coco8.zip](https://github.com/ultralytics/hub/blob/master/example_datsets/coco8.zip) dataset in this repository can be
+The [example_datasets/coco8.zip](https://github.com/ultralytics/hub/blob/master/example_datasets/coco8.zip) dataset in this repository can be
 downloaded and unzipped to see exactly how to structure your custom dataset.
 
 <p align="center">
