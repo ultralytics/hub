@@ -7,6 +7,6 @@ yet diverse enough to test training pipelines for errors and act as a sanity che
 
 This dataset is intended for use with Ultralytics YOLOv8.
 
-Docs: https://docs.ultralytics.com  
-Community: https://community.ultralytics.com  
-GitHub: https://github.com/ultralytics/ultralytics  
+Docs: https://docs.ultralytics.com
+Community: https://community.ultralytics.com
+GitHub: https://github.com/ultralytics/ultralytics
