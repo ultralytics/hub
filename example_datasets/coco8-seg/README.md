@@ -8,6 +8,6 @@ larger datasets.
 
 This dataset is intended for use with Ultralytics [HUB](https://hub.ultralytics.com) and YOLOv8.
 
-Docs: https://docs.ultralytics.com
-Community: https://community.ultralytics.com
-GitHub: https://github.com/ultralytics/ultralytics
+- Docs: https://docs.ultralytics.com
+- Community: https://community.ultralytics.com
+- GitHub: https://github.com/ultralytics/ultralytics
