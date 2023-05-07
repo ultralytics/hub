@@ -16,7 +16,7 @@ and [YOLOv8](https://github.com/ultralytics/ultralytics).
 We hope that the variety of resources provided here will help you get the most out of HUB and maximize your experience
 with HUB and COCO8-seg.
 
-- Browse the [Docs](https://docs.ultralytics.com/yolov5) for details on usage and implementation.
+- Browse the [Docs](https://docs.ultralytics.com/) for details on usage and implementation.
 - Raise an issue on [GitHub](https://github.com/ultralytics/hub/issues/new/choose) for support and troubleshooting.
 - Join our [Discord](https://discord.gg/n6cFeSPZdD) community for questions and discussions with fellow users and
   developers.
