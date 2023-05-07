@@ -45,7 +45,7 @@ Ultralytics HUB datasets are just like YOLOv5 and YOLOv8 🚀 datasets, they use
 everything simple.
 
 When you upload a dataset to Ultralytics HUB, make sure to **place your dataset YAML inside the dataset root directory**
-as in the example shown below, and then zip for upload to https://hub.ultralytics.com/. Your **dataset YAML, directory
+as in the example shown below, and then zip for upload to [https://hub.ultralytics.com](https://hub.ultralytics.com/). Your **dataset YAML, directory
 and zip** should all share the same name. For example, if your dataset is called 'coco8' as in our
 example [ultralytics/hub/example_datasets/coco8.zip](https://github.com/ultralytics/hub/blob/master/example_datasets/coco8.zip), then you should have a
 `coco8.yaml` inside your `coco8/` directory, which should zip to create `coco8.zip` for upload:
