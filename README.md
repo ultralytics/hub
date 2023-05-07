@@ -47,14 +47,14 @@ everything simple.
 When you upload a dataset to Ultralytics HUB, make sure to **place your dataset YAML inside the dataset root directory**
 as in the example shown below, and then zip for upload to [https://hub.ultralytics.com](https://hub.ultralytics.com/). Your **dataset YAML, directory
 and zip** should all share the same name. For example, if your dataset is called 'coco8' as in our
-example [ultralytics/hub/example_datasets/coco8.zip](https://github.com/ultralytics/hub/blob/master/example_datasets/coco8.zip), then you should have a
+example [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip), then you should have a
 `coco8.yaml` inside your `coco8/` directory, which should zip to create `coco8.zip` for upload:
 
 ```bash
 zip -r coco8.zip coco8
 ```
 
-The [example_datasets/coco8.zip](https://github.com/ultralytics/hub/blob/master/example_datasets/coco8.zip) dataset in this repository can be
+The [example_datasets/coco8.zip](./example_datasets/coco8.zip) dataset in this repository can be
 downloaded and unzipped to see exactly how to structure your custom dataset.
 
 <p align="center">
