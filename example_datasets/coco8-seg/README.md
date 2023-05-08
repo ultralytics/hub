@@ -11,6 +11,12 @@ larger datasets.
 This dataset is intended for use with Ultralytics [HUB](https://hub.ultralytics.com)
 and [YOLOv8](https://github.com/ultralytics/ultralytics).
 
+## Sample Images and Annotations
+
+Here are some examples of images from the dataset, along with their corresponding annotations in a training mosaic:
+
+<img src="https://user-images.githubusercontent.com/26833433/236818387-f7bde7df-caaa-46d1-8341-1f7504cd11a1.jpg" alt="Dataset sample image" width="800">
+
 ## Resources
 
 We hope that the variety of resources provided here will help you get the most out of HUB and maximize your experience
