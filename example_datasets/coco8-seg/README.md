@@ -15,7 +15,7 @@ and [YOLOv8](https://github.com/ultralytics/ultralytics).
 
 Here are some examples of images from the dataset, along with their corresponding annotations in a training mosaic:
 
-<img src="https://user-images.githubusercontent.com/26833433/236818387-f7bde7df-caaa-46d1-8341-1f7504cd11a1.jpg" alt="Dataset sample image" width="1024px">
+<img src="https://user-images.githubusercontent.com/26833433/236818387-f7bde7df-caaa-46d1-8341-1f7504cd11a1.jpg" alt="Dataset sample image" width="800">
 
 ## Resources
 
