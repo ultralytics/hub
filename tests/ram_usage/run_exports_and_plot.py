@@ -14,7 +14,7 @@ export_formats = ["torchscript", "onnx", "openvino", "coreml", "saved_model", "p
 
 # Run measure_ram_usage.py for each export format
 for export_format in export_formats:
-    os.system(f"python measure_ram_usage.py {export_format} {csv_filename}")
+    os.system(f"python3 measure_ram_usage.py {export_format} {csv_filename}")
 
 # Read the CSV file and store the data
 ram_usage_data = defaultdict(list)
