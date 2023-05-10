@@ -9,7 +9,8 @@ csv_filename = "ram_usage_data.csv"
 if os.path.exists(csv_filename):
     os.remove(csv_filename)
 
-export_formats = ["torchscript", "onnx", "openvino"]  #, "engine", "coreml", "saved_model", "pb", "tflite", "edgetpu", "tfjs", "paddle"]
+# export_formats = ["torchscript", "onnx", "openvino", "engine", "coreml", "saved_model", "pb", "tflite", "edgetpu", "tfjs", "paddle"]
+export_formats = ["torchscript", "onnx", "openvino", "coreml", "saved_model", "pb", "tflite", "edgetpu", "tfjs", "paddle"]
 
 # Run measure_ram_usage.py for each export format
 for export_format in export_formats:
