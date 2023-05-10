@@ -9,7 +9,7 @@ def get_ram_usage():
 def export_and_measure_ram(export_format, model_path, output_file):
     model = YOLO(model_path)
 
-    for _ in range(10):
+    for _ in range(30):
         model.export(format=export_format)
         ram_usage = get_ram_usage()
 
