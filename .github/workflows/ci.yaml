@@ -20,7 +20,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         python-version: ['3.10']
-    timeout-minutes: 240
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -90,7 +90,7 @@ jobs:
                           time.sleep(wait_time)
           assert all(success)
       - name: Notify on failure
-        if: failure() && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push')
+        if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push')
         uses: slackapi/slack-github-action@v1.23.0
         with:
           payload: |
