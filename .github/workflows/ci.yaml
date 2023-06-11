@@ -69,8 +69,11 @@ jobs:
           url = f"https://api.ultralytics.com/v1/predict/{model_id}"
           headers = {"x-api-key": api_key}
           data = {"size": 320, "confidence": 0.25, "iou": 0.45}
-          with open("ultralytics/assets/zidane.jpg", "rb") as f:
-              response = requests.post(url, headers=headers, data=data, files={"image": f})
+          image_url = "https://github.com/ultralytics/yolov5/releases/download/v1.0/zidane.jpg"
+          response = requests.get(image_url)  # download the image into memory
+          response.raise_for_status()  # ensure we got a successful response
+          f = BytesIO(response.content)  # use `response.content` in the POST request
+          response = requests.post(url, headers=headers, data=data, files={"image": f})
           assert response.status_code == 200, f'Status code {response.status_code}, Reason {response.reason}'
           print(json.dumps(response.json(), indent=2))
       - name: Test HUB export
