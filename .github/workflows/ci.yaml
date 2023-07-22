@@ -90,7 +90,7 @@ jobs:
           hub.login(api_key)
           success = []
           for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
-                    'paddle', 'ultralytics_tflite', 'ultralytics_coreml'):
+                    'paddle', 'ultralytics_tflite', 'ultralytics_coreml', 'ncnn'):
               backoff_times = [60, 120, 240, 480]  # exponential backoff waits in seconds
               for wait_time in backoff_times:
                   try:
