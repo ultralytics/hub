@@ -42,7 +42,7 @@ We hope that the resources here will help you get the most out of HUB. Please br
 
 ## 1. Upload a Dataset
 
-Ultralytics HUB datasets are just like YOLOv5 and YOLOv8 🚀 datasets, they use the same structure and the same label formats to keep
+Ultralytics HUB datasets are just like [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics) 🚀 datasets, they use the same structure and the same label formats to keep
 everything simple.
 
 When you upload a dataset to Ultralytics HUB, make sure to **place your dataset YAML inside the dataset root directory**
