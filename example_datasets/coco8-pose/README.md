@@ -24,7 +24,7 @@ with HUB and COCO8-pose.
 
 - Browse the [Docs](https://docs.ultralytics.com/) for details on usage and implementation.
 - Raise an issue on [GitHub](https://github.com/ultralytics/hub/issues/new/choose) for support and troubleshooting.
-- Join our [Discord](https://discord.gg/7aegy5d8) community for questions and discussions with fellow users and
+- Join our [Discord](https://ultralytics.com/discord) community for questions and discussions with fellow users and
   developers.
 - Learn more about Ultralytics and our work at our [Community](https://community.ultralytics.com) page.
 - Explore the Ultralytics YOLOv8 [GitHub](https://github.com/ultralytics/ultralytics) repository for additional tools
