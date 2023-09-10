@@ -9,7 +9,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'  # runs every 8 hours, starting at 02:00 UTC
+    - cron: '0 2 * * *'  # runs every 24 hours, starting at 02:00 UTC
 
 
 jobs:
