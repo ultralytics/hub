@@ -4,9 +4,9 @@ name: HUB CI
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '0 2 * * *'  # runs every 8 hours, starting at 02:00 UTC
