@@ -1,8 +1,11 @@
-<a href="https://bit.ly/ultralytics_hub" target="_blank">
-<img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/ultralytics-hub.png"></a>
-<br>
-<br>
 <div align="center">
+  <p>
+    <a href="https://hub.ultralytics.com" target="_blank">
+      <img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/ultralytics-hub.png"></a>
+  </p>
+
+[English](README.md) | [简体中文](README.zh-CN.md)
+
   <a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml">
     <img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a>
   <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb">
