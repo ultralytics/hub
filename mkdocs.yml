@@ -1,0 +1,54 @@
+site_name: Ultralytics HUB
+site_url: https://ultralytics.github.io/hub
+site_description: Train and deploy YOLOv5 and YOLOv8 models effortlessly with Ultralytics HUB. Leverage our user-friendly no-code platform and bring your custom models to life.
+site_author: Ultralytics
+
+repo_name: ultralytics/hub
+repo_url: https://github.com/ultralytics/hub
+
+theme:
+  name: material
+  favicon: img/favicon.ico
+  logo: https://github.com/ultralytics/assets/raw/main/logo/Ultralytics_Logotype_Reverse.svg # TODO: Use Ultralytics HUB logo
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  features:
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Datasets: datasets.md
+  - Projects: projects.md
+  - Models: models.md
+  - Integrations: integrations.md
+  - Mobile Application:
+      - Getting Started: app/index.md
+      - iOS: app/ios.md
+      - Android: app/android.md
+  - Inference API: inference-api.md
+
+extra_css:
+  - css/main.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: ./
+  - pymdownx.tabbed:
+      alternate_style: true
+
+copyright: <a href="https://ultralytics.com" target="_blank">© 2023 Ultralytics Inc.</a> All rights reserved.
