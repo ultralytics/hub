@@ -41,8 +41,8 @@ Ultralytics HUB is your one-stop solution for training and deploying YOLOv5 and 
 
 While we're polishing this page, feel free to:
 
-- Browse the [Ultralytics HUB Docs](https://ultralytics.github.io/hub) for detailed guides and tutorials.
-- Raise an issue on our [GitHub](ttps://github.com/ultralytics/hub/issues/new/choose) for support.
+- Browse the [Ultralytics HUB Docs](../) for detailed guides and tutorials.
+- Raise an issue on our [GitHub](https://github.com/ultralytics/hub/issues/new/choose) for support.
 - Join our [Discord Community](https://ultralytics.com/discord) for questions and discussions.
 
 We appreciate your patience as we work to make this section comprehensive and user-friendly. Stay tuned for updates!

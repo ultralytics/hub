@@ -46,7 +46,7 @@ Ultralytics HUB is designed to be user-friendly and intuitive, with a drag-and-d
 
 We hope that the resources here will help you get the most out of Ultralytics HUB.
 
-Please browse the <a href="https://ultralytics.github.io/hub">Ultralytics HUB Docs</a> for detailed guides and tutorials, raise an issue on <a href="https://github.com/ultralytics/hub/issues/new/choose">GitHub</a> for support, and join our <a href="https://ultralytics.com/discord">Discord</a> community for questions and discussions!
+Please browse the <a href="../">Ultralytics HUB Docs</a> for detailed guides and tutorials, raise an issue on <a href="https://github.com/ultralytics/hub/issues/new/choose">GitHub</a> for support, and join our <a href="https://ultralytics.com/discord">Discord</a> community for questions and discussions!
 
 - [**Getting Started**](./getting-started.md). Start training and deploying YOLO models with Ultralytics HUB in seconds.
 - [**Datasets: Preparing and Uploading**](./datasets.md). Learn how to prepare and upload your datasets to Ultralytics HUB in YOLO format.
