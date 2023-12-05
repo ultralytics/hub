@@ -51,6 +51,10 @@ zip -r coco8.zip coco8
 
 Explore the provided [example_datasets/coco8.zip](./example_datasets/coco8.zip) for insights on structuring your custom dataset.
 
+<p align="center">
+<img width="80%" src="https://user-images.githubusercontent.com/26833433/201424843-20fa081b-ad4b-4d6c-a095-e810775908d8.png" title="COCO8" />
+</p>
+
 ### YAML Specifications:
 
 The dataset YAML follows the established YOLOv5 and YOLOv8 format. For exhaustive instructions, refer to the [Train Custom Data tutorial](https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/).
