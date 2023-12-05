@@ -25,6 +25,7 @@ Our goal is to provide you with comprehensive tools and documentation to help yo
 Ultralytics HUB datasets align with the format used by [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics). They adhere to the same structural and labeling conventions, ensuring a seamless experience.
 
 ### Dataset Preparation:
+
 Ensure that the YAML file describing your dataset is placed in the root directory of your dataset, as illustrated below. Once in place, zip the directory for uploading to [Ultralytics HUB](https://hub.ultralytics.com/). The dataset YAML, its directory, and the zip file should all bear the identical name.
 
 For instance, with a dataset named 'coco8', as shown in [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip), include a `coco8.yaml` within the `coco8/` directory. Zip this to form `coco8.zip` for upload with the command:
@@ -34,9 +35,10 @@ For instance, with a dataset named 'coco8', as shown in [ultralytics/hub/example
 zip -r coco8.zip coco8
 ```
 
-Explore the provided [example_datasets/coco8.zip](./example_datasets/coco8.zip) for insights on structuring your custom dataset. 
+Explore the provided [example_datasets/coco8.zip](./example_datasets/coco8.zip) for insights on structuring your custom dataset.
 
 ### YAML Specifications:
+
 The dataset YAML follows the established YOLOv5 and YOLOv8 format. For exhaustive instructions, refer to the [Train Custom Data tutorial](https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/).
 
 ```yaml
