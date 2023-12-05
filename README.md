@@ -74,7 +74,7 @@ names:
 Upload your zipped dataset to [Ultralytics HUB](https://bit.ly/ultralytics_hub) by logging in, navigating to the 'Datasets' tab, and selecting 'Upload Dataset'. This lets you scan and view your dataset prior to training YOLOv5 or YOLOv8 models.
 
 <p align="center">
-  <img width="80%" src="https://user-images.githubusercontent.com/26833433/201424843-20fa081b-ad4b-4d6c-a095-e810775908d8.png" title="COCO8 Dataset Example" />
+  <img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
 </p>
 
 ## 🚀 2. Train a Model
