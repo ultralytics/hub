@@ -71,7 +71,7 @@ names:
   # Add more classes as needed
 ```
 
-Upload your dataset to [Ultralytics HUB](https://bit.ly/ultralytics_hub) by logging in, navigating to the 'Datasets' tab, and selecting 'Upload Dataset'. This lets you scan and view your dataset prior to training YOLOv5 or YOLOv8 models.
+Upload your zipped dataset to [Ultralytics HUB](https://bit.ly/ultralytics_hub) by logging in, navigating to the 'Datasets' tab, and selecting 'Upload Dataset'. This lets you scan and view your dataset prior to training YOLOv5 or YOLOv8 models.
 
 <p align="center">
   <img width="80%" src="https://user-images.githubusercontent.com/26833433/201424843-20fa081b-ad4b-4d6c-a095-e810775908d8.png" title="COCO8 Dataset Example" />
