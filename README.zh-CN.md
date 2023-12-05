@@ -40,9 +40,7 @@ zip -r coco8.zip coco8
 
 ### YAML 规范：
 
-数据集 YAML 遵循已建立的 YOLOv5 和 YOLOv8 格式。有关详尽说明，请参阅 \[自定义数据训练
-
-教程\](https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/)。
+数据集 YAML 遵循已建立的 YOLOv5 和 YOLOv8 格式。有关详尽说明，请参阅 [自定义数据训练教程](https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/)。
 
 ```yaml
 # 自定义数据集的 YAML 配置示例
