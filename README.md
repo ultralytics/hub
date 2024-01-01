@@ -91,8 +91,7 @@ Connect to the Ultralytics HUB notebook and employ your model API key to embark 
 
 ## 🌐 3. Deploy to the Real World
 
-Transition your model to 13 different formats including TensorFlow, ONNX, OpenVINO, CoreML, Paddle, and more. Operate your models directly on your [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) or
-[Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) mobile device by downloading the [Ultralytics App](https://ultralytics.com/app_install)!
+Transition your model to 13 different formats including TensorFlow, ONNX, OpenVINO, CoreML, Paddle, and more. Operate your models directly on your [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) or [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) mobile device by downloading the [Ultralytics App](https://ultralytics.com/app_install)!
 
 ## ❓ Have Issues or Questions?
 
