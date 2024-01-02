@@ -1,4 +1,4 @@
 # Ultralytics requirements
 # Usage: pip install -r requirements.txt
 
-ultralytics>=8.0
+ultralytics>=8.0.232
