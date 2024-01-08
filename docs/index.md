@@ -54,6 +54,6 @@ Please browse the <a href="../">Ultralytics HUB Docs</a> for detailed guides and
 - [**Models: Training and Exporting**](./models.md). Train YOLOv5 and YOLOv8 models on your custom datasets and export them to various formats for deployment.
 - [**Integrations**](./integrations.md). Explore different integration options for your trained models, such as TensorFlow, ONNX, OpenVINO, CoreML, and PaddlePaddle.
 - [**Ultralytics HUB Mobile Application**](./app/index.md). Learn about the Ultralytics HUB mobile application for iOS and Android, which allows you to run models directly on your mobile device.
-  - [**iOS**](./app/ios.md). Learn about YOLO CoreML models accelerated on Apple's Neural Engine on iPhones and iPads.
-  - [**Android**](./app/android.md). Explore TFLite acceleration on mobile devices.
+    - [**iOS**](./app/ios.md). Learn about YOLO CoreML models accelerated on Apple's Neural Engine on iPhones and iPads.
+    - [**Android**](./app/android.md). Explore TFLite acceleration on mobile devices.
 - [**Inference API**](./inference-api.md). Understand how to use the Inference API for running your trained models in the cloud to generate predictions.
