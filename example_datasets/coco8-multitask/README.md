@@ -1,4 +1,4 @@
-# Ultralytics COCO8-seg Dataset
+# Ultralytics COCO8-multitask Dataset
 
 ## Introduction
 
@@ -14,12 +14,13 @@ and [YOLOv8](https://github.com/ultralytics/ultralytics).
 
 Here are some examples of images from the dataset, along with their corresponding annotations in a training mosaic:
 
-<img src="" alt="Dataset sample image" width="800">
+<img src="https://github.com/stedavkle/hub/assets/77785743/b3d30e02-320f-415f-b18d-1718ddc236c4" alt="Dataset sample image" width="800">
 
 ## Resources
 
-We hope that the variety of resources provided here will help you get the most out of HUB and maximize your experience
-with HUB and COCO8-seg.
+We hope that the variety of resources provided here will help you get the most out of HUB and maximize your experience!
+
+with HUB and COCO8-multitask.
 
 - Browse the [Docs](https://docs.ultralytics.com/) for details on usage and implementation.
 - Raise an issue on [GitHub](https://github.com/ultralytics/hub/issues/new/choose) for support and troubleshooting.
