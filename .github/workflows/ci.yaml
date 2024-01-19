@@ -9,8 +9,7 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'  # runs every 24 hours, starting at 02:00 UTC
-
+    - cron: "0 2 * * *" # runs every 24 hours, starting at 02:00 UTC
 
 jobs:
   Tests:
@@ -19,14 +18,14 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        python-version: ['3.11']
+        python-version: ["3.11"]
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-          cache: 'pip' # caching pip dependencies
+          cache: "pip" # caching pip dependencies
       - name: Install requirements
         run: |
           python -m pip install --upgrade pip wheel
