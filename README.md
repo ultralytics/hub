@@ -61,10 +61,10 @@ The dataset YAML follows the established YOLOv5 and YOLOv8 format. For exhaustiv
 
 ```yaml
 # YAML configuration example for custom datasets
-path:  # dataset root dir (leave empty for HUB integration)
-train: images/train  # train images (relative to 'path') 8 images
-val: images/val  # val images (relative to 'path') 8 images
-test:  # test images (optional)
+path: # dataset root dir (leave empty for HUB integration)
+train: images/train # train images (relative to 'path') 8 images
+val: images/val # val images (relative to 'path') 8 images
+test: # test images (optional)
 
 # Class labels
 names:
