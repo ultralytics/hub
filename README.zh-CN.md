@@ -44,10 +44,10 @@ zip -r coco8.zip coco8
 
 ```yaml
 # 自定义数据集的 YAML 配置示例
-path:  # 数据集根目录（集成 HUB 时留空）
-train: images/train  # 训练图片（相对于 'path'）8张图片
-val: images/val  # 验证图片（相对于 'path'）8张图片
-test:  # 测试图片（可选）
+path: # 数据集根目录（集成 HUB 时留空）
+train: images/train # 训练图片（相对于 'path'）8张图片
+val: images/val # 验证图片（相对于 'path'）8张图片
+test: # 测试图片（可选）
 
 # 类别标签
 names:
