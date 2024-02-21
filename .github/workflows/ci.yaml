@@ -31,7 +31,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip wheel
           # pip install ultralytics --extra-index-url https://download.pytorch.org/whl/cpu
-          pip install git+https://github.com/ultralytics/hub-sdk.git@develop --extra-index-url https://download.pytorch.org/whl/cpu
+          pip install ultralytics git+https://github.com/ultralytics/hub-sdk.git@develop --extra-index-url https://download.pytorch.org/whl/cpu
       - name: Check environment
         run: |
           yolo checks
