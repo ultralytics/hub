@@ -1,7 +1,7 @@
 <div align="center">
   <p>
-    <a href="https://hub.ultralytics.com" target="_blank">
-      <img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/ultralytics-hub.png"></a>
+    <a href="https://ow.ly/9ztL50QGEn9" target="_blank">
+      <img width="100%" src="https://github.com/ultralytics/assets/releases/download/v0.0.0/hub-banner-cloud-training.png"></a>
   </p>
 
 [中文](https://docs.ultralytics.com/zh/) | [한국어](https://docs.ultralytics.com/ko/) | [日本語](https://docs.ultralytics.com/ja/) | [Русский](https://docs.ultralytics.com/ru/) | [Deutsch](https://docs.ultralytics.com/de/) | [Français](https://docs.ultralytics.com/fr/) | [Español](https://docs.ultralytics.com/es/) | [Português](https://docs.ultralytics.com/pt/) | [हिन्दी](https://docs.ultralytics.com/hi/) | [العربية](https://docs.ultralytics.com/ar/)
