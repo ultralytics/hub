@@ -75,7 +75,7 @@ names:
   # Add more classes as needed
 ```
 
-Upload your zipped dataset to [Ultralytics HUB](https://bit.ly/ultralytics_hub) by logging in, navigating to the 'Datasets' tab, and selecting 'Upload Dataset'. This lets you scan and view your dataset prior to training YOLOv5 or YOLOv8 models.
+Upload your zipped dataset to [Ultralytics HUB](https://ow.ly/9ztL50QGEn9) by logging in, navigating to the 'Datasets' tab, and selecting 'Upload Dataset'. This lets you scan and view your dataset prior to training YOLOv5 or YOLOv8 models.
 
 <p align="center">
   <img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
@@ -95,7 +95,7 @@ Transition your model to 13 different formats including TensorFlow, ONNX, OpenVI
 
 ## ❓ Have Issues or Questions?
 
-For those just embarking on their [Ultralytics HUB](https://bit.ly/ultralytics_hub) journey, the [Issues](https://github.com/ultralytics/hub/issues) tab is your go-to resource for support. Click the 'New Issue' button and share your thoughts or questions. Our aim is to enhance your experience with invaluable solutions and improvements! 😃
+For those just embarking on their [Ultralytics HUB](https://ow.ly/9ztL50QGEn9) journey, the [Issues](https://github.com/ultralytics/hub/issues) tab is your go-to resource for support. Click the 'New Issue' button and share your thoughts or questions. Our aim is to enhance your experience with invaluable solutions and improvements! 😃
 
 <br>
 <div align="center">
