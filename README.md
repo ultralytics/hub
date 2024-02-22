@@ -13,7 +13,7 @@
 </div>
 <br>
 
-👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to launch [Ultralytics HUB](https://bit.ly/ultralytics_hub), a new web tool for training and deploying all your YOLOv5 and YOLOv8 🚀 models from one spot!
+👋 Hello from the [Ultralytics](https://ultralytics.com/) Team! We've been working hard these last few months to launch [Ultralytics HUB](https://ow.ly/9ztL50QGEn9), a new web tool for training and deploying all your YOLOv5 and YOLOv8 🚀 models from one spot!
 
 We hope that the resources here will help you get the most out of HUB. Please browse the HUB <a href="https://docs.ultralytics.com/">Docs</a> for details, raise an issue on <a href="https://github.com/ultralytics/hub/issues/new/choose">GitHub</a> for support, and join our <a href="https://ultralytics.com/discord">Discord</a> community for questions and discussions!
 
@@ -40,7 +40,7 @@ Ultralytics HUB datasets align with the format used by [YOLOv5](https://github.c
 
 ### Dataset Preparation:
 
-Ensure that the YAML file describing your dataset is placed in the root directory of your dataset, as illustrated below. Once in place, zip the directory for uploading to [Ultralytics HUB](https://hub.ultralytics.com/). The dataset YAML, its directory, and the zip file should all bear the identical name.
+Ensure that the YAML file describing your dataset is placed in the root directory of your dataset, as illustrated below. Once in place, zip the directory for uploading to [Ultralytics HUB](https://ow.ly/9ztL50QGEn9). The dataset YAML, its directory, and the zip file should all bear the identical name.
 
 For instance, with a dataset named 'coco8', as shown in [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip), include a `coco8.yaml` within the `coco8/` directory. Zip this to form `coco8.zip` for upload with the command:
 
