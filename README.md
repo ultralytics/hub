@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-    <a href="https://hub.ultralytics.com" target="_blank">
+    <a href="https://bit.ly/ultralytics_hub" target="_blank">
       <img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/ultralytics-hub.png"></a>
   </p>
 
@@ -40,7 +40,7 @@ Ultralytics HUB datasets align with the format used by [YOLOv5](https://github.c
 
 ### Dataset Preparation:
 
-Ensure that the YAML file describing your dataset is placed in the root directory of your dataset, as illustrated below. Once in place, zip the directory for uploading to [Ultralytics HUB](https://hub.ultralytics.com/). The dataset YAML, its directory, and the zip file should all bear the identical name.
+Ensure that the YAML file describing your dataset is placed in the root directory of your dataset, as illustrated below. Once in place, zip the directory for uploading to [Ultralytics HUB](https://bit.ly/ultralytics_hub/). The dataset YAML, its directory, and the zip file should all bear the identical name.
 
 For instance, with a dataset named 'coco8', as shown in [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip), include a `coco8.yaml` within the `coco8/` directory. Zip this to form `coco8.zip` for upload with the command:
 
