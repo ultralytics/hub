@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml">
     <img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a>
-  <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb">
+  <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 </div>
 <br>
@@ -23,7 +23,7 @@ Ultralytics HUB 数据集与 [YOLOv5](https://github.com/ultralytics/yolov5) 和
 
 ### 数据集准备：
 
-确保将描述您的数据集的 YAML 文件放在数据集的根目录下，如下所示。放置好后，将目录压缩以上传到 [Ultralytics HUB](https://bit.ly/ultralytics_hub/)。数据集 YAML、其目录和 zip 文件应该全部具有相同的名称。
+确保将描述您的数据集的 YAML 文件放在数据集的根目录下，如下所示。放置好后，将目录压缩以上传到 [Ultralytics HUB](https://bit.ly/ultralytics_hub)。数据集 YAML、其目录和 zip 文件应该全部具有相同的名称。
 
 例如，对于名为 'coco8' 的数据集，如 [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip) 所示，包含一个 `coco8.yaml` 文件在 `coco8/` 目录中。将其压缩成 `coco8.zip` 以使用以下命令上传：
 
@@ -68,7 +68,7 @@ names:
 
 连接到 Ultralytics HUB 笔记本并使用您的模型 API 密钥开始训练模型！
 
-<a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb" target="_blank">
+<a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="在 Colab 中打开" />
 </a>
 
