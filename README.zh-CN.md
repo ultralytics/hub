@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml">
     <img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a>
-  <a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb">
+  <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 </div>
 <br>
@@ -68,7 +68,7 @@ names:
 
 连接到 Ultralytics HUB 笔记本并使用您的模型 API 密钥开始训练模型！
 
-<a href="https://colab.research.google.com/github/ultralytics/hub/blob/master/hub.ipynb" target="_blank">
+<a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="在 Colab 中打开" />
 </a>
 
