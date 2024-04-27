@@ -48,7 +48,7 @@ zip -r coco8.zip coco8
 浏览提供的 [example_datasets/coco8.zip](./example_datasets/coco8.zip) 以获得关于构建自定义数据集的洞察。
 
 <p align="center">
-<img width="80%" src="https://user-images.githubusercontent.com/26833433/201424843-20fa081b-ad4b-4d6c-a095-e810775908d8.png" title="COCO8" />
+<img width="80%" src="https://raw.githubusercontent.com/ultralytics/assets/main/docs/hub/datasets/hub_upload_dataset_1.jpg" title="COCO8 Example Dataset" />
 </p>
 
 ### YAML 规范：
