@@ -6,12 +6,7 @@
 
 [中文](https://docs.ultralytics.com/zh/hub/) | [한국어](https://docs.ultralytics.com/ko/hub/) | [日本語](https://docs.ultralytics.com/ja/hub/) | [Русский](https://docs.ultralytics.com/ru/hub/) | [Deutsch](https://docs.ultralytics.com/de/hub/) | [Français](https://docs.ultralytics.com/fr/hub/) | [Español](https://docs.ultralytics.com/es/hub/) | [Português](https://docs.ultralytics.com/pt/hub/) | [Türkçe](https://docs.ultralytics.com/tr/hub/) | [Tiếng Việt](https://docs.ultralytics.com/vi/hub/) | [हिन्दी](https://docs.ultralytics.com/hi/hub/) | [العربية](https://docs.ultralytics.com/ar/hub/)
 
-<a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml">
-    <img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a>
-  <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
-</div>
-<br>
+<a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml"><img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a> <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> <a href="https://ultralytics.com/discord"><img alt="Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a>
 
 👋 欢迎来到 [Ultralytics](https://ultralytics.com/) 团队！在过去的几个月里，我们一直在努力推出 [Ultralytics HUB](https://bit.ly/ultralytics_hub)，一个新的网络工具，用于从一个地方训练和部署您所有的 YOLOv5 和 YOLOv8 🚀 模型！
 
@@ -33,6 +28,7 @@
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="2%">
   <a href="https://ultralytics.com/discord"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="2%" alt="Ultralytics Discord"></a>
 </div>
+</div>
 
 ## 🗂️ 1. 上传数据集
 
@@ -52,7 +48,7 @@ zip -r coco8.zip coco8
 探索提供的 [example_datasets/coco8.zip](./example_datasets/coco8.zip) 以获取构建自定义数据集的见解。
 
 <p align="center">
-<img width="80%" src="https://user-images.githubusercontent.com/26833433/201424843-20fa081b-ad4b-4d6c-a095-e810775908d8.png" title="COCO8">
+<img width="80%" src="https://raw.githubusercontent.com/ultralytics/assets/main/docs/hub/datasets/hub_upload_dataset_1.jpg" title="COCO8 Example Dataset" />
 </p>
 
 ### YAML 规范：
