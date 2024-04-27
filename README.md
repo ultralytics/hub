@@ -48,7 +48,7 @@ zip -r coco8.zip coco8
 Explore the provided [example_datasets/coco8.zip](./example_datasets/coco8.zip) for insights on structuring your custom dataset.
 
 <p align="center">
-<img width="80%" src="https://user-images.githubusercontent.com/26833433/201424843-20fa081b-ad4b-4d6c-a095-e810775908d8.png" title="COCO8" />
+<img width="80%" src="https://raw.githubusercontent.com/ultralytics/assets/main/docs/hub/datasets/hub_upload_dataset_1.jpg" title="COCO8 Example Dataset" />
 </p>
 
 ### YAML Specifications:
