@@ -18,7 +18,7 @@ jobs:
           pr-message: |
             👋 Hello @${{ github.actor }}, thank you for submitting a YOLO 🚀 PR! To allow your work to be integrated as seamlessly as possible, we advise you to:
 
-            - ✅ Verify your PR is **up-to-date** with `ultralytics/hub` `master` branch. If your PR is behind you can update your code by clicking the 'Update branch' button or by running `git pull` and `git merge main` locally.
+            - ✅ Verify your PR is **up-to-date** with `ultralytics/hub` `main` branch. If your PR is behind you can update your code by clicking the 'Update branch' button or by running `git pull` and `git merge main` locally.
             - ✅ Verify all Continuous Integration (CI) **checks are passing**.
             - ✅ Update [Docs](https://docs.ultralytics.com) for any new or updated features.
             - ✅ Reduce changes to the absolute **minimum** required for your bug fix or feature addition. _"It is not daily increase but daily decrease, hack away the unessential. The closer to the source, the less wastage there is."_  — Bruce Lee
@@ -33,10 +33,10 @@ jobs:
             - [**Projects: Creating and Managing**](https://docs.ultralytics.com/hub/projects). Group your models into projects for improved organization.
             - [**Models: Training and Exporting**](https://docs.ultralytics.com/hub/models). Train YOLOv5 and YOLOv8 models on your custom datasets and export them to various formats for deployment.
             - [**Integrations**](https://docs.ultralytics.com/hub/integrations). Explore different integration options for your trained models, such as TensorFlow, ONNX, OpenVINO, CoreML, and PaddlePaddle.
-            - [**Ultralytics HUB App**](https://docs.ultralytics.com/hub/app/index). Learn about the Ultralytics App for iOS and Android, which allows you to run models directly on your mobile device.
+            - [**Ultralytics HUB App**](https://docs.ultralytics.com/hub/app). Learn about the Ultralytics App for iOS and Android, which allows you to run models directly on your mobile device.
                 * [**iOS**](https://docs.ultralytics.com/hub/app/ios). Learn about YOLO CoreML models accelerated on Apple's Neural Engine on iPhones and iPads.
                 * [**Android**](https://docs.ultralytics.com/hub/app/android). Explore TFLite acceleration on mobile devices.
-            - [**Inference API**](https://docs.ultralytics.com/hub/inference_api). Understand how to use the Inference API for running your trained models in the cloud to generate predictions.
+            - [**Inference API**](https://docs.ultralytics.com/hub/inference-api). Understand how to use the Inference API for running your trained models in the cloud to generate predictions.
 
             If this is a 🐛 Bug Report, please provide screenshots and steps to [reproduce](https://docs.ultralytics.com/help/minimum_reproducible_example/) your problem to help us get started working on a fix.
 
