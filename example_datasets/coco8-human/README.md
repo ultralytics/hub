@@ -6,6 +6,4 @@ Despite its small size, this dataset provides sufficient diversity to effectivel
 
 This dataset is intended for use with Ultralytics YOLOv8.
 
-Docs: https://docs.ultralytics.com
-Community: https://community.ultralytics.com
-GitHub: https://github.com/ultralytics/ultralytics
+Docs: https://docs.ultralytics.com Community: https://community.ultralytics.com GitHub: https://github.com/ultralytics/ultralytics
