@@ -64,11 +64,11 @@ test: # 测试图像（可选）
 
 # 类别标签
 names:
-  0: person
-  1: bicycle
-  2: car
-  3: motorcycle
-  # 根据需要添加更多类别
+    0: person
+    1: bicycle
+    2: car
+    3: motorcycle
+    # 根据需要添加更多类别
 ```
 
 通过登录、导航至“数据集”标签页并选择“上传数据集”，将您的压缩数据集上传到 [Ultralytics HUB](https://bit.ly/ultralytics_hub)，这样您就可以在训练 YOLOv5 或 YOLOv8 模型之前查看您的数据集。

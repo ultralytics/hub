@@ -34,8 +34,6 @@ We hope that the resources here will help you get the most out of HUB. Please br
 
 Ultralytics HUB datasets align with the format used by [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics). They adhere to the same structural and labeling conventions, ensuring a seamless experience.
 
-
-
 ### Dataset Preparation:
 
 Ensure that the YAML file describing your dataset is placed in the root directory of your dataset, as illustrated below. Once in place, zip the directory for uploading to [Ultralytics HUB](https://bit.ly/ultralytics_hub). The dataset YAML, its directory, and the zip file should all bear the identical name.
@@ -66,11 +64,11 @@ test: # test images (optional)
 
 # Class labels
 names:
-  0: person
-  1: bicycle
-  2: car
-  3: motorcycle
-  # Add more classes as needed
+    0: person
+    1: bicycle
+    2: car
+    3: motorcycle
+    # Add more classes as needed
 ```
 
 Upload your zipped dataset to [Ultralytics HUB](https://bit.ly/ultralytics_hub) by logging in, navigating to the 'Datasets' tab, and selecting 'Upload Dataset'. This lets you scan and view your dataset prior to training YOLOv5 or YOLOv8 models.
