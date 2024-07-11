@@ -71,7 +71,7 @@ jobs:
           url = f"https://api.ultralytics.com/v1/predict/{model_id}"
           headers = {"x-api-key": api_key}
           data = {"size": 320, "confidence": 0.25, "iou": 0.45}
-          f = BytesIO(requests.get("https://github.com/ultralytics/yolov5/releases/download/v1.0/zidane.jpg").content)
+          f = BytesIO(requests.get("https://github.com/ultralytics/assets/releases/download/v0.0.0/zidane.jpg").content)
           response = requests.post(url, headers=headers, data=data, files={"image": f})
           response.raise_for_status()  # ensure we got a successful response
           print(json.dumps(response.json(), indent=2))
