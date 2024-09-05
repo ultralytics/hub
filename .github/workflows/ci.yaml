@@ -67,7 +67,7 @@ jobs:
           response.raise_for_status()  # ensure we got a successful response
           print(json.dumps(response.json(), indent=2))
       - name: Test HUB export
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        # if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         shell: python
         env:
           API_KEY: ${{ secrets.ULTRALYTICS_HUB_API_KEY }}
