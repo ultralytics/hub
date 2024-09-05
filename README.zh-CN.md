@@ -8,9 +8,9 @@
 
 <a href="https://github.com/ultralytics/hub/actions/workflows/ci.yaml"><img src="https://github.com/ultralytics/hub/actions/workflows/ci.yaml/badge.svg" alt="CI CPU"></a> <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> <a href="https://ultralytics.com/discord"><img alt="Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a> <a href="https://community.ultralytics.com"><img alt="Ultralytics Forums" src="https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue"></a> <a href="https://reddit.com/r/ultralytics"><img alt="Ultralytics Reddit" src="https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue"></a>
 
-👋 欢迎来自 [Ultralytics](https://ultralytics.com/) 团队的问候！在过去的几个月里，我们一直在努力推出 [Ultralytics HUB](https://ultralytics.com/hub)，这是一个全新的网络工具，可让您在一个地方训练和部署所有的 YOLOv5 和 YOLOv8 🚀 模型！
+👋 欢迎来自 [Ultralytics](https://www.ultralytics.com/) 团队的问候！在过去的几个月里，我们一直在努力推出 [Ultralytics HUB](https://www.ultralytics.com/hub)，这是一个全新的网络工具，可让您在一个地方训练和部署所有的 YOLOv5 和 YOLOv8 🚀 模型！
 
-我们希望这里的资源能帮助您充分利用 HUB。请浏览 HUB 的[文档](https://docs.ultralytics.com/)了解详情，若需要支持，请在 [GitHub](https://github.com/ultralytics/hub/issues/new/choose) 上提出问题，加入我们的 [Discord](https://ultralytics.com/discord) 社区参与问题讨论！
+我们希望这里的资源能帮助您充分利用 HUB。请浏览 HUB 的[文档](https://docs.ultralytics.com/)了解详情，若需要支持，请在 [GitHub](https://github.com/ultralytics/hub/issues/new/choose) 上提出问题，加入我们的 [Discord](https://discord.com/invite/ultralytics) 社区参与问题讨论！
 
 <br>
 <div align="center">
@@ -36,7 +36,7 @@ Ultralytics HUB 的数据集格式与 [YOLOv5](https://github.com/ultralytics/yo
 
 ### 数据集准备：
 
-确保将描述您的数据集的 YAML 文件放在数据集的根目录下，如下所示。放置好后，将目录压缩并上传到 [Ultralytics HUB](https://ultralytics.com/hub)。数据集的 YAML 文件、其目录和压缩文件应具有相同的名称。
+确保将描述您的数据集的 YAML 文件放在数据集的根目录下，如下所示。放置好后，将目录压缩并上传到 [Ultralytics HUB](https://www.ultralytics.com/hub)。数据集的 YAML 文件、其目录和压缩文件应具有相同的名称。
 
 例如，对于名为 'coco8' 的数据集，如 [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip) 所示，在 `coco8/` 目录内包含一个 `coco8.yaml`。使用以下命令将其压缩为 `coco8.zip` 以进行上传：
 
@@ -71,7 +71,7 @@ names:
   # 根据需要添加更多类别
 ```
 
-通过登录、导航至“数据集”标签页并选择“上传数据集”，将您的压缩数据集上传到 [Ultralytics HUB](https://ultralytics.com/hub)，这样您就可以在训练 YOLOv5 或 YOLOv8 模型之前查看您的数据集。
+通过登录、导航至“数据集”标签页并选择“上传数据集”，将您的压缩数据集上传到 [Ultralytics HUB](https://www.ultralytics.com/hub)，这样您就可以在训练 YOLOv5 或 YOLOv8 模型之前查看您的数据集。
 
 <p align="center">
   <img width="100%" alt="HUB 数据集上传" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
@@ -87,11 +87,11 @@ names:
 
 ## 🌐 3. 部署到现实世界
 
-将您的模型转换为 TensorFlow、ONNX、OpenVINO、CoreML、Paddle 等 13 种不同格式。通过下载 [Ultralytics App](https://ultralytics.com/app_install)，直接在您的 [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) 或 [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) 移动设备上操作您的模型！
+将您的模型转换为 TensorFlow、ONNX、OpenVINO、CoreML、Paddle 等 13 种不同格式。通过下载 [Ultralytics App](https://www.ultralytics.com/app-install)，直接在您的 [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) 或 [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) 移动设备上操作您的模型！
 
 ## ❓ 有问题或疑问？
 
-对于刚开始 [Ultralytics HUB](https://ultralytics.com/hub) 之旅的人来说，[问题](https://github.com/ultralytics/hub/issues) 标签是您寻求支持的首选资源。点击“新建问题”按钮，分享您的想法或问题。我们的目标是通过宝贵的解决方案和改进来增强您的体验！ 😃
+对于刚开始 [Ultralytics HUB](https://www.ultralytics.com/hub) 之旅的人来说，[问题](https://github.com/ultralytics/hub/issues) 标签是您寻求支持的首选资源。点击“新建问题”按钮，分享您的想法或问题。我们的目标是通过宝贵的解决方案和改进来增强您的体验！ 😃
 
 <br>
 <div align="center">
