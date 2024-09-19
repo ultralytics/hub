@@ -27,3 +27,21 @@ jobs:
           summary: true # print PR summary with GPT4o (requires 'openai_api_key')
           openai_azure_api_key: ${{ secrets.OPENAI_AZURE_API_KEY }}
           openai_azure_endpoint: ${{ secrets.OPENAI_AZURE_ENDPOINT }}
+          first_issue_response: |
+            👋 Hello @${{ github.actor }}, thank you for raising an issue about [Ultralytics HUB](https://hub.ultralytics.com) 🚀! Please visit our [HUB Docs](https://docs.ultralytics.com/hub) to learn more:
+            
+            - [**Quickstart**](https://docs.ultralytics.com/hub/quickstart). Start training and deploying YOLO models with HUB in seconds.
+            - [**Datasets: Preparing and Uploading**](https://docs.ultralytics.com/hub/datasets). Learn how to prepare and upload your datasets to HUB in YOLO format.
+            - [**Projects: Creating and Managing**](https://docs.ultralytics.com/hub/projects). Group your models into projects for improved organization.
+            - [**Models: Training and Exporting**](https://docs.ultralytics.com/hub/models). Train YOLOv5 and YOLOv8 models on your custom datasets and export them to various formats for deployment.
+            - [**Integrations**](https://docs.ultralytics.com/hub/integrations). Explore different integration options for your trained models, such as TensorFlow, ONNX, OpenVINO, CoreML, and PaddlePaddle.
+            - [**Ultralytics HUB App**](https://docs.ultralytics.com/hub/app). Learn about the Ultralytics App for iOS and Android, which allows you to run models directly on your mobile device.
+                * [**iOS**](https://docs.ultralytics.com/hub/app/ios). Learn about YOLO CoreML models accelerated on Apple's Neural Engine on iPhones and iPads.
+                * [**Android**](https://docs.ultralytics.com/hub/app/android). Explore TFLite acceleration on mobile devices.
+            - [**Inference API**](https://docs.ultralytics.com/hub/inference-api). Understand how to use the Inference API for running your trained models in the cloud to generate predictions.
+            
+            If this is a 🐛 Bug Report, please provide screenshots and steps to [reproduce](https://docs.ultralytics.com/help/minimum_reproducible_example/) your problem to help us get started working on a fix.
+            
+            If this is a ❓ Question, please provide as much information as possible, including dataset, model, environment details etc. so that we might provide the most helpful response.
+            
+            We try to respond to all issues as promptly as possible. Thank you for your patience!
