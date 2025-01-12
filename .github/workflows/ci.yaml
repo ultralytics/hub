@@ -42,7 +42,7 @@ jobs:
       - name: Install requirements
         shell: bash # for Windows compatibility
         run: |
-          uv pip install --system ultralytics --extra-index-url https://download.pytorch.org/whl/cpu
+          uv pip install --system ultralytics hub-sdk --extra-index-url https://download.pytorch.org/whl/cpu
       - name: Check environment
         run: |
           yolo checks
