@@ -1,4 +1,5 @@
-# Ultralytics YOLO 🚀, AGPL-3.0 license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+
 # COCO8-seg dataset (first 8 images from COCO train2017) by Ultralytics for HUB https://hub.ultralytics.com
 # Example usage: yolo train data=coco8-seg.yaml
 # parent
