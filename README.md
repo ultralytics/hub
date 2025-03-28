@@ -1,5 +1,3 @@
-<a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
-
 <div align="center">
   <p>
     <a href="https://www.ultralytics.com/hub" target="_blank">
