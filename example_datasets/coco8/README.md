@@ -18,14 +18,14 @@ The COCO8 dataset features diverse images with multiple objects and complex scen
 
 Explore the following resources to maximize your experience with Ultralytics HUB and the COCO8 dataset:
 
--   **Ultralytics HUB Quickstart:** Get started quickly with training models on datasets like COCO8 using [Ultralytics HUB](https://docs.ultralytics.com/hub/quickstart/).
--   **Ultralytics Docs:** Dive deep into model usage, implementation details, and best practices in our official [documentation](https://docs.ultralytics.com/).
--   **GitHub Issues:** Report bugs, request features, or get support for troubleshooting via the [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose).
--   **Discord Community:** Join our vibrant [Discord server](https://discord.com/invite/ultralytics) to connect with fellow users, developers, and the Ultralytics team.
--   **Ultralytics Community Forums:** Engage in discussions, ask questions, and share your projects on the [Ultralytics Community](https://community.ultralytics.com/) forums.
--   **YOLOv8 Repository:** Access the source code, additional tools, and resources for Ultralytics YOLOv8 on [GitHub](https://github.com/ultralytics/ultralytics).
--   **Debugging ML Models:** Learn general techniques for [debugging machine learning models](https://neptune.ai/blog/debugging-machine-learning-models) which can be applied when using COCO8.
--   **Sanity Checks in ML:** Understand the importance of [sanity checks in deep learning](https://towardsdatascience.com/sanity-checks-for-deep-learning-models-172900373a1d) before scaling up training.
+- **Ultralytics HUB Quickstart:** Get started quickly with training models on datasets like COCO8 using [Ultralytics HUB](https://docs.ultralytics.com/hub/quickstart/).
+- **Ultralytics Docs:** Dive deep into model usage, implementation details, and best practices in our official [documentation](https://docs.ultralytics.com/).
+- **GitHub Issues:** Report bugs, request features, or get support for troubleshooting via the [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose).
+- **Discord Community:** Join our vibrant [Discord server](https://discord.com/invite/ultralytics) to connect with fellow users, developers, and the Ultralytics team.
+- **Ultralytics Community Forums:** Engage in discussions, ask questions, and share your projects on the [Ultralytics Community](https://community.ultralytics.com/) forums.
+- **YOLOv8 Repository:** Access the source code, additional tools, and resources for Ultralytics YOLOv8 on [GitHub](https://github.com/ultralytics/ultralytics).
+- **Debugging ML Models:** Learn general techniques for [debugging machine learning models](https://neptune.ai/blog/debugging-machine-learning-models) which can be applied when using COCO8.
+- **Sanity Checks in ML:** Understand the importance of [sanity checks in deep learning](https://towardsdatascience.com/sanity-checks-for-deep-learning-models-172900373a1d) before scaling up training.
 
 For commercial use or custom solutions, consider an Enterprise License by completing the form at [Ultralytics Licensing](https://www.ultralytics.com/license).
 

@@ -6,11 +6,11 @@ The Ultralytics `coco8-human` dataset is a compact yet versatile collection desi
 
 These 8 images are split evenly: 4 for training and 4 for validation. Each image features annotations specifically for the 'person' class, including standard [bounding boxes](https://www.ultralytics.com/glossary/bounding-box). Additionally, this dataset provides rich attribute information for each detected human:
 
--   Weight (kg)
--   Height (cm)
--   Gender (0: female, 1: male)
--   Age (years)
--   Ethnicity (0: Asian, 1: White, 2: Middle Eastern, 3: Indian, 4: Latino, 5: Black)
+- Weight (kg)
+- Height (cm)
+- Gender (0: female, 1: male)
+- Age (years)
+- Ethnicity (0: Asian, 1: White, 2: Middle Eastern, 3: Indian, 4: Latino, 5: Black)
 
 Despite its small size, `coco8-human` offers sufficient diversity to effectively test [object detection](https://www.ultralytics.com/glossary/object-detection) model [training](https://docs.ultralytics.com/modes/train/) pipelines for potential errors or serve as a quick sanity check before committing resources to larger datasets like the full [COCO dataset](https://docs.ultralytics.com/datasets/detect/coco/). It is particularly well-suited for experimenting with models like [Ultralytics YOLOv8](https://docs.ultralytics.com/models/yolov8/).
 
