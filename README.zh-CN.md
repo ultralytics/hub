@@ -87,7 +87,7 @@ names:
 
 ## 🌐 3. 部署到现实世界
 
-将您的模型转换为 TensorFlow、ONNX、OpenVINO、CoreML、Paddle 等 13 种不同格式。通过下载 [Ultralytics App](https://www.ultralytics.com/app-install)，直接在您的 [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) 或 [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) 移动设备上操作您的模型！
+将您的模型转换为 TensorFlow、ONNX、OpenVINO、CoreML、Paddle 等 13 种不同格式。通过下载 [Ultralytics App](https://www.ultralytics.com/app-install)，直接在您的 [iOS](https://apps.apple.com/xk/app/ultralytics-hub/id1583935240) 或 [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) 移动设备上操作您的模型！
 
 ## ❓ 有问题或疑问？
 

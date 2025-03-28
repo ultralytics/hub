@@ -1,3 +1,5 @@
+<a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+
 <div align="center">
   <p>
     <a href="https://www.ultralytics.com/hub" target="_blank">
@@ -6,11 +8,15 @@
 
 [中文](https://docs.ultralytics.com/zh/hub/) | [한국어](https://docs.ultralytics.com/ko/hub/) | [日本語](https://docs.ultralytics.com/ja/hub/) | [Русский](https://docs.ultralytics.com/ru/hub/) | [Deutsch](https://docs.ultralytics.com/de/hub/) | [Français](https://docs.ultralytics.com/fr/hub/) | [Español](https://docs.ultralytics.com/es/hub/) | [Português](https://docs.ultralytics.com/pt/hub/) | [Türkçe](https://docs.ultralytics.com/tr/hub/) | [Tiếng Việt](https://docs.ultralytics.com/vi/hub/) | [العربية](https://docs.ultralytics.com/ar/hub/)
 
-<a href="https://github.com/ultralytics/hub/actions/workflows/ci.yml"><img src="https://github.com/ultralytics/hub/actions/workflows/ci.yml/badge.svg" alt="CI CPU"></a> <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> <a href="https://discord.com/invite/ultralytics"><img alt="Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a> <a href="https://community.ultralytics.com/"><img alt="Ultralytics Forums" src="https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue"></a> <a href="https://reddit.com/r/ultralytics"><img alt="Ultralytics Reddit" src="https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue"></a>
+[![Ultralytics Actions](https://github.com/ultralytics/hub/actions/workflows/ci.yml/badge.svg)](https://github.com/ultralytics/hub/actions/workflows/ci.yml)
+[![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue)](https://discord.com/invite/ultralytics)
+[![Ultralytics Forums](https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue)](https://community.ultralytics.com/)
+[![Ultralytics Reddit](https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue)](https://reddit.com/r/ultralytics)
+<a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
-👋 Hello from the [Ultralytics](https://www.ultralytics.com/) Team! We've been working hard these last few months to launch [Ultralytics HUB](https://www.ultralytics.com/hub), a new web tool for training and deploying all your YOLOv5 and YOLOv8 🚀 models from one spot!
+👋 Hello from the [Ultralytics](https://www.ultralytics.com/) Team! We've been working hard these last few months to launch [Ultralytics HUB](https://www.ultralytics.com/hub), a new platform for training and deploying all your [Ultralytics YOLOv5](https://docs.ultralytics.com/models/yolov5/) and [YOLOv8](https://docs.ultralytics.com/models/yolov8/) 🚀 models from one central location!
 
-We hope that the resources here will help you get the most out of HUB. Please browse the HUB <a href="https://docs.ultralytics.com/">Docs</a> for details, raise an issue on <a href="https://github.com/ultralytics/hub/issues/new/choose">GitHub</a> for support, and join our <a href="https://discord.com/invite/ultralytics">Discord</a> community for questions and discussions!
+We hope that the resources here will help you get the most out of Ultralytics HUB. Please browse the [Ultralytics HUB documentation](https://docs.ultralytics.com/hub/) for details, raise an issue on [GitHub](https://github.com/ultralytics/hub/issues/new/choose) for support, and join our [Discord community](https://discord.com/invite/ultralytics) for questions and discussions!
 
 <br>
 <div align="center">
@@ -30,34 +36,34 @@ We hope that the resources here will help you get the most out of HUB. Please br
 </div>
 </div>
 
-## 🗂️ 1. Upload a Dataset
+## 🗂️ Upload a Dataset
 
-Ultralytics HUB datasets align with the format used by [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics). They adhere to the same structural and labeling conventions, ensuring a seamless experience.
+Ultralytics HUB datasets align with the format used by [YOLOv5](https://github.com/ultralytics/yolov5) and [YOLOv8](https://github.com/ultralytics/ultralytics). They adhere to the same structural and labeling conventions, ensuring a seamless experience for [object detection](https://docs.ultralytics.com/tasks/detect/), [segmentation](https://docs.ultralytics.com/tasks/segment/), and [classification](https://docs.ultralytics.com/tasks/classify/) tasks.
 
-### Dataset Preparation:
+### Dataset Preparation
 
-Ensure that the YAML file describing your dataset is placed in the root directory of your dataset, as illustrated below. Once in place, zip the directory for uploading to [Ultralytics HUB](https://www.ultralytics.com/hub). The dataset YAML, its directory, and the zip file should all bear the identical name.
+Ensure that the YAML file describing your dataset is placed in the root directory of your dataset, as illustrated below. Once in place, zip the directory for uploading to [Ultralytics HUB](https://www.ultralytics.com/hub). The dataset YAML, its directory, and the zip file should all share the identical name.
 
-For instance, with a dataset named 'coco8', as shown in [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip), include a `coco8.yaml` within the `coco8/` directory. Zip this to form `coco8.zip` for upload with the command:
+For instance, with a dataset named 'coco8', as shown in [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip), include a `coco8.yaml` within the `coco8/` directory. Zip this directory to form `coco8.zip` for upload using a command like:
 
 ```bash
 # Zipping the dataset directory for upload
 zip -r coco8.zip coco8
 ```
 
-Explore the provided [example_datasets/coco8.zip](./example_datasets/coco8.zip) for insights on structuring your custom dataset.
+Explore the provided [example_datasets/coco8.zip](./example_datasets/coco8.zip) for insights on structuring your custom dataset. You can find more information on dataset formats in our [datasets documentation](https://docs.ultralytics.com/datasets/).
 
 <p align="center">
-<img width="70%" src="https://raw.githubusercontent.com/ultralytics/assets/main/docs/hub/datasets/hub_upload_dataset_1.jpg" title="COCO8 Example Dataset" />
+<img width="70%" src="https://raw.githubusercontent.com/ultralytics/assets/main/docs/hub/datasets/hub_upload_dataset_1.jpg" title="COCO8 Example Dataset Structure" />
 </p>
 
-### YAML Specifications:
+### YAML Specifications
 
-The dataset YAML follows the established YOLOv5 and YOLOv8 format. For exhaustive instructions, refer to the [Train Custom Data tutorial](https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/).
+The dataset YAML follows the established YOLOv5 and YOLOv8 format. For comprehensive instructions, refer to the [Train Custom Data guide](https://docs.ultralytics.com/guides/model-training-tips/).
 
 ```yaml
 # YAML configuration example for custom datasets
-path: # dataset root dir (leave empty for HUB integration)
+path: ../datasets/coco8 # dataset root dir (can be relative or absolute)
 train: images/train # train images (relative to 'path') 8 images
 val: images/val # val images (relative to 'path') 8 images
 test: # test images (optional)
@@ -71,27 +77,33 @@ names:
   # Add more classes as needed
 ```
 
-Upload your zipped dataset to [Ultralytics HUB](https://www.ultralytics.com/hub) by logging in, navigating to the 'Datasets' tab, and selecting 'Upload Dataset'. This lets you scan and view your dataset prior to training YOLOv5 or YOLOv8 models.
+Upload your zipped dataset to [Ultralytics HUB](https://www.ultralytics.com/hub) by logging in, navigating to the ['Datasets' tab](https://docs.ultralytics.com/hub/datasets/), and selecting 'Upload Dataset'. This allows you to scan and view your dataset prior to training YOLOv5 or YOLOv8 models.
 
 <p align="center">
-  <img width="100%" alt="HUB Dataset Upload" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
+  <img width="100%" alt="Ultralytics HUB Dataset Upload Interface" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
 </p>
 
-## 🚀 2. Train a Model
+## 🚀 Train a Model
 
-Connect to the Ultralytics HUB notebook and employ your model API key to embark on model training!
+Connect to the Ultralytics HUB notebook and use your API key to start [model training](https://docs.ultralytics.com/modes/train/)! Ultralytics HUB offers streamlined [cloud training](https://docs.ultralytics.com/hub/cloud-training/) options, making it easy to train models without local hardware constraints.
 
 <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
 </a>
 
-## 🌐 3. Deploy to the Real World
+## 🌐 Deploy to the Real World
 
-Transition your model to 13 different formats including TensorFlow, ONNX, OpenVINO, CoreML, Paddle, and more. Operate your models directly on your [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) or [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) mobile device by downloading the [Ultralytics App](https://www.ultralytics.com/app-install)!
+Transition your trained model to various formats using the [Export mode](https://docs.ultralytics.com/modes/export/), including [TensorFlow](https://www.tensorflow.org/), [ONNX](https://onnx.ai/), [OpenVINO](https://docs.openvino.ai/latest/index.html), [CoreML](https://developer.apple.com/documentation/coreml), [PaddlePaddle](https://www.paddlepaddle.org.cn/en), and more (13+ formats supported). Operate your models directly on your [iOS](https://apps.apple.com/app/ultralytics/id1583935240) or [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) mobile device by downloading the [Ultralytics App](https://www.ultralytics.com/app-install)! Explore various [model deployment options](https://docs.ultralytics.com/guides/model-deployment-options/) for edge devices and cloud platforms.
 
 ## ❓ Have Issues or Questions?
 
-For those just embarking on their [Ultralytics HUB](https://www.ultralytics.com/hub) journey, the [Issues](https://github.com/ultralytics/hub/issues) tab is your go-to resource for support. Click the 'New Issue' button and share your thoughts or questions. Our aim is to enhance your experience with invaluable solutions and improvements! 😃
+For those just starting their [Ultralytics HUB](https://www.ultralytics.com/hub) journey, the [GitHub Issues](https://github.com/ultralytics/hub/issues) tab is your primary resource for support and bug reporting. Click the 'New Issue' button and share your thoughts, questions, or report problems. Our aim is to enhance your experience by providing valuable solutions and continuous improvements! 😃
+
+## Contribute
+
+We love contributions! ❤️ See our [Contributing Guide](https://docs.ultralytics.com/help/contributing/) for more details on how to get involved. Thank you to all our contributors!
+
+[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
 
 <br>
 <div align="center">
