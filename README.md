@@ -16,8 +16,6 @@
 
 We hope that the resources here will help you get the most out of Ultralytics HUB. Please browse the [Ultralytics HUB documentation](https://docs.ultralytics.com/hub/) for details, raise an issue on [GitHub](https://github.com/ultralytics/hub/issues/new/choose) for support, and join our [Discord community](https://discord.com/invite/ultralytics) for questions and discussions!
 
-
-
 <br>
 <div align="center">
   <a href="https://github.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="2%" alt="Ultralytics GitHub"></a>
