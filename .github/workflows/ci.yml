@@ -97,7 +97,7 @@ jobs:
                           time.sleep(wait_time)
           assert all(success)
       - name: Notify on failure
-        if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push')
+        if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
         uses: slackapi/slack-github-action@v2.0.0
         with:
           webhook-type: incoming-webhook
