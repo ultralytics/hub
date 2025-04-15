@@ -33,6 +33,7 @@ jobs:
           retry_delay_seconds: 60
           retries: 2
           run: |
+            set -o pipefail  # This makes the pipeline return the exit code of the first failing command
             lychee \
             --scheme 'https' \
             --accept 403,429,500,502,999 \
@@ -52,7 +53,6 @@ jobs:
           retry_delay_seconds: 60
           retries: 2
           run: |
-            set -o pipefail  # This makes the pipeline return the exit code of the first failing command
             lychee \
             --scheme 'https' \
             --accept 429,999 \
