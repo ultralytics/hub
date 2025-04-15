@@ -53,6 +53,7 @@ jobs:
           retries: 2
           run: |
             lychee \
+            set -o pipefail  # This makes the pipeline return the exit code of the first failing command
             --scheme 'https' \
             --accept 429,999 \
             --exclude-loopback \
