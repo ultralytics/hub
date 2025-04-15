@@ -72,9 +72,9 @@ The dataset YAML should follow the [YOLO dataset format](https://docs.ultralytic
 ```yaml
 # Example YAML configuration for a custom dataset
 path: ../datasets/coco8 # dataset root directory (relative or absolute)
-train: images/train     # training images (relative to 'path')
-val: images/val         # validation images (relative to 'path')
-test:                   # test images (optional)
+train: images/train # training images (relative to 'path')
+val: images/val # validation images (relative to 'path')
+test: # test images (optional)
 
 # Class labels
 names:
