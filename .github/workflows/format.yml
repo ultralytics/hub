@@ -28,7 +28,6 @@ jobs:
           labels: true # Auto-label issues/PRs using AI
           python: true # Format Python with Ruff and docformatter
           prettier: true # Format YAML, JSON, Markdown, CSS
-          swift: false # Format Swift (requires macos-latest)
           spelling: true # Check spelling with codespell
           links: false # Check broken links with Lychee
           summary: true # Generate AI-powered PR summaries
