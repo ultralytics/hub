@@ -98,7 +98,7 @@ jobs:
           assert all(success)
       - name: Notify on failure
         if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
-        uses: slackapi/slack-github-action@v2.0.0
+        uses: slackapi/slack-github-action@v2.1.0
         with:
           webhook-type: incoming-webhook
           webhook: ${{ secrets.SLACK_WEBHOOK_URL_HUBWEB }}
