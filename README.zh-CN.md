@@ -6,11 +6,15 @@
 
 [中文](https://docs.ultralytics.com/zh/hub/) | [한국어](https://docs.ultralytics.com/ko/hub/) | [日本語](https://docs.ultralytics.com/ja/hub/) | [Русский](https://docs.ultralytics.com/ru/hub/) | [Deutsch](https://docs.ultralytics.com/de/hub/) | [Français](https://docs.ultralytics.com/fr/hub/) | [Español](https://docs.ultralytics.com/es/hub/) | [Português](https://docs.ultralytics.com/pt/hub/) | [Türkçe](https://docs.ultralytics.com/tr/hub/) | [Tiếng Việt](https://docs.ultralytics.com/vi/hub/) | [العربية](https://docs.ultralytics.com/ar/hub/)
 
-<a href="https://github.com/ultralytics/hub/actions/workflows/ci.yml"><img src="https://github.com/ultralytics/hub/actions/workflows/ci.yml/badge.svg" alt="CI CPU"></a> <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> <a href="https://discord.com/invite/ultralytics"><img alt="Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a> <a href="https://community.ultralytics.com/"><img alt="Ultralytics Forums" src="https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue"></a> <a href="https://reddit.com/r/ultralytics"><img alt="Ultralytics Reddit" src="https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue"></a>
+[![Ultralytics Actions](https://github.com/ultralytics/hub/actions/workflows/ci.yml/badge.svg)](https://github.com/ultralytics/hub/actions/workflows/ci.yml)
+[![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue)](https://discord.com/invite/ultralytics)
+[![Ultralytics Forums](https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue)](https://community.ultralytics.com/)
+[![Ultralytics Reddit](https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue)](https://reddit.com/r/ultralytics)
+<a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
-👋 欢迎来自 [Ultralytics](https://www.ultralytics.com/) 团队的问候！在过去的几个月里，我们一直在努力推出 [Ultralytics HUB](https://www.ultralytics.com/hub)，这是一个全新的网络工具，可让您在一个地方训练和部署所有的 YOLOv5 和 YOLOv8 🚀 模型！
+👋 来自 [Ultralytics](https://www.ultralytics.com/) 团队的问候！我们一直致力于打造 [Ultralytics HUB](https://www.ultralytics.com/hub)，这是一个全新平台，助您在一个中心位置轻松训练和部署所有 [Ultralytics YOLO](https://www.ultralytics.com/yolo) 模型，包括 [YOLOv5](https://docs.ultralytics.com/models/yolov5/)、[YOLOv8](https://docs.ultralytics.com/models/yolov8/) 及未来版本 🚀！
 
-我们希望这里的资源能帮助您充分利用 HUB。请浏览 HUB 的[文档](https://docs.ultralytics.com/)了解详情，若需要支持，请在 [GitHub](https://github.com/ultralytics/hub/issues/new/choose) 上提出问题，加入我们的 [Discord](https://discord.com/invite/ultralytics) 社区参与问题讨论！
+我们希望这里的资源能帮助您充分利用 Ultralytics HUB。欢迎查阅 [Ultralytics HUB 文档](https://docs.ultralytics.com/hub/) 了解详细指南，在 [GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose) 提交问题以获得支持，并加入我们的 [Discord 社区](https://discord.com/invite/ultralytics) 参与讨论！
 
 <br>
 <div align="center">
@@ -30,36 +34,36 @@
 </div>
 </div>
 
-## 🗂️ 1. 上传数据集
+## 🗂️ 上传数据集
 
-Ultralytics HUB 的数据集格式与 [YOLOv5](https://github.com/ultralytics/yolov5) 和 [YOLOv8](https://github.com/ultralytics/ultralytics) 使用的格式相符，遵循相同的结构和标记约定，确保无缝体验。
+Ultralytics HUB 数据集格式与 [YOLOv5](https://github.com/ultralytics/yolov5) 和 [YOLOv8](https://github.com/ultralytics/ultralytics) 完全兼容。它们采用统一的结构和标签规范，确保在 [目标检测](https://docs.ultralytics.com/tasks/detect/)、[分割](https://docs.ultralytics.com/tasks/segment/)、[分类](https://docs.ultralytics.com/tasks/classify/) 等任务中实现无缝体验。
 
-### 数据集准备：
+### 数据集准备
 
-确保将描述您的数据集的 YAML 文件放在数据集的根目录下，如下所示。放置好后，将目录压缩并上传到 [Ultralytics HUB](https://www.ultralytics.com/hub)。数据集的 YAML 文件、其目录和压缩文件应具有相同的名称。
+请确保您的数据集根目录下包含描述数据集的 YAML 文件。准备好后，将整个目录压缩为 ZIP 文件，便于上传至 [Ultralytics HUB](https://www.ultralytics.com/hub)。YAML 文件、其所在目录及压缩包需保持同名。
 
-例如，对于名为 'coco8' 的数据集，如 [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip) 所示，在 `coco8/` 目录内包含一个 `coco8.yaml`。使用以下命令将其压缩为 `coco8.zip` 以进行上传：
+例如，若您的数据集名为 'coco8'，请参考 [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip) 的结构，在 `coco8/` 目录下放置 `coco8.yaml` 文件。然后使用如下命令将其压缩：
 
 ```bash
-# 压缩数据集目录以供上传
+# 压缩数据集目录以便上传
 zip -r coco8.zip coco8
 ```
 
-浏览提供的 [example_datasets/coco8.zip](./example_datasets/coco8.zip) 以获得关于构建自定义数据集的洞察。
+建议浏览 [example_datasets/coco8.zip](./example_datasets/coco8.zip) 获取自定义数据集构建的实际案例。更多数据集格式说明，请参阅 [Ultralytics 数据集文档](https://docs.ultralytics.com/datasets/)。
 
 <p align="center">
-<img width="70%" src="https://raw.githubusercontent.com/ultralytics/assets/main/docs/hub/datasets/hub_upload_dataset_1.jpg" title="COCO8 Example Dataset" />
+<img width="100%" src="https://raw.githubusercontent.com/ultralytics/assets/main/docs/hub/datasets/hub_upload_dataset_1.jpg" title="COCO8 Example Dataset Structure" />
 </p>
 
-### YAML 规范：
+### YAML 规范
 
-数据集 YAML 遵循已建立的 YOLOv5 和 YOLOv8 格式。有关详尽的说明，请参阅 [自定义数据训练教程](https://docs.ultralytics.com/yolov5/tutorials/train_custom_data/)。
+数据集 YAML 文件遵循 YOLO 格式规范。详细说明请参考 [训练自定义数据指南](https://docs.ultralytics.com/guides/model-training-tips/)。
 
 ```yaml
-# 自定义数据集的 YAML 配置示例
-path: # 数据集根目录（留空以适应 HUB）
-train: images/train # 训练图像（相对于 'path'）8张图像
-val: images/val # 验证图像（相对于 'path'）8张图像
+# 自定义数据集 YAML 配置示例
+path: ../datasets/coco8 # 数据集根目录（相对或绝对路径）
+train: images/train # 训练图像（相对 'path'）8 张图像
+val: images/val # 验证图像（相对 'path'）8 张图像
 test: # 测试图像（可选）
 
 # 类别标签
@@ -68,30 +72,36 @@ names:
   1: bicycle
   2: car
   3: motorcycle
-  # 根据需要添加更多类别
+  # 可根据需要添加更多类别
 ```
 
-通过登录、导航至“数据集”标签页并选择“上传数据集”，将您的压缩数据集上传到 [Ultralytics HUB](https://www.ultralytics.com/hub)，这样您就可以在训练 YOLOv5 或 YOLOv8 模型之前查看您的数据集。
+登录 [Ultralytics HUB](https://www.ultralytics.com/hub)，前往 ['Datasets' 选项卡](https://docs.ultralytics.com/hub/datasets/)，点击 'Upload Dataset' 上传您的 ZIP 数据集。上传后，您可在训练 YOLO 模型前预览和检查数据集内容。
 
 <p align="center">
-  <img width="100%" alt="HUB 数据集上传" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
+  <img width="100%" alt="Ultralytics HUB Dataset Upload Interface" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
 </p>
 
-## 🚀 2. 训练模型
+## 🚀 训练模型
 
-连接到 Ultralytics HUB 笔记本并使用您的模型 API 密钥开始模型训练！
+通过连接 Ultralytics HUB notebook 并使用 API 密钥，即可轻松开启 [模型训练](https://docs.ultralytics.com/modes/train/)。Ultralytics HUB 提供便捷的 [云训练](https://docs.ultralytics.com/hub/cloud-training/) 功能，让您无需本地硬件即可高效训练模型。
 
 <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
 </a>
 
-## 🌐 3. 部署到现实世界
+## 🌐 部署到现实世界
 
-将您的模型转换为 TensorFlow、ONNX、OpenVINO、CoreML、Paddle 等 13 种不同格式。通过下载 [Ultralytics App](https://www.ultralytics.com/app-install)，直接在您的 [iOS](https://apps.apple.com/xk/app/ultralytics/id1583935240) 或 [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) 移动设备上操作您的模型！
+利用 [导出模式](https://docs.ultralytics.com/modes/export/)，可将训练好的模型转换为多种格式，包括 [TensorFlow](https://www.tensorflow.org/)、[ONNX](https://onnx.ai/)、[OpenVINO](https://docs.openvino.ai/latest/index.html)、[CoreML](https://developer.apple.com/documentation/coreml)、[PaddlePaddle](https://www.paddlepaddle.org.cn/en) 等（支持 13+ 种格式）。下载 [Ultralytics App](https://www.ultralytics.com/app-install)，即可在 [iOS](https://apps.apple.com/app/ultralytics/id1583935240) 或 [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) 移动设备上直接运行您的模型！探索更多适用于边缘设备和云平台的 [模型部署选项](https://docs.ultralytics.com/guides/model-deployment-options/)。
 
 ## ❓ 有问题或疑问？
 
-对于刚开始 [Ultralytics HUB](https://www.ultralytics.com/hub) 之旅的人来说，[问题](https://github.com/ultralytics/hub/issues) 标签是您寻求支持的首选资源。点击“新建问题”按钮，分享您的想法或问题。我们的目标是通过宝贵的解决方案和改进来增强您的体验！ 😃
+如果您在使用 [Ultralytics HUB](https://www.ultralytics.com/hub) 过程中遇到问题，[GitHub Issues](https://github.com/ultralytics/hub/issues) 是获取支持和反馈的首选渠道。点击 'New Issue'，提交您的建议、问题或遇到的挑战。我们致力于为您持续优化体验并提供高效解决方案！😃
+
+## 贡献
+
+我们欢迎您的贡献！❤️ 请参阅 [贡献指南](https://docs.ultralytics.com/help/contributing/) 了解参与方式。感谢所有为 Ultralytics 生态做出贡献的开发者！
+
+[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
 
 <br>
 <div align="center">

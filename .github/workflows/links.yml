@@ -42,7 +42,12 @@ jobs:
             --github-token ${{ secrets.GITHUB_TOKEN }} \
             --header "User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.183 Safari/537.36" \
             './**/*.md' \
-            './**/*.html'
+            './**/*.html' | tee -a $GITHUB_STEP_SUMMARY
+
+            # Raise error if broken links found
+            if ! grep -q "0 Errors" $GITHUB_STEP_SUMMARY; then
+              exit 1
+            fi
 
       - name: Test Markdown, HTML, YAML, Python and Notebook links with retry
         if: github.event_name == 'workflow_dispatch'
@@ -65,4 +70,9 @@ jobs:
             './**/*.yml' \
             './**/*.yaml' \
             './**/*.py' \
-            './**/*.ipynb'
+            './**/*.ipynb' | tee -a $GITHUB_STEP_SUMMARY
+
+            # Raise error if broken links found
+            if ! grep -q "0 Errors" $GITHUB_STEP_SUMMARY; then
+              exit 1
+            fi
