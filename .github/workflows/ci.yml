@@ -1,6 +1,8 @@
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 name: HUB CI
+permissions:
+  contents: read
 
 on:
   push:
