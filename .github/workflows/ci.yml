@@ -42,14 +42,16 @@ jobs:
         run: |
           yolo checks
           uv pip list
+      - name: Login to HUB
+        run: |
+          yolo login ${{ env.API_KEY }}
       - name: Test HUB training
         continue-on-error: false
         shell: python
         run: |
           import os
           from ultralytics import YOLO, hub
-          api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
-          hub.login(api_key)
+          model_id = os.environ['MODEL_ID']
           hub.reset_model(model_id)
           model = YOLO('https://hub.ultralytics.com/models/' + model_id)
           model.train()
@@ -76,8 +78,7 @@ jobs:
           import time
           from ultralytics import YOLO, checks, hub
           checks()
-          api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
-          hub.login(api_key)
+          model_id = os.environ['MODEL_ID']
           success = []
           for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
                     'paddle', 'ultralytics_tflite', 'ultralytics_coreml', 'ncnn'):
