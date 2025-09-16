@@ -108,7 +108,7 @@ jobs:
                       break  # exit the loop if no exception is raised
                   except Exception as e:
                       if i < len(backoff_times) - 1:
-                          print(f'checking in {wait_time} seconds')
+                          print(f"checking in {wait_time} seconds")
                           continue  # export still in progress
                       else:
                           success.append(False)
