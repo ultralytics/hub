@@ -1,6 +1,8 @@
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 name: HUB CI
+permissions:
+  contents: read
 
 on:
   push:
@@ -30,8 +32,8 @@ jobs:
             python-version: "3.12"
     timeout-minutes: 180
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
       - uses: astral-sh/setup-uv@v6
@@ -44,14 +46,16 @@ jobs:
         run: |
           yolo checks
           uv pip list
+      - name: Login to HUB
+        run: |
+          yolo login ${{ env.API_KEY }}
       - name: Test HUB training
         continue-on-error: false
         shell: python
         run: |
           import os
           from ultralytics import YOLO, hub
-          api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
-          hub.login(api_key)
+          model_id = os.environ['MODEL_ID']
           hub.reset_model(model_id)
           model = YOLO('https://hub.ultralytics.com/models/' + model_id)
           model.train()
@@ -78,8 +82,7 @@ jobs:
           import time
           from ultralytics import YOLO, checks, hub
           checks()
-          api_key, model_id = os.environ['API_KEY'], os.environ['MODEL_ID']
-          hub.login(api_key)
+          model_id = os.environ['MODEL_ID']
           success = []
           for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
                     'paddle', 'ultralytics_tflite', 'ultralytics_coreml', 'ncnn'):
@@ -102,7 +105,7 @@ jobs:
           assert all(success)
       - name: Notify on failure
         if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
-        uses: slackapi/slack-github-action@v2.1.0
+        uses: slackapi/slack-github-action@v2.1.1
         with:
           webhook-type: incoming-webhook
           webhook: ${{ secrets.SLACK_WEBHOOK_URL_HUBWEB }}

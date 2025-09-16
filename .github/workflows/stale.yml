@@ -1,6 +1,10 @@
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 name: Close stale issues
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
 on:
   schedule:
     - cron: "0 0 * * *" # Runs at 00:00 UTC every day
@@ -9,7 +13,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v9
+      - uses: actions/stale@v10
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
