@@ -108,7 +108,7 @@ jobs:
                       break  # exit the loop if no exception is raised
                   except Exception as e:
                       if i < len(backoff_times) - 1:
-                          continue
+                          continue  # export still in progress
                       else:
                           success.append(False)
                           print(f'Error ❌ {f} export {e}')
