@@ -77,27 +77,39 @@ jobs:
           import os
           import time
           from ultralytics import YOLO, checks, hub
+          
           checks()
-          model_id = os.environ['MODEL_ID']
+          model_id = os.environ["MODEL_ID"]
           success = []
-          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
-                    'paddle', 'ultralytics_tflite', 'ultralytics_coreml', 'ncnn', 'engine'):
-              backoff_times = [60, 120, 240, 480]  # exponential backoff waits in seconds
-              for wait_time in backoff_times:
-                  try:
-                      print(f'Starting {f} export... ', end='')
-                      hub.export_model(model_id, format=f)
-                      time.sleep(wait_time)  # wait for export to complete
-                      success.append(hub.get_export(model_id, format=f)['success'])
-                      print('done ✅' if success[-1] else 'Error ❌')
+          backoff_times = [60, 120, 240, 480]  # exponential backoff waits in seconds
+          for f in (
+              "torchscript",
+              "onnx",
+              "openvino",
+              "coreml",
+              "saved_model",
+              "pb",
+              "tflite",
+              "edgetpu",
+              "tfjs",
+              "paddle",
+              "ultralytics_tflite",
+              "ultralytics_coreml",
+              "ncnn",
+              "engine",
+          ):
+              print(f"Starting {f} export... ", end="")
+              hub.export_model(model_id, format=f)
+              for i, wait_time in enumerate(backoff_times):
+                  time.sleep(wait_time)  # wait for export to complete
+                  result = hub.get_export(model_id, format=f)["success"]
+                  if result is True:
+                      success.append(True)
+                      print("done ✅")
                       break  # exit the loop if no exception is raised
-                  except Exception as e:
-                      if wait_time == backoff_times[-1]:  # if it's the last backoff time
-                          success.append(False)
-                          print(f'Error ❌ {f} export {e}')
-                      else:
-                          print(f'Retrying {f} export in {wait_time // 60} minutes due to error: {e}')
-                          time.sleep(wait_time)
+                  elif i == len(backoff_times) - 1:
+                      success.append(False)
+                      print(f"Error ❌ {f}: time limit exceeded")
           assert all(success)
       - name: Notify on failure
         if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
