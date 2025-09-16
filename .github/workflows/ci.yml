@@ -81,7 +81,7 @@ jobs:
           checks()
           model_id = os.environ["MODEL_ID"]
           success = []
-          backoff_times = [60, 120, 240, 480]  # exponential backoff waits in seconds
+          backoff_times = [30, 60, 90, 120, 240, 360]  # exponential backoff waits in seconds
           for f in (
               "torchscript",
               "onnx",
