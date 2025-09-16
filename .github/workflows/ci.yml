@@ -105,14 +105,13 @@ jobs:
                   try:
                       success.append(hub.get_export(model_id, format=f)["success"])
                       print("done ✅" if success[-1] else f"Error ❌ {f}")
-                      break  # exit the loop if no exception is raised
+                      break
                   except Exception as e:
-                      if i < len(backoff_times) - 1:
-                          print(f"checking in {wait_time} seconds")
-                          continue  # export still in progress
-                      else:
+                      if i == (len(backoff_times) - 1):
                           success.append(False)
                           print(f"Error ❌ {f} export {e}")
+                      else:
+                          print(f"waiting {backoff_times[i + 1]}s")
           assert all(success)
       - name: Notify on failure
         if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
