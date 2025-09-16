@@ -108,6 +108,7 @@ jobs:
                       break  # exit the loop if no exception is raised
                   except Exception as e:
                       if i < len(backoff_times) - 1:
+                          print(f'Retrying {f} export in {wait_time // 60} minutes')
                           continue  # export still in progress
                       else:
                           success.append(False)
