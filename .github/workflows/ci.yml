@@ -112,7 +112,7 @@ jobs:
                           continue  # export still in progress
                       else:
                           success.append(False)
-                          print(f'Error ❌ {f} export {e}')
+                          print(f"Error ❌ {f} export {e}")
           assert all(success)
       - name: Notify on failure
         if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
