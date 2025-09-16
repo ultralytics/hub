@@ -102,14 +102,16 @@ jobs:
               hub.export_model(model_id, format=f)
               for i, wait_time in enumerate(backoff_times):
                   time.sleep(wait_time)  # wait for export to complete
-                  result = hub.get_export(model_id, format=f)["success"]
-                  if result is True:
-                      success.append(True)
-                      print("done ✅")
+                  try:
+                      success.append(hub.get_export(model_id, format=f)["success"])
+                      print("done ✅" if success[-1] else "Error ❌")
                       break  # exit the loop if no exception is raised
-                  elif i == len(backoff_times) - 1:
-                      success.append(False)
-                      print(f"Error ❌ {f}: time limit exceeded")
+                  except Exception as e:
+                      if i < len(backoff_times) - 1:
+                          continue
+                      else:
+                          success.append(False)
+                          print(f"Error ❌ {f}: time limit exceeded")
           assert all(success)
       - name: Notify on failure
         if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
