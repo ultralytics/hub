@@ -36,7 +36,7 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
-      - uses: astral-sh/setup-uv@v6
+      - uses: astral-sh/setup-uv@v7
         with:
           enable-cache: false
       - name: Install requirements
@@ -81,27 +81,41 @@ jobs:
           import os
           import time
           from ultralytics import YOLO, checks, hub
+          
           checks()
-          model_id = os.environ['MODEL_ID']
+          model_id = os.environ["MODEL_ID"]
           success = []
-          for f in ('torchscript', 'onnx', 'openvino', 'coreml', 'saved_model', 'pb', 'tflite', 'edgetpu', 'tfjs',
-                    'paddle', 'ultralytics_tflite', 'ultralytics_coreml', 'ncnn'):
-              backoff_times = [60, 120, 240, 480]  # exponential backoff waits in seconds
-              for wait_time in backoff_times:
+          backoff_times = [30, 60, 90, 120, 240, 360]  # exponential backoff waits in seconds
+          for f in (
+              "torchscript",
+              "onnx",
+              "openvino",
+              "coreml",
+              "saved_model",
+              "pb",
+              "tflite",
+              "edgetpu",
+              "tfjs",
+              "paddle",
+              "ultralytics_tflite",
+              "ultralytics_coreml",
+              "ncnn",
+              "engine",
+          ):
+              print(f"Starting {f} export... ", end="")
+              hub.export_model(model_id, format=f)
+              for i, wait_time in enumerate(backoff_times):
+                  time.sleep(wait_time)  # wait for export to complete
                   try:
-                      print(f'Starting {f} export... ', end='')
-                      hub.export_model(model_id, format=f)
-                      time.sleep(wait_time)  # wait for export to complete
-                      success.append(hub.get_export(model_id, format=f)['success'])
-                      print('done ✅' if success[-1] else 'Error ❌')
-                      break  # exit the loop if no exception is raised
+                      success.append(hub.get_export(model_id, format=f)["success"])
+                      print("done ✅" if success[-1] else f"Error ❌ {f}")
+                      break
                   except Exception as e:
-                      if wait_time == backoff_times[-1]:  # if it's the last backoff time
+                      if i == (len(backoff_times) - 1):
                           success.append(False)
-                          print(f'Error ❌ {f} export {e}')
+                          print(f"Error ❌ {f} export {e}")
                       else:
-                          print(f'Retrying {f} export in {wait_time // 60} minutes due to error: {e}')
-                          time.sleep(wait_time)
+                          print(f"waiting {backoff_times[i + 1]}s", flush=True)
           assert all(success)
       - name: Notify on failure
         if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
