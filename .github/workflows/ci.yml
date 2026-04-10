@@ -37,7 +37,7 @@ jobs:
           enable-cache: false
       - name: Install requirements
         run: |
-          uv pip install --system ultralytics hub-sdk --extra-index-url https://download.pytorch.org/whl/cpu
+          uv pip install --system "git+https://github.com/ultralytics/ultralytics.git@fix/hub-local-zip-datasets" hub-sdk --extra-index-url https://download.pytorch.org/whl/cpu
       - name: Check environment
         run: |
           yolo checks
