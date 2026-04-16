@@ -18,7 +18,7 @@ COCO8 features diverse scenes with multiple objects, providing a realistic testi
 
 Enhance your experience with COCO8 and Ultralytics tools using these valuable resources:
 
-- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/hub/quickstart/): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
+- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/platform/): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco/): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models/): Explore available YOLO models for object detection, segmentation, and more.

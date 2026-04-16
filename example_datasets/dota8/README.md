@@ -8,13 +8,13 @@ The **Ultralytics DOTA8** dataset is a compact and versatile resource for **orie
 
 Despite its small size, DOTA8 offers a diverse set of scenarios, making it ideal for quickly verifying [training pipelines](https://docs.ultralytics.com/modes/train/) and ensuring your setup is error-free before scaling up to larger datasets. Its simplicity enables fast iteration and serves as a reliable sanity check for model evaluation and development.
 
-DOTA8 is fully compatible with [Ultralytics HUB](https://docs.ultralytics.com/hub/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11/) models, empowering users to streamline their OBB workflows.
+DOTA8 is fully compatible with [Ultralytics HUB](https://docs.ultralytics.com/platform/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11/) models, empowering users to streamline their OBB workflows.
 
 ## 📚 Resources
 
 Enhance your experience with DOTA8 and Ultralytics tools using these valuable resources:
 
-- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/hub/quickstart/): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
+- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/platform/): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco/): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models/): Explore available YOLO models for object detection, segmentation, and more.

@@ -8,7 +8,7 @@ Welcome to the Ultralytics COCO8-pose dataset! This compact and versatile datase
 
 COCO8-pose is ideal for quickly testing and debugging [pose estimation](https://www.ultralytics.com/blog/pose-estimation-with-ultralytics-yolov8) models, experimenting with new [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) or [pose estimation approaches](https://arxiv.org/abs/1812.08008), and verifying the integrity of your [training pipelines](https://docs.ultralytics.com/modes/train/). Its small size (just 8 images) makes it highly manageable, while still providing enough diversity for practical sanity checks before scaling up to larger [datasets](https://docs.ultralytics.com/datasets/).
 
-This dataset is optimized for use with [Ultralytics HUB](https://hub.ultralytics.com/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11/) models. Get started quickly by following the [Ultralytics HUB Quickstart guide](https://docs.ultralytics.com/hub/quickstart/).
+This dataset is optimized for use with [Ultralytics HUB](https://hub.ultralytics.com/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11/) models. Get started quickly by following the [Ultralytics HUB Quickstart guide](https://docs.ultralytics.com/platform/).
 
 ## 🖼️ Sample Images and Annotations
 
@@ -20,7 +20,7 @@ Below are examples showcasing images from the COCO8-pose dataset, visualized in 
 
 Enhance your experience with COCO8-pose and Ultralytics tools using these valuable resources:
 
-- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/hub/quickstart/): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
+- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/platform/): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco/): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models/): Explore available YOLO models for object detection, segmentation, and more.
