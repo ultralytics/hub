@@ -8,7 +8,9 @@ The **Ultralytics COCO8-Seg** dataset is a compact, easy-to-use resource for **i
 
 With just 8 images, COCO8-Seg is highly manageable, making it perfect for verifying [training pipelines](https://docs.ultralytics.com/guides/model-training-tips) and catching potential issues before scaling up to [larger datasets](https://docs.ultralytics.com/datasets). It serves as a practical sanity check for model development and experimentation.
 
-COCO8-Seg is designed for seamless integration with [Ultralytics HUB](https://hub.ultralytics.com/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11) models. For a deeper understanding of instance segmentation, check out our blog post: [What is Instance Segmentation? A Quick Guide](https://www.ultralytics.com/blog/what-is-instance-segmentation-a-quick-guide).
+COCO8-Seg is designed for seamless integration with [Ultralytics Platform](https://platform.ultralytics.com/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11) models. For a deeper understanding of instance segmentation, check out our blog post: [What is Instance Segmentation? A Quick Guide](https://www.ultralytics.com/blog/what-is-instance-segmentation-a-quick-guide).
+
+Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com/) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
 
 ## 🖼️ Sample Images and Annotations
 
@@ -20,11 +22,11 @@ Below are sample images from the COCO8-Seg dataset, each with its corresponding 
 
 Enhance your experience with COCO8-seg and Ultralytics tools using these valuable resources:
 
-- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/platform): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
+- [Ultralytics Platform](https://docs.ultralytics.com/platform): Step-by-step guide to uploading, annotating, training, exporting, and deploying models with datasets like COCO8-seg.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.
-- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report bugs, request features, or seek troubleshooting support.
+- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
 - [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11): Details on the latest YOLO model architecture and usage.

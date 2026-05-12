@@ -6,7 +6,9 @@
 
 The [Ultralytics COCO8 dataset](https://docs.ultralytics.com/datasets/detect/coco8) is a compact and versatile resource for [object detection](https://www.ultralytics.com/glossary/object-detection) tasks. It consists of the first 8 images from the popular [COCO train 2017 dataset](https://cocodataset.org/#home), split into 4 images for training and 4 for validation. This small dataset is ideal for **quick testing, debugging, and validating** your object detection pipelines within the [Ultralytics](https://www.ultralytics.com/) ecosystem.
 
-COCO8 is especially useful for verifying your setup before scaling up to [larger datasets](https://docs.ultralytics.com/datasets), making it a valuable **sanity check** for model training, data loading, and annotation workflows. Its manageable size ensures rapid iteration, whether you are experimenting with new detection strategies or ensuring compatibility with [Ultralytics HUB](https://hub.ultralytics.com/) and [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11). To get started with training on COCO8, follow the [Ultralytics Quickstart guide](https://docs.ultralytics.com/quickstart).
+COCO8 is especially useful for verifying your setup before scaling up to [larger datasets](https://docs.ultralytics.com/datasets), making it a valuable **sanity check** for model training, data loading, and annotation workflows. Its manageable size ensures rapid iteration, whether you are experimenting with new detection strategies or validating data in [Ultralytics Platform](https://platform.ultralytics.com/) with [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11). To get started with training on COCO8, follow the [Ultralytics Quickstart guide](https://docs.ultralytics.com/quickstart).
+
+Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com/) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
 
 ## 🖼️ Sample Images and Annotations
 
@@ -18,11 +20,11 @@ COCO8 features diverse scenes with multiple objects, providing a realistic testi
 
 Enhance your experience with COCO8 and Ultralytics tools using these valuable resources:
 
-- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/platform): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
+- [Ultralytics Platform](https://docs.ultralytics.com/platform): Step-by-step guide to uploading, annotating, training, exporting, and deploying models with datasets like COCO8.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.
-- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report bugs, request features, or seek troubleshooting support.
+- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
 - [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11): Details on the latest YOLO model architecture and usage.

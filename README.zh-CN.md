@@ -1,10 +1,10 @@
 <div align="center">
   <p>
     <a href="https://platform.ultralytics.com/" target="_blank">
-      <img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/ultralytics-hub.png"></a>
+      <img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/dataset-screenshot.avif" alt="Ultralytics Platform dataset interface"></a>
   </p>
 
-[中文](https://docs.ultralytics.com/zh/hub) | [한국어](https://docs.ultralytics.com/ko/hub) | [日本語](https://docs.ultralytics.com/ja/hub) | [Русский](https://docs.ultralytics.com/ru/hub) | [Deutsch](https://docs.ultralytics.com/de/hub) | [Français](https://docs.ultralytics.com/fr/hub) | [Español](https://docs.ultralytics.com/es/hub/) | [Português](https://docs.ultralytics.com/pt/hub) | [Türkçe](https://docs.ultralytics.com/tr/hub) | [Tiếng Việt](https://docs.ultralytics.com/vi/hub) | [العربية](https://docs.ultralytics.com/ar/hub)
+[中文](https://docs.ultralytics.com/zh/platform) | [한국어](https://docs.ultralytics.com/ko/platform) | [日本語](https://docs.ultralytics.com/ja/platform) | [Русский](https://docs.ultralytics.com/ru/platform) | [Deutsch](https://docs.ultralytics.com/de/platform) | [Français](https://docs.ultralytics.com/fr/platform) | [Español](https://docs.ultralytics.com/es/platform) | [Português](https://docs.ultralytics.com/pt/platform) | [Türkçe](https://docs.ultralytics.com/tr/platform) | [Tiếng Việt](https://docs.ultralytics.com/vi/platform) | [العربية](https://docs.ultralytics.com/ar/platform)
 
 [![Ultralytics Actions](https://github.com/ultralytics/hub/actions/workflows/ci.yml/badge.svg)](https://github.com/ultralytics/hub/actions/workflows/ci.yml)
 [![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue)](https://discord.com/invite/ultralytics)
@@ -12,9 +12,9 @@
 [![Ultralytics Reddit](https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue)](https://reddit.com/r/ultralytics)
 <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
-👋 来自 [Ultralytics](https://www.ultralytics.com/) 团队的问候！我们一直致力于打造 [Ultralytics HUB](https://platform.ultralytics.com/)，这是一个全新平台，助您在一个中心位置轻松训练和部署所有 [Ultralytics YOLO](https://www.ultralytics.com/yolo) 模型，包括 [YOLOv5](https://docs.ultralytics.com/models/yolov5)、[YOLOv8](https://docs.ultralytics.com/models/yolov8) 及未来版本 🚀！
+👋 来自 [Ultralytics](https://www.ultralytics.com/) 团队的问候！[Ultralytics HUB](https://hub.ultralytics.com/) 正在逐步停用，并将于 2026 年 7 月底完成下线。新项目请使用全新的 [Ultralytics Platform](https://platform.ultralytics.com/)，这是面向计算机视觉的端到端平台，覆盖数据准备、图像标注、YOLO 模型训练、生产格式导出和全球多区域端点部署 🚀！
 
-我们希望这里的资源能帮助您充分利用 Ultralytics HUB。欢迎查阅 [Ultralytics HUB 文档](https://docs.ultralytics.com/platform) 了解详细指南，在 [GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose) 提交问题以获得支持，并加入我们的 [Discord 社区](https://discord.com/invite/ultralytics) 参与讨论！
+请创建 [Platform 账号](https://platform.ultralytics.com/) 开始新的工作流。现有 HUB 用户在创建账号后，可进入 **Settings > Integrations > Ultralytics HUB** 粘贴 HUB API key，直接迁移所有 HUB 数据集和模型。欢迎查阅 [Ultralytics Platform 文档](https://docs.ultralytics.com/platform) 了解详细指南，在 [GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose) 提交旧版 HUB 仓库支持问题，并加入我们的 [Discord 社区](https://discord.com/invite/ultralytics) 参与讨论！
 
 <br>
 <div align="center">
@@ -34,13 +34,13 @@
 </div>
 </div>
 
-## 🗂️ 上传数据集
+## 🗂️ 准备和上传数据集
 
-Ultralytics HUB 数据集格式与 [YOLOv5](https://github.com/ultralytics/yolov5) 和 [YOLOv8](https://github.com/ultralytics/ultralytics) 完全兼容。它们采用统一的结构和标签规范，确保在 [目标检测](https://docs.ultralytics.com/tasks/detect)、[分割](https://docs.ultralytics.com/tasks/segment)、[分类](https://docs.ultralytics.com/tasks/classify) 等任务中实现无缝体验。
+Ultralytics Platform 数据集格式与 [YOLO11](https://docs.ultralytics.com/models/yolo11)、[YOLOv8](https://docs.ultralytics.com/models/yolov8) 和 [YOLOv5](https://docs.ultralytics.com/models/yolov5) 完全兼容。它们采用统一的结构和标签规范，支持 [目标检测](https://docs.ultralytics.com/tasks/detect)、[实例分割](https://docs.ultralytics.com/tasks/segment)、[姿态估计](https://docs.ultralytics.com/tasks/pose)、[定向目标检测](https://docs.ultralytics.com/tasks/obb) 和 [图像分类](https://docs.ultralytics.com/tasks/classify) 等任务。
 
 ### 数据集准备
 
-请确保您的数据集根目录下包含描述数据集的 YAML 文件。准备好后，将整个目录压缩为 ZIP 文件，便于上传至 [Ultralytics HUB](https://platform.ultralytics.com/)。YAML 文件、其所在目录及压缩包需保持同名。
+请确保您的数据集根目录下包含描述数据集的 YAML 文件。准备好后，将整个目录压缩为 ZIP 文件，便于上传至 [Ultralytics Platform](https://platform.ultralytics.com/)。YAML 文件、其所在目录及压缩包需保持同名。
 
 例如，若您的数据集名为 'coco8'，请参考 [ultralytics/hub/example_datasets/coco8.zip](./example_datasets/coco8.zip) 的结构，在 `coco8/` 目录下放置 `coco8.yaml` 文件。然后使用如下命令将其压缩：
 
@@ -75,15 +75,15 @@ names:
   # 可根据需要添加更多类别
 ```
 
-登录 [Ultralytics HUB](https://platform.ultralytics.com/)，前往 ['Datasets' 选项卡](https://docs.ultralytics.com/platform)，点击 'Upload Dataset' 上传您的 ZIP 数据集。上传后，您可在训练 YOLO 模型前预览和检查数据集内容。
+登录 [Ultralytics Platform](https://platform.ultralytics.com/)，前往 ['Datasets' 页面](https://docs.ultralytics.com/platform)，点击 'Upload Dataset' 上传您的 ZIP 数据集。上传后，您可在同一工作流中预览、分析、标注并训练数据集。
 
 <p align="center">
-  <img width="100%" alt="Ultralytics HUB Dataset Upload Interface" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
+  <img width="100%" alt="Ultralytics Platform Dataset Upload Interface" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
 </p>
 
 ## 🚀 训练模型
 
-通过连接 Ultralytics HUB notebook 并使用 API 密钥，即可轻松开启 [模型训练](https://docs.ultralytics.com/modes/train)。Ultralytics HUB 提供便捷的 [云训练](https://docs.ultralytics.com/platform) 功能，让您无需本地硬件即可高效训练模型。
+使用 [Ultralytics Platform](https://platform.ultralytics.com/) 可在云端 GPU 上训练 YOLO 模型、流式同步远程训练指标、在项目中比较实验结果，并集中管理训练好的 `.pt` 模型。旧版 HUB notebook 工作流会在 HUB 下线过渡期内继续保留给现有用户，但新的训练工作应从 Platform 开始。
 
 <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" />
@@ -91,11 +91,11 @@ names:
 
 ## 🌐 部署到现实世界
 
-利用 [导出模式](https://docs.ultralytics.com/modes/export)，可将训练好的模型转换为多种格式，包括 [TensorFlow](https://www.tensorflow.org/)、[ONNX](https://onnx.ai/)、[OpenVINO](https://docs.openvino.ai/latest/index.html)、[CoreML](https://developer.apple.com/documentation/coreml)、[PaddlePaddle](https://www.paddlepaddle.org.cn/en) 等（支持 13+ 种格式）。下载 [Ultralytics App](https://www.ultralytics.com/app-install)，即可在 [iOS](https://apps.apple.com/app/ultralytics/id1583935240) 或 [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) 移动设备上直接运行您的模型！探索更多适用于边缘设备和云平台的 [模型部署选项](https://docs.ultralytics.com/guides/model-deployment-options)。
+利用 [Ultralytics Platform](https://platform.ultralytics.com/) 或 [导出模式](https://docs.ultralytics.com/modes/export)，可将训练好的模型部署到生产环境。Platform 支持浏览器预测、监控部署、全球专用端点，以及 17+ 种导出格式，包括 [TensorFlow](https://www.tensorflow.org/)、[ONNX](https://onnx.ai/)、[OpenVINO](https://docs.openvino.ai/latest/index.html)、[TensorRT](https://developer.nvidia.com/tensorrt)、[CoreML](https://developer.apple.com/documentation/coreml)、[PaddlePaddle](https://www.paddlepaddle.org.cn/en) 等。下载 [Ultralytics App](https://www.ultralytics.com/app-install)，即可在 [iOS](https://apps.apple.com/app/ultralytics/id1583935240) 或 [Android](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app) 移动设备上直接运行您的模型！探索更多适用于边缘设备和云平台的 [模型部署选项](https://docs.ultralytics.com/guides/model-deployment-options)。
 
 ## ❓ 有问题或疑问？
 
-如果您在使用 [Ultralytics HUB](https://platform.ultralytics.com/) 过程中遇到问题，[GitHub Issues](https://github.com/ultralytics/hub/issues) 是获取支持和反馈的首选渠道。点击 'New Issue'，提交您的建议、问题或遇到的挑战。我们致力于为您持续优化体验并提供高效解决方案！😃
+新项目请从 [Ultralytics Platform](https://platform.ultralytics.com/) 和 [Platform 文档](https://docs.ultralytics.com/platform) 开始。如果您需要在 2026 年 7 月底 HUB 下线前迁移现有工作，请创建 Platform 账号，并在 **Settings > Integrations > Ultralytics HUB** 粘贴 HUB API key，即可迁移所有 HUB 数据集和模型。[GitHub Issues](https://github.com/ultralytics/hub/issues) 可用于旧版 HUB 仓库支持和迁移问题反馈。
 
 ## 贡献
 

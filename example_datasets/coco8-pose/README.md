@@ -8,7 +8,9 @@ Welcome to the Ultralytics COCO8-pose dataset! This compact and versatile datase
 
 COCO8-pose is ideal for quickly testing and debugging [pose estimation](https://www.ultralytics.com/blog/pose-estimation-with-ultralytics-yolov8) models, experimenting with new [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) or [pose estimation approaches](https://arxiv.org/abs/1812.08008), and verifying the integrity of your [training pipelines](https://docs.ultralytics.com/modes/train). Its small size (just 8 images) makes it highly manageable, while still providing enough diversity for practical sanity checks before scaling up to larger [datasets](https://docs.ultralytics.com/datasets).
 
-This dataset is optimized for use with [Ultralytics HUB](https://hub.ultralytics.com/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11) models. Get started quickly by following the [Ultralytics HUB Quickstart guide](https://docs.ultralytics.com/platform).
+This dataset is optimized for use with [Ultralytics Platform](https://platform.ultralytics.com/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11) models. Get started quickly by following the [Ultralytics Platform guide](https://docs.ultralytics.com/platform).
+
+Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com/) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
 
 ## 🖼️ Sample Images and Annotations
 
@@ -20,11 +22,11 @@ Below are examples showcasing images from the COCO8-pose dataset, visualized in 
 
 Enhance your experience with COCO8-pose and Ultralytics tools using these valuable resources:
 
-- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/platform): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
+- [Ultralytics Platform](https://docs.ultralytics.com/platform): Step-by-step guide to uploading, annotating, training, exporting, and deploying models with datasets like COCO8-pose.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.
-- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report bugs, request features, or seek troubleshooting support.
+- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
 - [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11): Details on the latest YOLO model architecture and usage.
