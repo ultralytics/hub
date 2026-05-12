@@ -75,7 +75,7 @@ You can zip your dataset using:
 
 ```bash
 # Zip the dataset directory for upload
-zip -r my-dataset.zip my-dataset
+cd my-dataset && zip -r ../my-dataset.zip .
 ```
 
 See [example_datasets/coco8.zip](./example_datasets/coco8.zip) and the local `example_datasets/` directory for small YOLO-format archives. For more on dataset formats, visit the [Ultralytics datasets documentation](https://docs.ultralytics.com/datasets). Platform also accepts COCO JSON annotations, Ultralytics NDJSON exports, classification folder layouts, videos, and raw unannotated images for labeling in the annotation editor.

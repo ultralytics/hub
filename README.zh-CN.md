@@ -75,7 +75,7 @@ my-dataset.zip
 
 ```bash
 # 压缩数据集目录以便上传
-zip -r my-dataset.zip my-dataset
+cd my-dataset && zip -r ../my-dataset.zip .
 ```
 
 请参考 [example_datasets/coco8.zip](./example_datasets/coco8.zip) 和本地 `example_datasets/` 目录中的小型 YOLO 格式压缩包示例。更多数据集格式说明，请参阅 [Ultralytics 数据集文档](https://docs.ultralytics.com/datasets)。Platform 也支持 COCO JSON 标注、Ultralytics NDJSON 导出、分类文件夹布局、视频，以及用于在线标注的原始未标注图像。
