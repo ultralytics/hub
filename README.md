@@ -9,6 +9,7 @@
 [![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue)](https://discord.com/invite/ultralytics)
 [![Ultralytics Forums](https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue)](https://community.ultralytics.com/)
 [![Ultralytics Reddit](https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue)](https://reddit.com/r/ultralytics)
+
 </div>
 
 Welcome from the [Ultralytics](https://www.ultralytics.com/) team. This repository now provides legacy support for existing Ultralytics HUB users while they migrate datasets, models, and workflows to [Ultralytics Platform](https://platform.ultralytics.com), the end-to-end computer vision platform for data preparation, annotation, YOLO model training, export, deployment, and monitoring.

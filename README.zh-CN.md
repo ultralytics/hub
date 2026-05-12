@@ -9,6 +9,7 @@
 [![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue)](https://discord.com/invite/ultralytics)
 [![Ultralytics Forums](https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue)](https://community.ultralytics.com/)
 [![Ultralytics Reddit](https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue)](https://reddit.com/r/ultralytics)
+
 </div>
 
 来自 [Ultralytics](https://www.ultralytics.com/) 团队的问候。本仓库现在用于为现有 Ultralytics HUB 用户提供旧版支持，帮助他们将数据集、模型和工作流迁移到 [Ultralytics Platform](https://platform.ultralytics.com)。Platform 是端到端计算机视觉平台，覆盖数据准备、标注、YOLO 模型训练、导出、部署和监控。
