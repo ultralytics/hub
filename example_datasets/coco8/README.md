@@ -4,9 +4,11 @@
 
 ## 🚀 Introduction
 
-The [Ultralytics COCO8 dataset](https://docs.ultralytics.com/datasets/detect/coco8/) is a compact and versatile resource for [object detection](https://www.ultralytics.com/glossary/object-detection) tasks. It consists of the first 8 images from the popular [COCO train 2017 dataset](https://cocodataset.org/#home), split into 4 images for training and 4 for validation. This small dataset is ideal for **quick testing, debugging, and validating** your object detection pipelines within the [Ultralytics](https://www.ultralytics.com/) ecosystem.
+The [Ultralytics COCO8 dataset](https://docs.ultralytics.com/datasets/detect/coco8) is a compact and versatile resource for [object detection](https://www.ultralytics.com/glossary/object-detection) tasks. It consists of the first 8 images from the popular [COCO train 2017 dataset](https://cocodataset.org/#home), split into 4 images for training and 4 for validation. This small dataset is ideal for **quick testing, debugging, and validating** your object detection pipelines within the [Ultralytics](https://www.ultralytics.com/) ecosystem.
 
-COCO8 is especially useful for verifying your setup before scaling up to [larger datasets](https://docs.ultralytics.com/datasets/), making it a valuable **sanity check** for model training, data loading, and annotation workflows. Its manageable size ensures rapid iteration, whether you are experimenting with new detection strategies or ensuring compatibility with [Ultralytics HUB](https://hub.ultralytics.com/) and [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11/). To get started with training on COCO8, follow the [Ultralytics Quickstart guide](https://docs.ultralytics.com/quickstart/).
+COCO8 is especially useful for verifying your setup before scaling up to [larger datasets](https://docs.ultralytics.com/datasets), making it a valuable **sanity check** for model training, data loading, and annotation workflows. Its manageable size ensures rapid iteration, whether you are experimenting with new detection strategies or validating data in [Ultralytics Platform](https://platform.ultralytics.com) with [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11). To get started with training on COCO8, follow the [Ultralytics Quickstart guide](https://docs.ultralytics.com/quickstart).
+
+Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
 
 ## 🖼️ Sample Images and Annotations
 
@@ -18,22 +20,22 @@ COCO8 features diverse scenes with multiple objects, providing a realistic testi
 
 Enhance your experience with COCO8 and Ultralytics tools using these valuable resources:
 
-- [Ultralytics HUB Quickstart](https://docs.ultralytics.com/hub/quickstart/): Step-by-step guide to training models on datasets like COCO8 using Ultralytics HUB.
+- [Ultralytics Platform Datasets](https://docs.ultralytics.com/platform/data/datasets): Step-by-step guide to uploading, analyzing, and preparing datasets like COCO8.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
-- [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco/): Learn more about the full COCO dataset and its applications in computer vision.
-- [Ultralytics Models](https://docs.ultralytics.com/models/): Explore available YOLO models for object detection, segmentation, and more.
-- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report bugs, request features, or seek troubleshooting support.
+- [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
+- [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.
+- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
-- [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11/): Details on the latest YOLO model architecture and usage.
-- [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks/): Learn about supported computer vision tasks, including detection, segmentation, and more.
-- [Ultralytics Model Training Tips](https://docs.ultralytics.com/guides/model-training-tips/): Best practices for efficient and effective model training.
-- [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights/): Guidance on evaluating model performance and interpreting results.
-- [Ultralytics Model Deployment Options](https://docs.ultralytics.com/guides/model-deployment-options/): Explore deployment strategies for your trained models.
+- [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11): Details on the latest YOLO model architecture and usage.
+- [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks): Learn about supported computer vision tasks, including detection, segmentation, and more.
+- [Ultralytics Model Training Tips](https://docs.ultralytics.com/guides/model-training-tips): Best practices for efficient and effective model training.
+- [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.
+- [Ultralytics Model Deployment Options](https://docs.ultralytics.com/guides/model-deployment-options): Explore deployment strategies for your trained models.
 - [Ultralytics License Information](https://www.ultralytics.com/license): For commercial use or custom solutions, complete the form to obtain an Enterprise License.
 
 ## 🤝 Contributing
 
-Contributions are always welcome! If you would like to enhance the COCO8 dataset or its documentation, please review our [Contributing Guide](https://docs.ultralytics.com/help/contributing/) and submit a pull request. Thank you to all our contributors!
+Contributions are always welcome! If you would like to enhance the COCO8 dataset or its documentation, please review our [Contributing Guide](https://docs.ultralytics.com/help/contributing) and submit a pull request. Thank you to all our contributors!
 
 [![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
