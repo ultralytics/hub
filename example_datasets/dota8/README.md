@@ -8,15 +8,15 @@ The **Ultralytics DOTA8** dataset is a compact and versatile resource for **orie
 
 Despite its small size, DOTA8 offers a diverse set of scenarios, making it ideal for quickly verifying [training pipelines](https://docs.ultralytics.com/modes/train) and ensuring your setup is error-free before scaling up to larger datasets. Its simplicity enables fast iteration and serves as a reliable sanity check for model evaluation and development.
 
-DOTA8 is fully compatible with [Ultralytics Platform](https://platform.ultralytics.com/) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11) models, empowering users to streamline their OBB workflows from upload and annotation through training, export, and deployment.
+DOTA8 is fully compatible with [Ultralytics Platform](https://platform.ultralytics.com) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11) models, empowering users to streamline their OBB workflows from upload and annotation through training, export, and deployment.
 
-Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com/) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
+Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
 
 ## 📚 Resources
 
 Enhance your experience with DOTA8 and Ultralytics tools using these valuable resources:
 
-- [Ultralytics Platform](https://docs.ultralytics.com/platform): Step-by-step guide to uploading, annotating, training, exporting, and deploying models with datasets like DOTA8.
+- [Ultralytics Platform Datasets](https://docs.ultralytics.com/platform/data/datasets): Step-by-step guide to uploading, analyzing, and preparing datasets like DOTA8.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.

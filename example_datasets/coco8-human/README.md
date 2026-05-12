@@ -15,9 +15,9 @@ These 8 images are split evenly, with 4 images for training and 4 for validation
 
 Despite its small size, the `coco8-human` dataset provides enough diversity to effectively test [object detection](https://www.ultralytics.com/glossary/object-detection) [training pipelines](https://docs.ultralytics.com/modes/train) for errors or serve as a quick sanity check before scaling up to larger datasets such as the [full COCO dataset](https://docs.ultralytics.com/datasets/detect/coco). It is particularly useful for experimenting with models like [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11), [YOLOv8](https://docs.ultralytics.com/models/yolov8), and other [YOLO model versions](https://docs.ultralytics.com/models).
 
-This dataset is fully compatible with the Ultralytics framework and integrates seamlessly with [Ultralytics Platform](https://platform.ultralytics.com/), enabling fast prototyping, annotation, cloud training, export, and deployment.
+This dataset is fully compatible with the Ultralytics framework and integrates seamlessly with [Ultralytics Platform](https://platform.ultralytics.com), enabling fast prototyping, annotation, cloud training, export, and deployment.
 
-Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com/) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
+Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
 
 For more information on datasets, model training, and best practices, explore the [Ultralytics documentation](https://docs.ultralytics.com/), learn about [data annotation and collection](https://docs.ultralytics.com/guides/data-collection-and-annotation), or discover [object detection solutions](https://www.ultralytics.com/solutions/ai-in-automotive). If you're interested in the latest trends in computer vision, check out the [Ultralytics blog](https://www.ultralytics.com/blog/a-guide-to-deep-dive-into-object-detection-in-2025).
 
@@ -27,7 +27,7 @@ Join the discussion and get support from the community at the [Ultralytics Commu
 
 Enhance your experience with COCO8-human and Ultralytics tools using these valuable resources:
 
-- [Ultralytics Platform](https://docs.ultralytics.com/platform): Step-by-step guide to uploading, annotating, training, exporting, and deploying models with datasets like COCO8-human.
+- [Ultralytics Platform Datasets](https://docs.ultralytics.com/platform/data/datasets): Step-by-step guide to uploading, analyzing, and preparing datasets like COCO8-human.
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.

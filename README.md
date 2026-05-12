@@ -1,6 +1,6 @@
 <div align="center">
   <p>
-    <a href="https://platform.ultralytics.com/" target="_blank">
+    <a href="https://platform.ultralytics.com" target="_blank">
       <img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/dataset-screenshot.avif" alt="Ultralytics Platform dataset interface"></a>
   </p>
 
@@ -12,9 +12,9 @@
 [![Ultralytics Reddit](https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue)](https://reddit.com/r/ultralytics)
 <a href="https://colab.research.google.com/github/ultralytics/hub/blob/main/hub.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
-👋 Welcome from the [Ultralytics](https://www.ultralytics.com/) Team! [Ultralytics HUB](https://hub.ultralytics.com/) is being deprecated and will be wound down at the end of July 2026. New projects should use the new [Ultralytics Platform](https://platform.ultralytics.com/), the end-to-end computer vision platform for preparing data, annotating images, training YOLO models, exporting to production formats, and deploying monitored endpoints across global regions. 🚀
+👋 Welcome from the [Ultralytics](https://www.ultralytics.com/) Team! Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. New projects should use the new [Ultralytics Platform](https://platform.ultralytics.com), the end-to-end computer vision platform for preparing data, annotating images, training YOLO models, exporting to production formats, and deploying monitored endpoints across global regions. 🚀
 
-Create a [Platform account](https://platform.ultralytics.com/) to start new work. Existing HUB users can migrate all HUB datasets and models directly by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation. Explore the [Ultralytics Platform documentation](https://docs.ultralytics.com/platform), open [GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose) for legacy HUB repository support, and join our [Discord community](https://discord.com/invite/ultralytics) for discussions and collaboration!
+Create a [Platform account](https://platform.ultralytics.com) to start new work. Existing HUB users can migrate all HUB datasets and models directly by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation. Explore the [Ultralytics Platform documentation](https://docs.ultralytics.com/platform/quickstart), open [GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose) for legacy HUB repository support, and join our [Discord community](https://discord.com/invite/ultralytics) for discussions and collaboration!
 
 <br>
 <div align="center">
@@ -41,11 +41,11 @@ Ultralytics Platform datasets follow the same structure and labeling conventions
 - Review dataset best practices in the [Ultralytics datasets documentation](https://docs.ultralytics.com/datasets).
 - Learn about dataset annotation and preparation in the [data collection and annotation guide](https://docs.ultralytics.com/guides/data-collection-and-annotation).
 - Explore open-source datasets such as [COCO](https://docs.ultralytics.com/datasets/detect/coco), [LVIS](https://docs.ultralytics.com/datasets/detect/lvis), and [ImageNet](https://docs.ultralytics.com/datasets/classify/imagenet).
-- Upload ZIP, TAR, image, video, or NDJSON data to [Ultralytics Platform](https://platform.ultralytics.com/) for automatic processing, analysis, manual annotation, and Smart Annotation.
+- Upload ZIP, TAR, image, video, or NDJSON data to [Ultralytics Platform](https://platform.ultralytics.com) for automatic processing, analysis, manual annotation, and Smart Annotation.
 
 ### Dataset Preparation
 
-Place your dataset YAML file in the root directory of your dataset. The YAML file, its directory, and the zipped archive should all share the same name for easy upload to [Ultralytics Platform](https://platform.ultralytics.com/). For example, for a dataset called `coco8`, your structure should look like:
+Place your dataset YAML file in the root directory of your dataset. The YAML file, its directory, and the zipped archive should all share the same name for easy upload to [Ultralytics Platform](https://platform.ultralytics.com). For example, for a dataset called `coco8`, your structure should look like:
 
 - `coco8/`
   - `coco8.yaml`
@@ -86,7 +86,7 @@ names:
   # Add more classes as needed
 ```
 
-Upload your zipped dataset to [Ultralytics Platform](https://platform.ultralytics.com/) by logging in, navigating to the [Datasets page](https://docs.ultralytics.com/platform), and selecting 'Upload Dataset'. You can preview, analyze, annotate, and train from the dataset in the same workflow.
+Upload your zipped dataset to [Ultralytics Platform](https://platform.ultralytics.com) by logging in, navigating to the [Datasets page](https://docs.ultralytics.com/platform/data/datasets), and selecting 'Upload Dataset'. You can preview, analyze, annotate, and train from the dataset in the same workflow.
 
 <p align="center">
   <img width="100%" alt="Ultralytics Platform Dataset Upload Interface" src="https://user-images.githubusercontent.com/26833433/216763338-9a8812c8-a4e5-4362-8102-40dad7818396.png">
@@ -94,7 +94,7 @@ Upload your zipped dataset to [Ultralytics Platform](https://platform.ultralytic
 
 ## 🚀 Train a Model
 
-Use [Ultralytics Platform](https://platform.ultralytics.com/) to train YOLO models on cloud GPUs, stream remote-training metrics, compare experiments inside projects, and manage trained `.pt` models in one place. Legacy HUB notebook workflows remain available in this repository for existing users during the wind-down period, but new training should start on Platform.
+Use [Ultralytics Platform](https://platform.ultralytics.com) to train YOLO models on cloud GPUs, stream remote-training metrics, compare experiments inside projects, and manage trained `.pt` models in one place. Legacy HUB notebook workflows remain available in this repository for existing users during the wind-down period, but new training should start on Platform.
 
 - Discover [model training tips](https://docs.ultralytics.com/guides/model-training-tips) for best practices.
 - Learn about [hyperparameter tuning](https://docs.ultralytics.com/guides/hyperparameter-tuning) to optimize your results.
@@ -106,7 +106,7 @@ Use [Ultralytics Platform](https://platform.ultralytics.com/) to train YOLO mode
 
 ## 🌐 Deploy to the Real World
 
-After training, deploy your models to production using [Ultralytics Platform](https://platform.ultralytics.com/) or the [Export mode](https://docs.ultralytics.com/modes/export). Platform supports browser prediction, monitored deployments, global dedicated endpoints, and 17+ export formats, including [TensorFlow](https://www.tensorflow.org/), [ONNX](https://onnx.ai/), [OpenVINO](https://docs.openvino.ai/latest/index.html), [TensorRT](https://developer.nvidia.com/tensorrt), [CoreML](https://developer.apple.com/documentation/coreml), [PaddlePaddle](https://www.paddlepaddle.org.cn/en), and more.
+After training, deploy your models to production using [Ultralytics Platform](https://platform.ultralytics.com) or the [Export mode](https://docs.ultralytics.com/modes/export). Platform supports browser prediction, monitored deployments, global dedicated endpoints, and 17+ export formats, including [TensorFlow](https://www.tensorflow.org/), [ONNX](https://onnx.ai/), [OpenVINO](https://docs.openvino.ai/latest/index.html), [TensorRT](https://developer.nvidia.com/tensorrt), [CoreML](https://developer.apple.com/documentation/coreml), [PaddlePaddle](https://www.paddlepaddle.org.cn/en), and more.
 
 - Learn about [model deployment options](https://docs.ultralytics.com/guides/model-deployment-options) for edge and cloud.
 - Explore [optimizing OpenVINO latency vs throughput](https://docs.ultralytics.com/guides/optimizing-openvino-latency-vs-throughput-modes) for real-time inference.
@@ -114,7 +114,7 @@ After training, deploy your models to production using [Ultralytics Platform](ht
 
 ## ❓ Have Issues or Questions?
 
-For new work, start with [Ultralytics Platform](https://platform.ultralytics.com/) and the [Platform documentation](https://docs.ultralytics.com/platform). If you need to move existing HUB work before the end of July 2026 wind-down, create a Platform account and paste your HUB API key into **Settings > Integrations > Ultralytics HUB** to migrate all HUB datasets and models.
+For new work, start with [Ultralytics Platform](https://platform.ultralytics.com) and the [Platform quickstart](https://docs.ultralytics.com/platform/quickstart). If you need to move existing HUB work before the end of July 2026 wind-down, create a Platform account and paste your HUB API key into **Settings > Integrations > Ultralytics HUB** to migrate all HUB datasets and models.
 
 - Use [GitHub Issues](https://github.com/ultralytics/hub/issues) for legacy HUB repository support and migration questions.
 - Visit the [Ultralytics help center](https://docs.ultralytics.com/help/FAQ) for quick answers.
