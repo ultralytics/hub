@@ -42,10 +42,26 @@ jobs:
         run: |
           yolo checks
           uv pip list
-      - name: Login to HUB
+      - name: Check HUB credentials
+        id: hub_secrets
+        shell: bash
         run: |
-          yolo login ${{ env.API_KEY }}
+          if [[ -n "${API_KEY}" && -n "${MODEL_ID}" ]]; then
+            echo "available=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "available=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Skipping HUB API integration tests because HUB secrets are unavailable."
+            if [[ "${GITHUB_EVENT_NAME}" != "pull_request" ]]; then
+              echo "::error::ULTRALYTICS_HUB_API_KEY and ULTRALYTICS_HUB_MODEL_ID are required for ${GITHUB_EVENT_NAME} runs."
+              exit 1
+            fi
+          fi
+      - name: Login to HUB
+        if: steps.hub_secrets.outputs.available == 'true'
+        run: |
+          yolo login "$API_KEY"
       - name: Test HUB training
+        if: steps.hub_secrets.outputs.available == 'true'
         continue-on-error: false
         shell: python
         run: |
@@ -56,6 +72,7 @@ jobs:
           model = YOLO('https://hub.ultralytics.com/models/' + model_id)
           model.train()
       - name: Test HUB inference API
+        if: steps.hub_secrets.outputs.available == 'true'
         shell: python
         run: |
           import os
@@ -71,48 +88,9 @@ jobs:
           response.raise_for_status()  # ensure we got a successful response
           print(json.dumps(response.json(), indent=2))
       - name: Test HUB export
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        shell: python
+        if: steps.hub_secrets.outputs.available == 'true' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         run: |
-          import os
-          import time
-          from ultralytics import YOLO, checks, hub
-          
-          checks()
-          model_id = os.environ["MODEL_ID"]
-          success = []
-          backoff_times = [30, 60, 90, 120, 240, 360]  # exponential backoff waits in seconds
-          for f in (
-              "torchscript",
-              "onnx",
-              "openvino",
-              "coreml",
-              "saved_model",
-              "pb",
-              "tflite",
-              "edgetpu",
-              "tfjs",
-              "paddle",
-              "ultralytics_tflite",
-              "ultralytics_coreml",
-              "ncnn",
-              "engine",
-          ):
-              print(f"Starting {f} export... ", end="")
-              hub.export_model(model_id, format=f)
-              for i, wait_time in enumerate(backoff_times):
-                  time.sleep(wait_time)  # wait for export to complete
-                  try:
-                      success.append(hub.get_export(model_id, format=f)["success"])
-                      print("done ✅" if success[-1] else f"Error ❌ {f}")
-                      break
-                  except Exception as e:
-                      if i == (len(backoff_times) - 1):
-                          success.append(False)
-                          print(f"Error ❌ {f} export {e}")
-                      else:
-                          print(f"waiting {backoff_times[i + 1]}s", flush=True)
-          assert all(success)
+          python .github/scripts/run_hub_exports.py
       - name: Notify on failure
         if: (cancelled() || failure()) && github.repository == 'ultralytics/hub' && (github.event_name == 'schedule' || github.event_name == 'push') && github.run_attempt == '1'
         uses: slackapi/slack-github-action@v3.0.3
