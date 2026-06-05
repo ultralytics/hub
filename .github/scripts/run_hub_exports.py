@@ -10,7 +10,6 @@ from dataclasses import dataclass
 
 from ultralytics import checks, hub
 
-
 POLL_DELAYS = (30, 60, 90, 120, 240, 360)
 REQUIRED_FORMATS = (
     "torchscript",
@@ -97,17 +96,10 @@ def main() -> None:
 
     write_summary(results)
 
-    failed_required = [
-        result for result in results if result.required and not result.ok
-    ]
-    failed_optional = [
-        result for result in results if not result.required and not result.ok
-    ]
+    failed_required = [result for result in results if result.required and not result.ok]
+    failed_optional = [result for result in results if not result.required and not result.ok]
     for result in failed_optional:
-        print(
-            f"::warning::Optional HUB export {result.name} failed after "
-            f"{result.attempts} attempts: {result.detail}"
-        )
+        print(f"::warning::Optional HUB export {result.name} failed after {result.attempts} attempts: {result.detail}")
     if failed_required:
         names = ", ".join(result.name for result in failed_required)
         raise AssertionError(f"Required HUB exports failed: {names}")
