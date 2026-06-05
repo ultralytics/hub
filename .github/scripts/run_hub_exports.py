@@ -11,6 +11,7 @@ from dataclasses import dataclass
 from ultralytics import checks, hub
 
 POLL_DELAYS = (30, 60, 90, 120, 240, 360)
+TOTAL_TIMEOUT_SECONDS = 55 * 60
 REQUIRED_FORMATS = (
     "torchscript",
     "onnx",
@@ -37,8 +38,13 @@ class ExportResult:
     detail: str
 
 
-def poll_export(model_id: str, name: str, required: bool) -> ExportResult:
+def poll_export(model_id: str, name: str, required: bool, deadline: float) -> ExportResult:
     """Start one export and poll until it succeeds or exhausts the retry window."""
+    if time.monotonic() >= deadline:
+        detail = "skipped because the CI timeout budget was exhausted"
+        print(f"{name}: {detail}", flush=True)
+        return ExportResult(name, required, False, 0, detail)
+
     print(f"Starting {name} export...", flush=True)
     try:
         hub.export_model(model_id, format=name)
@@ -47,6 +53,10 @@ def poll_export(model_id: str, name: str, required: bool) -> ExportResult:
 
     detail = "no status returned"
     for attempt, delay in enumerate(POLL_DELAYS, start=1):
+        if time.monotonic() + delay >= deadline:
+            detail = "stopped before the CI timeout budget was exhausted"
+            print(f"{name}: {detail}", flush=True)
+            return ExportResult(name, required, False, attempt - 1, detail)
         time.sleep(delay)
         try:
             export = hub.get_export(model_id, format=name)
@@ -90,8 +100,9 @@ def write_summary(results: list[ExportResult]) -> None:
 def main() -> None:
     checks()
     model_id = os.environ["MODEL_ID"]
-    results = [poll_export(model_id, name, True) for name in REQUIRED_FORMATS] + [
-        poll_export(model_id, name, False) for name in OPTIONAL_FORMATS
+    deadline = time.monotonic() + TOTAL_TIMEOUT_SECONDS
+    results = [poll_export(model_id, name, True, deadline) for name in REQUIRED_FORMATS] + [
+        poll_export(model_id, name, False, deadline) for name in OPTIONAL_FORMATS
     ]
 
     write_summary(results)
