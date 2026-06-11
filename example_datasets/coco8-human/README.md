@@ -34,7 +34,6 @@ Enhance your experience with COCO8-human and Ultralytics tools using these valua
 - [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
-- [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11): Details on the latest YOLO model architecture and usage.
 - [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks): Learn about supported computer vision tasks, including detection, segmentation, and more.
 - [Ultralytics Model Training Tips](https://docs.ultralytics.com/guides/model-training-tips): Best practices for efficient and effective model training.
 - [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.
@@ -43,6 +42,6 @@ Enhance your experience with COCO8-human and Ultralytics tools using these valua
 
 ## 🚀 Contributions
 
-We welcome and value contributions from the community! If you'd like to improve the `coco8-human` dataset, suggest new features, or report issues, please visit the [Ultralytics GitHub repository](https://github.com/ultralytics/ultralytics) to submit a pull request or open an issue. Your feedback helps us make Ultralytics tools better for everyone.
+We welcome and value contributions from the community! If you'd like to improve the `coco8-human` dataset, suggest new features, or report issues, please review our [Contributing Guide](https://docs.ultralytics.com/help/contributing) and submit a pull request. Your feedback helps us make Ultralytics tools better for everyone.
 
 [![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
