@@ -40,9 +40,7 @@ class ExportResult:
     detail: str
 
 
-def poll_export(
-    model_id: str, name: str, required: bool, deadline: float
-) -> ExportResult:
+def poll_export(model_id: str, name: str, required: bool, deadline: float) -> ExportResult:
     """Start one export and poll until it succeeds or exhausts the retry window."""
     if time.monotonic() >= deadline:
         detail = "skipped because the CI timeout budget was exhausted"
@@ -106,22 +104,16 @@ def main() -> None:
     checks()
     model_id = os.environ["MODEL_ID"]
     deadline = time.monotonic() + TOTAL_TIMEOUT_SECONDS
-    results = [
-        poll_export(model_id, name, True, deadline) for name in REQUIRED_FORMATS
-    ] + [poll_export(model_id, name, False, deadline) for name in OPTIONAL_FORMATS]
+    results = [poll_export(model_id, name, True, deadline) for name in REQUIRED_FORMATS] + [
+        poll_export(model_id, name, False, deadline) for name in OPTIONAL_FORMATS
+    ]
 
     write_summary(results)
 
-    failed_required = [
-        result for result in results if result.required and not result.ok
-    ]
-    failed_optional = [
-        result for result in results if not result.required and not result.ok
-    ]
+    failed_required = [result for result in results if result.required and not result.ok]
+    failed_optional = [result for result in results if not result.required and not result.ok]
     for result in failed_optional:
-        print(
-            f"::warning::Optional HUB export {result.name} failed after {result.attempts} attempts: {result.detail}"
-        )
+        print(f"::warning::Optional HUB export {result.name} failed after {result.attempts} attempts: {result.detail}")
     if failed_required:
         names = ", ".join(result.name for result in failed_required)
         raise AssertionError(f"Required HUB exports failed: {names}")
