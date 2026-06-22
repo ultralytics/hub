@@ -8,7 +8,7 @@ Welcome to the Ultralytics COCO8-pose dataset! This compact and versatile datase
 
 COCO8-pose is ideal for quickly testing and debugging [pose estimation](https://www.ultralytics.com/blog/pose-estimation-with-ultralytics-yolov8) models, experimenting with new [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) or [pose estimation approaches](https://arxiv.org/abs/1812.08008), and verifying the integrity of your [training pipelines](https://docs.ultralytics.com/modes/train). Its small size (just 8 images) makes it highly manageable, while still providing enough diversity for practical sanity checks before scaling up to larger [datasets](https://docs.ultralytics.com/datasets).
 
-This dataset is optimized for use with [Ultralytics Platform](https://platform.ultralytics.com) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11) models. Get started quickly by following the [Ultralytics Platform quickstart](https://docs.ultralytics.com/platform/quickstart).
+This dataset is optimized for use with [Ultralytics Platform](https://platform.ultralytics.com) and [Ultralytics YOLO](https://docs.ultralytics.com/models) models. Get started quickly by following the [Ultralytics Platform quickstart](https://docs.ultralytics.com/platform/quickstart).
 
 Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
 
@@ -29,7 +29,6 @@ Enhance your experience with COCO8-pose and Ultralytics tools using these valuab
 - [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
-- [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11): Details on the latest YOLO model architecture and usage.
 - [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks): Learn about supported computer vision tasks, including detection, segmentation, and more.
 - [Ultralytics Model Training Tips](https://docs.ultralytics.com/guides/model-training-tips): Best practices for efficient and effective model training.
 - [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.

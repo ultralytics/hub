@@ -27,7 +27,6 @@ Enhance your experience with COCO8 and Ultralytics tools using these valuable re
 - [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
-- [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11): Details on the latest YOLO model architecture and usage.
 - [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks): Learn about supported computer vision tasks, including detection, segmentation, and more.
 - [Ultralytics Model Training Tips](https://docs.ultralytics.com/guides/model-training-tips): Best practices for efficient and effective model training.
 - [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.

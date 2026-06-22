@@ -31,6 +31,8 @@ OPTIONAL_FORMATS = ("edgetpu", "engine")
 
 @dataclass
 class ExportResult:
+    """Result from polling one HUB export format."""
+
     name: str
     required: bool
     ok: bool
@@ -98,6 +100,7 @@ def write_summary(results: list[ExportResult]) -> None:
 
 
 def main() -> None:
+    """Run all HUB export checks and fail when required formats fail."""
     checks()
     model_id = os.environ["MODEL_ID"]
     deadline = time.monotonic() + TOTAL_TIMEOUT_SECONDS

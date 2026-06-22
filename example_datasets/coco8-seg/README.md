@@ -8,7 +8,7 @@ The **Ultralytics COCO8-Seg** dataset is a compact, easy-to-use resource for **i
 
 With just 8 images, COCO8-Seg is highly manageable, making it perfect for verifying [training pipelines](https://docs.ultralytics.com/guides/model-training-tips) and catching potential issues before scaling up to [larger datasets](https://docs.ultralytics.com/datasets). It serves as a practical sanity check for model development and experimentation.
 
-COCO8-Seg is designed for seamless integration with [Ultralytics Platform](https://platform.ultralytics.com) and the latest [Ultralytics YOLO](https://docs.ultralytics.com/models/yolo11) models. For a deeper understanding of instance segmentation, check out our blog post: [What is Instance Segmentation? A Quick Guide](https://www.ultralytics.com/blog/what-is-instance-segmentation-a-quick-guide).
+COCO8-Seg is designed for seamless integration with [Ultralytics Platform](https://platform.ultralytics.com) and [Ultralytics YOLO](https://docs.ultralytics.com/models) models. For a deeper understanding of instance segmentation, check out our blog post: [What is Instance Segmentation? A Quick Guide](https://www.ultralytics.com/blog/what-is-instance-segmentation-a-quick-guide).
 
 Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
 
@@ -29,7 +29,6 @@ Enhance your experience with COCO8-seg and Ultralytics tools using these valuabl
 - [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
-- [Ultralytics YOLO11 Model Page](https://docs.ultralytics.com/models/yolo11): Details on the latest YOLO model architecture and usage.
 - [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks): Learn about supported computer vision tasks, including detection, segmentation, and more.
 - [Ultralytics Model Training Tips](https://docs.ultralytics.com/guides/model-training-tips): Best practices for efficient and effective model training.
 - [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.
@@ -38,6 +37,6 @@ Enhance your experience with COCO8-seg and Ultralytics tools using these valuabl
 
 ## 🤝 Contributing
 
-Contributions to improve the COCO8-Seg dataset or its documentation are always welcome! Please see the [Ultralytics repository](https://github.com/ultralytics/ultralytics) for contribution guidelines. Thank you for supporting open-source computer vision and helping advance the field!
+Contributions to improve the COCO8-Seg dataset or its documentation are always welcome! Please review our [Contributing Guide](https://docs.ultralytics.com/help/contributing) and submit a pull request. Thank you for supporting open-source computer vision and helping advance the field!
 
 [![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
