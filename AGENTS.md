@@ -46,15 +46,15 @@ python .github/scripts/run_hub_exports.py # export sweep, reads MODEL_ID env var
 # Format/lint (mirrors Ultralytics Actions; source of truth: action.yml in ultralytics/actions)
 ruff check --fix --unsafe-fixes --extend-select F,I,D,UP,RUF,FA --target-version py39 --ignore D100,D104,D203,D205,D212,D213,D401,D406,D407,D413,RUF001,RUF002,RUF012 .
 ruff format --line-length 120 .
-npx prettier --write --print-width 120 "**/*.{yml,yaml,json}"
+npx prettier --write --print-width 120 "**/*.{md,yml,yaml,json}"
 ```
 
 - CI matrix (`.github/workflows/ci.yml`): ubuntu-latest, Python 3.11 only.
-- There is no unit-test suite, coverage, package build, or in-repo lint config — the only "tests" are the live HUB API steps in `ci.yml`.
+- There is no unit-test suite, coverage, package build, or in-repo lint config — CI "tests" are the live HUB API steps in `ci.yml` plus the nightly lychee link checks in `links.yml`.
 
 ## Architecture
 
-This is the legacy support repository for Ultralytics HUB (deprecated, winding down at the end of July 2026) and contains no Python package: just the READMEs, the `hub.ipynb` Colab notebook, YOLO-format sample archives in `example_datasets/`, `requirements.txt` (single dependency: `ultralytics`), and `.github/`. There is no release or publish pipeline — nothing is versioned or shipped from here.
+This is the legacy support repository for Ultralytics HUB (deprecated, winding down at the end of July 2026) and contains no Python package: just the READMEs, the `hub.ipynb` Colab notebook, sample datasets in `example_datasets/` (zips plus extracted directories: YOLO-format coco8/coco8-human/coco8-pose/coco8-seg/dota8 and a classification folder layout in imagenet10), `requirements.txt` (single dependency: `ultralytics`), and `.github/`. There is no release or publish pipeline — nothing is versioned or shipped from here.
 
 CI (`ci.yml`, name "HUB CI") runs on push/PR to `main`, `workflow_dispatch`, and a nightly 02:00 UTC cron. Its test steps call the live HUB API (reset + train a model, inference API request) and are gated on repo secrets: missing secrets skip the steps on `pull_request` (e.g. fork PRs) but fail the run for all other events. The export sweep (`.github/scripts/run_hub_exports.py`) runs only on `schedule`/`workflow_dispatch`, and a Slack alert fires only on first-attempt `schedule`/`push` failures in `ultralytics/hub`.
 
