@@ -113,7 +113,7 @@ names:
 - 在项目中点击 **Train Model**，选择数据集、官方 YOLO 模型或您自己的已训练模型，设置 epochs 和 image size，然后选择 GPU。
 - 训练运行时可查看实时图表、控制台日志和系统指标。
 - 训练完成后，最佳 checkpoint 可用于下载、导出、浏览器预测和部署。
-- 使用 `ultralytics>=8.4.35` 和 API key，可在本地训练并将指标流式同步到 Platform。
+- 使用 `ultralytics>=8.4.83` 和 API key，可在本地训练并将指标流式同步到 Platform。
 - 阅读 [模型训练技巧](https://docs.ultralytics.com/guides/model-training-tips) 了解最佳实践。
 - 学习 [超参数调优](https://docs.ultralytics.com/guides/hyperparameter-tuning) 以优化结果。
 - 探索 [实验跟踪集成](https://docs.ultralytics.com/integrations/mlflow)，支持可复现研究。

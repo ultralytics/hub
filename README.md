@@ -113,7 +113,7 @@ Use [Ultralytics Platform](https://platform.ultralytics.com) to train YOLO model
 - Click **Train Model** from a project, select a dataset, choose an official YOLO model or one of your trained models, set epochs and image size, and select a GPU.
 - Monitor real-time charts, console logs, and system metrics while training runs.
 - Use the best checkpoint after training for download, export, browser prediction, and deployment.
-- Train locally with `ultralytics>=8.4.35` and stream metrics to Platform using your API key.
+- Train locally with `ultralytics>=8.4.83` and stream metrics to Platform using your API key.
 - Discover [model training tips](https://docs.ultralytics.com/guides/model-training-tips) for best practices.
 - Learn about [hyperparameter tuning](https://docs.ultralytics.com/guides/hyperparameter-tuning) to optimize your results.
 - Explore [experiment tracking integrations](https://docs.ultralytics.com/integrations/mlflow) for reproducible research.
