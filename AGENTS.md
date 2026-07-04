@@ -40,8 +40,8 @@ uv pip install --system ultralytics hub-sdk --extra-index-url https://download.p
 yolo checks
 
 # CI integration tests (live HUB API, need ULTRALYTICS_HUB_API_KEY + ULTRALYTICS_HUB_MODEL_ID)
-yolo login "$API_KEY"                                    # HUB login
-python .github/scripts/run_hub_exports.py                # export sweep, reads MODEL_ID env var
+yolo login "$API_KEY"                     # HUB login
+python .github/scripts/run_hub_exports.py # export sweep, reads MODEL_ID env var
 
 # Format/lint (mirrors Ultralytics Actions; source of truth: action.yml in ultralytics/actions)
 ruff check --fix --unsafe-fixes --extend-select F,I,D,UP,RUF,FA --target-version py39 --ignore D100,D104,D203,D205,D212,D213,D401,D406,D407,D413,RUF001,RUF002,RUF012 .
