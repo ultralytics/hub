@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://platform.ultralytics.com" target="_blank">
-    <img width="100%" src="https://raw.githubusercontent.com/ultralytics/assets/main/yolov8/banner-yolov8.png" alt="Ultralytics Platform">
+    <img width="320" src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" alt="Ultralytics">
   </a>
 
 # Ultralytics HUB 现已升级为 Ultralytics Platform 🚀
