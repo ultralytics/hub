@@ -20,7 +20,7 @@
 Meet the new **Ultralytics Platform**—the faster, more powerful home for the entire computer vision lifecycle. Go from raw images to production endpoints in one beautiful workspace, with a meaningful **Free plan** that makes advanced computer vision accessible to everyone.
 
 <p align="center">
-  <a href="https://platform.ultralytics.com"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/dataset-screenshot.avif" alt="Ultralytics Platform dataset workspace"></a>
+  <a href="https://platform.ultralytics.com"><img width="100%" src="https://cdn.ul.run/i/2990f4be3ba5e24b885f6a1ea278a793.avif" alt="Ultralytics Platform dataset workspace"></a>
 </p>
 
 ## ✨ Annotate
@@ -28,7 +28,7 @@ Meet the new **Ultralytics Platform**—the faster, more powerful home for the e
 Turn raw data into training-ready datasets without leaving your browser. Draw boxes, polygons, keypoints, and oriented boxes—or accelerate labeling with Smart Annotation powered by SAM and YOLO models.
 
 <p align="center">
-  <a href="https://docs.ultralytics.com/platform/data/annotation"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/platform-annotate-editor-toolbar-with-canvas.avif" alt="Ultralytics Platform annotation editor"></a>
+  <a href="https://docs.ultralytics.com/platform/data/annotation"><img width="100%" src="https://cdn.ul.run/i/fd13a4b1f4b8fad9ed5e736030a070cf.avif" alt="Ultralytics Platform annotation editor"></a>
 </p>
 
 ## 🚀 Train
@@ -36,7 +36,7 @@ Turn raw data into training-ready datasets without leaving your browser. Draw bo
 Launch cloud training in a few clicks or connect your own hardware. Compare experiments, stream live metrics and logs, and keep every model organized inside collaborative projects.
 
 <p align="center">
-  <a href="https://docs.ultralytics.com/platform/train"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/platform-train-overview.avif" alt="Ultralytics Platform model training"></a>
+  <a href="https://docs.ultralytics.com/platform/train"><img width="100%" src="https://cdn.ul.run/i/4ec82b7ca5d7c33caab98e08da93ea05.avif" alt="Ultralytics Platform model training"></a>
 </p>
 
 ## 🌍 Deploy
@@ -44,7 +44,7 @@ Launch cloud training in a few clicks or connect your own hardware. Compare expe
 Test predictions in the browser, export models for production, and launch monitored inference endpoints worldwide. Move from trained weights to a live API without building the infrastructure yourself.
 
 <p align="center">
-  <a href="https://docs.ultralytics.com/platform/deploy"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/deploy-page-world-map-with-overview-cards.avif" alt="Ultralytics Platform deployment dashboard"></a>
+  <a href="https://docs.ultralytics.com/platform/deploy"><img width="100%" src="https://cdn.ul.run/i/e922afb2e2f7573c320821ec4fa62537.avif" alt="Ultralytics Platform deployment dashboard"></a>
 </p>
 
 ## 🆓 Start Building for Free

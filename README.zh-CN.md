@@ -19,7 +19,7 @@
 欢迎使用全新的 **Ultralytics Platform**——覆盖完整计算机视觉生命周期的更快、更强大的一站式平台。通过一个精美的工作区，将原始图像转化为生产级推理端点；实用的 **Free 方案**让每个人都能轻松开始。
 
 <p align="center">
-  <a href="https://platform.ultralytics.com"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/dataset-screenshot.avif" alt="Ultralytics Platform 数据集工作区"></a>
+  <a href="https://platform.ultralytics.com"><img width="100%" src="https://cdn.ul.run/i/2990f4be3ba5e24b885f6a1ea278a793.avif" alt="Ultralytics Platform 数据集工作区"></a>
 </p>
 
 ## ✨ 标注
@@ -27,7 +27,7 @@
 直接在浏览器中将原始数据转化为可训练的数据集。绘制边界框、多边形、关键点和旋转框，或使用由 SAM 和 YOLO 模型驱动的 Smart Annotation 加速标注。
 
 <p align="center">
-  <a href="https://docs.ultralytics.com/zh/platform/data/annotation"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/platform-annotate-editor-toolbar-with-canvas.avif" alt="Ultralytics Platform 标注编辑器"></a>
+  <a href="https://docs.ultralytics.com/zh/platform/data/annotation"><img width="100%" src="https://cdn.ul.run/i/fd13a4b1f4b8fad9ed5e736030a070cf.avif" alt="Ultralytics Platform 标注编辑器"></a>
 </p>
 
 ## 🚀 训练
@@ -35,7 +35,7 @@
 只需点击几下即可启动云端训练，也可连接自有硬件。比较实验、实时查看指标与日志，并在协作项目中有序管理每个模型。
 
 <p align="center">
-  <a href="https://docs.ultralytics.com/zh/platform/train"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/platform-train-overview.avif" alt="Ultralytics Platform 模型训练"></a>
+  <a href="https://docs.ultralytics.com/zh/platform/train"><img width="100%" src="https://cdn.ul.run/i/4ec82b7ca5d7c33caab98e08da93ea05.avif" alt="Ultralytics Platform 模型训练"></a>
 </p>
 
 ## 🌍 部署
@@ -43,7 +43,7 @@
 在浏览器中测试预测、将模型导出到生产环境，并在全球启动带监控的推理端点。无需自行搭建基础设施，即可从训练权重快速获得在线 API。
 
 <p align="center">
-  <a href="https://docs.ultralytics.com/zh/platform/deploy"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/deploy-page-world-map-with-overview-cards.avif" alt="Ultralytics Platform 部署仪表板"></a>
+  <a href="https://docs.ultralytics.com/zh/platform/deploy"><img width="100%" src="https://cdn.ul.run/i/e922afb2e2f7573c320821ec4fa62537.avif" alt="Ultralytics Platform 部署仪表板"></a>
 </p>
 
 ## 🆓 免费开始构建
