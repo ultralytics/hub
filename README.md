@@ -14,18 +14,16 @@ Legacy HUB API keys do not work with Platform. Sign in to your migrated Platform
 
 ## A More Capable Platform, Free to Start
 
-Ultralytics Platform is the direct replacement for HUB and delivers a substantially more capable workflow in one workspace. The Free plan lets individuals get started without a subscription, with current plan limits and optional usage-based credits documented on Platform.
+Ultralytics Platform is the direct replacement for HUB and delivers a substantially more capable workflow in one workspace. A meaningful Free plan lets individuals get started, while [Platform pricing](https://www.ultralytics.com/pricing) remains the source of truth for current limits and optional usage-based credits.
 
-The **$0/month Free plan** provides meaningful end-to-end functionality, including public and private projects and datasets, model management, Smart Annotation, cloud training and deployment access, standard model exports, and community support. No credit card is required; compute-intensive operations use credits. See [Platform pricing](https://www.ultralytics.com/pricing) for current limits.
-
-| Capability | Ultralytics Platform improvement                                                                                                             |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Data       | Upload images, videos, ZIP, TAR, and NDJSON datasets with automatic validation, statistics, and regional data residency in the US, EU, or AP |
-| Annotation | Label supported YOLO annotation task types with dedicated tools, custom pose skeletons, and Smart Annotation powered by SAM and YOLO models  |
-| Training   | Train on cloud GPUs or your own hardware while streaming real-time metrics, logs, and system statistics into organized projects              |
-| Models     | Test predictions in the browser and export to all supported deployment formats, including ONNX, TensorRT, CoreML, LiteRT, and OpenVINO       |
-| Deployment | Launch dedicated, monitored inference endpoints in global regions with scale-to-zero behavior                                                |
-| Automation | Use new workspace-scoped Platform API keys and the full REST API for datasets, models, training, exports, and deployments                    |
+| Capability | Ultralytics Platform improvement                                                                                      |
+| ---------- | --------------------------------------------------------------------------------------------------------------------- |
+| Data       | Upload and validate rich computer vision datasets with built-in statistics and workspace organization                 |
+| Annotation | Label supported YOLO annotation task types with dedicated tools and Smart Annotation powered by SAM and YOLO models   |
+| Training   | Train on cloud GPUs or your own hardware while streaming metrics, logs, and system statistics into organized projects |
+| Models     | Test predictions in the browser and export models to supported deployment formats                                     |
+| Deployment | Launch and monitor dedicated inference endpoints                                                                      |
+| Automation | Use workspace-scoped Platform API keys and the REST API for datasets, models, training, exports, and deployments      |
 
 ## Move to Ultralytics Platform
 

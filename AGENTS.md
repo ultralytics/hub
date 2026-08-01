@@ -41,9 +41,9 @@ npx prettier --write --print-width 120 "**/*.{md,yml,yaml,json}"
 
 ## Architecture
 
-This is the historical repository for Ultralytics HUB, which was deprecated and shut down on July 31, 2026, and fully replaced by Ultralytics Platform. The managed HUB-to-Platform migration was completed during Q2 2026 before shutdown; HUB APIs, services, and API keys no longer work. The repository contains no Python package: just the Platform redirect READMEs, sample datasets in `example_datasets/` (zips plus extracted directories: YOLO-format coco8/coco8-human/coco8-pose/coco8-seg/dota8 and a classification folder layout in imagenet10), and `.github/`. There is no release or publish pipeline — nothing is versioned or shipped from here.
+This is the historical repository for Ultralytics HUB, which was deprecated and shut down on July 31, 2026, and fully replaced by Ultralytics Platform. The managed HUB-to-Platform migration was completed during Q2 2026 before shutdown; HUB APIs, services, and API keys no longer work. The repository contains no Python package: just the Platform redirect READMEs, extracted sample datasets in `example_datasets/` (YOLO-format coco8/coco8-human/coco8-pose/coco8-seg/dota8 and a classification folder layout in imagenet10), and `.github/`. There is no release or publish pipeline — nothing is versioned or shipped from here.
 
-`format.yml` runs Ultralytics Actions on PR events: it pushes auto-format commits to PR branches and adds AI labels and summaries. `links.yml` checks links by manual dispatch; `cla.yml` and `stale.yml` handle CLA signing and stale issues.
+`format.yml` runs Ultralytics Actions on PR events: it pushes auto-format commits to PR branches and adds AI labels and summaries. `links.yml` checks links by manual dispatch, and `cla.yml` handles CLA signing.
 
 ## Conventions
 
