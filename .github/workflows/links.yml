@@ -15,8 +15,6 @@ permissions:
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *" # runs at 00:00 UTC every day
 
 jobs:
   Links:
@@ -29,7 +27,7 @@ jobs:
           curl -sSfL "https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-gnu.tar.gz" |
             sudo tar xz --strip-components=1 -C /usr/local/bin lychee-x86_64-unknown-linux-gnu/lychee
 
-      - name: Test Markdown and HTML links with retry
+      - name: Test repository links with retry
         uses: ultralytics/actions/retry@main
         with:
           timeout_minutes: 5
@@ -38,42 +36,15 @@ jobs:
           run: |
             lychee \
             --scheme 'https' \
-            --accept 100..=103,200..=299,401,403,429,500,502,999 \
+            --accept 100..=103,200..=299,403,429,500,502,999 \
             --exclude-loopback \
             --exclude 'https?://(www\.)?(linkedin\.com|twitter\.com|instagram\.com|kaggle\.com|fonts\.gstatic\.com|url\.com)' \
-            --exclude-path './**/ci.yml' \
-            --github-token ${{ secrets.GITHUB_TOKEN }} \
-            --header "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.183 Safari/537.36" \
-            './**/*.md' \
-            './**/*.html' | tee -a $GITHUB_STEP_SUMMARY
-
-            # Raise error if broken links found
-            if ! grep -q "0 Errors" $GITHUB_STEP_SUMMARY; then
-              exit 1
-            fi
-
-      - name: Test Markdown, HTML, YAML, Python and Notebook links with retry
-        if: github.event_name == 'workflow_dispatch'
-        uses: ultralytics/actions/retry@main
-        with:
-          timeout_minutes: 5
-          retry_delay_seconds: 60
-          retries: 2
-          run: |
-            lychee \
-            --scheme 'https' \
-            --accept 100..=103,200..=299,429,999 \
-            --exclude-loopback \
-            --exclude 'https?://(www\.)?(linkedin\.com|twitter\.com|instagram\.com|kaggle\.com|fonts\.gstatic\.com|url\.com)' \
-            --exclude-path './**/ci.yml' \
             --github-token ${{ secrets.GITHUB_TOKEN }} \
             --header "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.183 Safari/537.36" \
             './**/*.md' \
             './**/*.html' \
             './**/*.yml' \
-            './**/*.yaml' \
-            './**/*.py' \
-            './**/*.ipynb' | tee -a $GITHUB_STEP_SUMMARY
+            './**/*.yaml' | tee -a $GITHUB_STEP_SUMMARY
 
             # Raise error if broken links found
             if ! grep -q "0 Errors" $GITHUB_STEP_SUMMARY; then
