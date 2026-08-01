@@ -61,6 +61,8 @@ Platform is the direct replacement for HUB—and a major upgrade. Create your wo
 
 For current product help and feedback, use the **Help** page inside Platform, explore the [Platform documentation](https://docs.ultralytics.com/platform), or join the [Ultralytics community](https://community.ultralytics.com/). This repository remains available as a historical reference for HUB.
 
+[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
+
 <br>
 <div align="center">
   <a href="https://github.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="Ultralytics GitHub"></a>
