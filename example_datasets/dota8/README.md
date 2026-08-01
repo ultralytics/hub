@@ -29,9 +29,3 @@ Enhance your experience with DOTA8 and Ultralytics tools using these valuable re
 - [Ultralytics License Information](https://www.ultralytics.com/license): For commercial use or custom solutions, complete the form to obtain an Enterprise License.
 
 For questions about enterprise licensing or commercial applications, please see [Ultralytics Licensing](https://www.ultralytics.com/license).
-
-## 🤝 Contributing
-
-Contributions are highly encouraged! If you would like to enhance the DOTA8 dataset or its documentation, please review our [Contributing Guide](https://docs.ultralytics.com/help/contributing) and submit a pull request. Your support helps strengthen the Ultralytics open-source community.
-
-[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)

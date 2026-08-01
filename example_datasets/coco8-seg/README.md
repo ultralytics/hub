@@ -33,9 +33,3 @@ Enhance your experience with COCO8-seg and Ultralytics tools using these valuabl
 - [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.
 - [Ultralytics Model Deployment Options](https://docs.ultralytics.com/guides/model-deployment-options): Explore deployment strategies for your trained models.
 - [Ultralytics License Information](https://www.ultralytics.com/license): For commercial use or custom solutions, complete the form to obtain an Enterprise License.
-
-## 🤝 Contributing
-
-Contributions to improve the COCO8-Seg dataset or its documentation are always welcome! Please review our [Contributing Guide](https://docs.ultralytics.com/help/contributing) and submit a pull request. Thank you for supporting open-source computer vision and helping advance the field!
-
-[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)

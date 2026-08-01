@@ -33,9 +33,3 @@ Enhance your experience with COCO8-pose and Ultralytics tools using these valuab
 - [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.
 - [Ultralytics Model Deployment Options](https://docs.ultralytics.com/guides/model-deployment-options): Explore deployment strategies for your trained models.
 - [Ultralytics License Information](https://www.ultralytics.com/license): For commercial use or custom solutions, complete the form to obtain an Enterprise License.
-
-## 🤝 Contributing
-
-Contributions are always welcome! If you'd like to improve this dataset or its documentation, please see our [Contributing Guide](https://docs.ultralytics.com/help/contributing). Thank you for supporting the Ultralytics open-source community!
-
-[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
