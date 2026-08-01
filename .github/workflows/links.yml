@@ -15,8 +15,6 @@ permissions:
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *" # runs at 00:00 UTC every day
 
 jobs:
   Links:

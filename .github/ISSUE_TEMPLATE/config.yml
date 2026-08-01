@@ -1,10 +1,13 @@
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
-  - name: 📄 Docs
-    url: https://docs.ultralytics.com/
-    about: Full Ultralytics Documentation
+  - name: 🚀 Ultralytics Platform
+    url: https://platform.ultralytics.com/
+    about: Start all new computer vision work on Ultralytics Platform
+  - name: 📄 Platform Docs
+    url: https://docs.ultralytics.com/platform/
+    about: Learn how to upload, annotate, train, export, and deploy with Platform
   - name: 💬 Forum
     url: https://community.ultralytics.com/
     about: Ask on Ultralytics Community Forum

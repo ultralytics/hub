@@ -36,9 +36,9 @@ jobs:
           first_issue_response: |
             👋 Hello @${{ github.actor }}, thank you for raising an issue in the legacy [Ultralytics HUB repository](https://github.com/ultralytics/hub).
 
-            Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. New projects should use [Ultralytics Platform](https://platform.ultralytics.com), the end-to-end computer vision platform for uploading data, annotating, training YOLO models, exporting production formats, deploying endpoints, and monitoring results.
+            Ultralytics HUB was deprecated on July 31, 2026, and has been fully replaced by [Ultralytics Platform](https://platform.ultralytics.com), the end-to-end computer vision platform for uploading data, annotating, training YOLO models, exporting production formats, deploying endpoints, and monitoring results. All new projects should use Platform.
 
-            Existing HUB users can migrate all HUB datasets and models after creating a Platform account by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB**.
+            HUB APIs and the HUB-to-Platform migration service are no longer available. Legacy HUB API keys do not work with Platform. Create a new Platform account and Platform API key, then upload any local dataset or model copies you want to use.
 
             Please visit the [Ultralytics Platform Docs](https://docs.ultralytics.com/platform) to learn more:
             - [**Quickstart**](https://docs.ultralytics.com/platform/quickstart). Create a project, upload data, train a model, and deploy with Platform.
@@ -46,7 +46,5 @@ jobs:
             - [**Annotation**](https://docs.ultralytics.com/platform/data/annotation). Label data manually or accelerate labeling with Smart Annotation.
             - [**Projects and Models**](https://docs.ultralytics.com/platform/train/projects). Organize experiments, train on cloud GPUs, stream remote-training metrics, and manage `.pt` models.
             - [**Export and Deployment**](https://docs.ultralytics.com/platform/deploy). Export trained models to production formats and deploy monitored endpoints in global regions.
-            - [**API Keys and Integrations**](https://docs.ultralytics.com/platform/account/api-keys). Manage Platform access and migrate existing HUB assets.
-            If this is a 🐛 Bug Report, please provide screenshots and steps to [reproduce](https://docs.ultralytics.com/help/minimum_reproducible_example/) your problem to help us get started working on a fix.
-            If this is a ❓ Question, please provide as much information as possible, including dataset, model, environment details etc. so that we might provide the most helpful response.
-            We try to respond to all issues as promptly as possible. Thank you for your patience!
+            - [**API Keys**](https://docs.ultralytics.com/platform/account/api-keys). Create a new Platform key for remote training, inference, and automation.
+            The retired HUB service cannot be restored through issues or pull requests, and new HUB features are not accepted. Submit current product feedback from the **Help** page in Platform.
