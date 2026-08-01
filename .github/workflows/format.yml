@@ -23,7 +23,6 @@ jobs:
         with:
           token: ${{ secrets._GITHUB_TOKEN || secrets.GITHUB_TOKEN }} # Auto-generated token
           labels: true # Auto-label issues/PRs using AI
-          python: true # Format Python with Ruff and docformatter
           prettier: true # Format YAML, JSON, Markdown, CSS
           spelling: true # Check spelling with codespell
           links: false # Check broken links with Lychee

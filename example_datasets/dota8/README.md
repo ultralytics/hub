@@ -10,7 +10,7 @@ Despite its small size, DOTA8 offers a diverse set of scenarios, making it ideal
 
 DOTA8 is fully compatible with [Ultralytics Platform](https://platform.ultralytics.com) and [Ultralytics YOLO](https://docs.ultralytics.com/models) models, empowering users to streamline their OBB workflows from upload and annotation through training, export, and deployment.
 
-Ultralytics HUB is being deprecated and will be wound down at the end of July 2026. Create a [Platform account](https://platform.ultralytics.com) for new dataset, training, export, and deployment workflows. Existing HUB users can migrate all HUB datasets and models by pasting their HUB API key into **Settings > Integrations > Ultralytics HUB** after account creation.
+Ultralytics HUB shut down on July 31, 2026, after the managed migration completed in Q2. Use [Ultralytics Platform](https://platform.ultralytics.com) for current dataset, training, export, and deployment workflows.
 
 ## 📚 Resources
 
@@ -20,7 +20,6 @@ Enhance your experience with DOTA8 and Ultralytics tools using these valuable re
 - [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.
-- [Ultralytics HUB GitHub Issues](https://github.com/ultralytics/hub/issues/new/choose): Report legacy HUB repository issues or ask migration questions.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
 - [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
 - [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks): Learn about supported computer vision tasks, including detection, segmentation, and more.

@@ -34,8 +34,6 @@ After opening a PR:
 
 ```bash
 # Format/lint (mirrors Ultralytics Actions; source of truth: action.yml in ultralytics/actions)
-ruff check --fix --unsafe-fixes --extend-select F,I,D,UP,RUF,FA --target-version py39 --ignore D100,D104,D203,D205,D212,D213,D401,D406,D407,D413,RUF001,RUF002,RUF012 .
-ruff format --line-length 120 .
 npx prettier --write --print-width 120 "**/*.{md,yml,yaml,json}"
 ```
 
@@ -50,7 +48,7 @@ This is the historical repository for Ultralytics HUB, which was deprecated and 
 ## Conventions
 
 - License header (`# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license`) tops every `.py`/`.yml` file — Ultralytics Actions adds it automatically; don't add or revert it manually.
-- Python follows Ruff formatting at line length 120 with a docstring on every function; Prettier formats Markdown/YAML/JSON.
+- Prettier formats Markdown/YAML/JSON.
 - Do not add or recommend HUB APIs, training, inference, exports, or API keys, and never present the completed Q2 2026 migration as ongoing. Platform behavior is owned and tested outside this historical repository.
 - No repo version, dependency installation, or automated dependency update exists; the repository is a historical Platform redirect.
 - `README.md` and `README.zh-CN.md` mirror each other — apply content edits to both.

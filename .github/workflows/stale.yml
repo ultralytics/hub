@@ -18,7 +18,7 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
           stale-issue-message: |
-            👋 Hello there! We wanted to give you a friendly reminder that this issue has not had any recent activity and may be closed soon, but don't worry - you can always reopen it if needed. If you still have any questions or concerns, please feel free to let us know how we can help.
+            👋 Hello there! This historical HUB issue has not had any recent activity and may be closed soon.
 
             The managed HUB-to-Platform migration was completed during Q2 2026, and HUB shut down on July 31, 2026. Legacy HUB API keys no longer work. Sign in to your migrated Platform account—or create one if you are new—then create a new Platform API key and use these current resources:
 

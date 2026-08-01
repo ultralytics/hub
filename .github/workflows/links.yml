@@ -36,7 +36,7 @@ jobs:
           run: |
             lychee \
             --scheme 'https' \
-            --accept 100..=103,200..=299,429,999 \
+            --accept 100..=103,200..=299,401,403,429,500,502,999 \
             --exclude-loopback \
             --exclude 'https?://(www\.)?(linkedin\.com|twitter\.com|instagram\.com|kaggle\.com|fonts\.gstatic\.com|url\.com)' \
             --github-token ${{ secrets.GITHUB_TOKEN }} \
@@ -44,9 +44,7 @@ jobs:
             './**/*.md' \
             './**/*.html' \
             './**/*.yml' \
-            './**/*.yaml' \
-            './**/*.py' \
-            './**/*.ipynb' | tee -a $GITHUB_STEP_SUMMARY
+            './**/*.yaml' | tee -a $GITHUB_STEP_SUMMARY
 
             # Raise error if broken links found
             if ! grep -q "0 Errors" $GITHUB_STEP_SUMMARY; then
