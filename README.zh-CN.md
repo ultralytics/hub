@@ -1,49 +1,74 @@
 <div align="center">
-  <a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+  <a href="https://platform.ultralytics.com" target="_blank">
+    <img width="100%" src="https://raw.githubusercontent.com/ultralytics/assets/main/yolov8/banner-yolov8.png" alt="Ultralytics Platform">
+  </a>
 
-# Ultralytics HUB（已停用）
+# Ultralytics HUB 现已升级为 Ultralytics Platform 🚀
 
-[English](README.md) | [Platform 文档](https://docs.ultralytics.com/zh/platform) | [Platform](https://platform.ultralytics.com)
+[English](README.md) | [한국어](https://docs.ultralytics.com/ko/platform) | [日本語](https://docs.ultralytics.com/ja/platform) | [Русский](https://docs.ultralytics.com/ru/platform) | [Deutsch](https://docs.ultralytics.com/de/platform) | [Français](https://docs.ultralytics.com/fr/platform) | [Español](https://docs.ultralytics.com/es/platform) | [Português](https://docs.ultralytics.com/pt/platform) | [العربية](https://docs.ultralytics.com/ar/platform)
+
+[![打开 Ultralytics Platform](https://img.shields.io/badge/打开-Ultralytics_Platform-111F68?logo=ultralytics&logoColor=white)](https://platform.ultralytics.com)
+[![Platform 文档](https://img.shields.io/badge/阅读-Platform_文档-00AEEF?logo=readthedocs&logoColor=white)](https://docs.ultralytics.com/zh/platform)
+[![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=5865F2)](https://discord.com/invite/ultralytics)
 
 </div>
 
-> [!WARNING]
-> Ultralytics HUB 已于 2026 年 7 月 31 日停用并关闭，现已由 [Ultralytics Platform](https://platform.ultralytics.com) 全面取代。HUB 到 Platform 的托管迁移已于 2026 年第二季度在 HUB 关闭前完成。
+> [!IMPORTANT]
+> Ultralytics HUB 已于 2026 年 7 月 31 日关闭。在此之前，托管的 HUB 到 Platform 迁移已于 2026 年第二季度顺利完成。迁移后的内容现已位于 [Ultralytics Platform](https://platform.ultralytics.com)；旧版 HUB API 和 API key 已停止工作。
 
-旧版 HUB API key 无法用于 Platform。请登录已迁移的 Platform 账号；新用户可创建账号。然后创建新的 Platform API key，以使用当前的训练、推理和自动化工作流。
+欢迎使用全新的 **Ultralytics Platform**——覆盖完整计算机视觉生命周期的更快、更强大的一站式平台。通过一个精美的工作区，将原始图像转化为生产级推理端点；实用的 **Free 方案**让每个人都能轻松开始。
 
-## 功能更强大，免费开始使用
+<p align="center">
+  <a href="https://platform.ultralytics.com"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/dataset-screenshot.avif" alt="Ultralytics Platform 数据集工作区"></a>
+</p>
 
-Ultralytics Platform 是 HUB 的直接替代产品，在统一工作区中提供功能显著增强的工作流。个人用户可通过实用的 Free 方案开始使用；当前方案限制和可选的按量 credits 请以 [Platform 定价](https://www.ultralytics.com/pricing)为准。
+## ✨ 标注
 
-| 功能   | Ultralytics Platform 提升                                                                                   |
-| ------ | ----------------------------------------------------------------------------------------------------------- |
-| 数据   | 上传并校验丰富的计算机视觉数据集，使用内置统计信息和工作区进行组织                                          |
-| 标注   | 使用专用工具标注 Platform 支持的 YOLO 标注任务类型，并通过 SAM 和 YOLO 模型驱动的 Smart Annotation 提升效率 |
-| 训练   | 使用云端 GPU 或自有硬件训练，并在项目中实时同步指标、日志和系统统计信息                                     |
-| 模型   | 在浏览器中测试预测，并将模型导出为支持的部署格式                                                            |
-| 部署   | 启动并监控专用推理端点                                                                                      |
-| 自动化 | 使用 workspace-scoped Platform API key 和 REST API 管理数据集、模型、训练、导出与部署                       |
+直接在浏览器中将原始数据转化为可训练的数据集。绘制边界框、多边形、关键点和旋转框，或使用由 SAM 和 YOLO 模型驱动的 Smart Annotation 加速标注。
 
-## 转向 Ultralytics Platform
+<p align="center">
+  <a href="https://docs.ultralytics.com/zh/platform/data/annotation"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/platform-annotate-editor-toolbar-with-canvas.avif" alt="Ultralytics Platform 标注编辑器"></a>
+</p>
 
-[Ultralytics Platform](https://platform.ultralytics.com) 提供当前端到端工作流，包括数据集管理和标注、云端与远程训练、模型导出、专用推理端点和部署监控。
+## 🚀 训练
 
-1. 登录已迁移的 Platform 账号；新用户可按照 [Platform 快速开始](https://docs.ultralytics.com/zh/platform/quickstart) 创建账号。
-2. 将新工作以及本地保存的数据集或模型直接添加到 Platform。HUB 托管迁移已于 2026 年第二季度完成。
-3. 在 **Settings > API Keys** 中创建新 key，并参阅 [Platform API key 指南](https://docs.ultralytics.com/zh/platform/account/api-keys)。
-4. 使用 [Platform REST API](https://docs.ultralytics.com/zh/platform/api) 进行编程访问。
+只需点击几下即可启动云端训练，也可连接自有硬件。比较实验、实时查看指标与日志，并在协作项目中有序管理每个模型。
 
-当前 Platform 资源：
+<p align="center">
+  <a href="https://docs.ultralytics.com/zh/platform/train"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/platform-train-overview.avif" alt="Ultralytics Platform 模型训练"></a>
+</p>
 
-- [Platform 概览](https://docs.ultralytics.com/zh/platform)
-- [数据集上传和管理](https://docs.ultralytics.com/zh/platform/data/datasets)
-- [数据标注](https://docs.ultralytics.com/zh/platform/data/annotation)
-- [云端与远程训练](https://docs.ultralytics.com/zh/platform/train/cloud-training)
-- [模型导出与部署](https://docs.ultralytics.com/zh/platform/deploy)
-- [REST API 参考](https://docs.ultralytics.com/zh/platform/api)
-- [Free、Pro 和 Enterprise 方案](https://www.ultralytics.com/plans)
+## 🌍 部署
 
-## 仓库状态
+在浏览器中测试预测、将模型导出到生产环境，并在全球启动带监控的推理端点。无需自行搭建基础设施，即可从训练权重快速获得在线 API。
 
-本仓库仅作为历史参考保留。HUB 服务无法通过仓库 issue 或 pull request 恢复，也不再接受新的 HUB 功能。当前产品帮助和反馈请使用 [Ultralytics Platform](https://platform.ultralytics.com) 中的 **Help** 页面、[Platform 文档](https://docs.ultralytics.com/zh/platform) 或 [Ultralytics 社区论坛](https://community.ultralytics.com/)。
+<p align="center">
+  <a href="https://docs.ultralytics.com/zh/platform/deploy"><img width="100%" src="https://cdn.jsdelivr.net/gh/ultralytics/assets@main/docs/platform/deploy-page-world-map-with-overview-cards.avif" alt="Ultralytics Platform 部署仪表板"></a>
+</p>
+
+## 🆓 免费开始构建
+
+Platform 是 HUB 的直接替代产品，也是一次重大升级。立即创建工作区、体验完整流程，并在 [Platform 定价页面](https://www.ultralytics.com/pricing)查看当前方案。
+
+<div align="center">
+
+### [开始使用 Ultralytics Platform →](https://platform.ultralytics.com)
+
+</div>
+
+## 💬 帮助与社区
+
+如需当前产品帮助或提交反馈，请使用 Platform 内的 **Help** 页面、浏览 [Platform 文档](https://docs.ultralytics.com/zh/platform)，或加入 [Ultralytics 社区](https://community.ultralytics.com/)。本仓库仅作为 HUB 的历史参考保留。
+
+<br>
+<div align="center">
+  <a href="https://github.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="Ultralytics GitHub"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://www.linkedin.com/company/ultralytics/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="3%" alt="Ultralytics LinkedIn"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://twitter.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-twitter.png" width="3%" alt="Ultralytics X"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://youtube.com/ultralytics?sub_confirmation=1"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-youtube.png" width="3%" alt="Ultralytics YouTube"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://discord.com/invite/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="3%" alt="Ultralytics Discord"></a>
+</div>
