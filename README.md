@@ -1,49 +1,79 @@
 <div align="center">
-  <a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+  <a href="https://platform.ultralytics.com" target="_blank">
+    <img width="320" src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" alt="Ultralytics">
+  </a>
 
-# Ultralytics HUB (Deprecated)
+# Ultralytics HUB is now Ultralytics Platform 🚀
 
-[中文](README.zh-CN.md) | [Platform Docs](https://docs.ultralytics.com/platform) | [Platform](https://platform.ultralytics.com)
+[中文](README.zh-CN.md) | [한국어](https://docs.ultralytics.com/ko/platform) | [日本語](https://docs.ultralytics.com/ja/platform) | [Русский](https://docs.ultralytics.com/ru/platform) | [Deutsch](https://docs.ultralytics.com/de/platform) | [Français](https://docs.ultralytics.com/fr/platform) | [Español](https://docs.ultralytics.com/es/platform) | [Português](https://docs.ultralytics.com/pt/platform) | [العربية](https://docs.ultralytics.com/ar/platform)
+
+[![Open Ultralytics Platform](https://img.shields.io/badge/Open-Ultralytics_Platform-111F68?logo=ultralytics&logoColor=white)](https://platform.ultralytics.com)
+[![Platform Docs](https://img.shields.io/badge/Read-Platform_Docs-00AEEF?logo=readthedocs&logoColor=white)](https://docs.ultralytics.com/platform)
+[![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=5865F2)](https://discord.com/invite/ultralytics)
+[![Ultralytics Forums](https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue)](https://community.ultralytics.com/)
 
 </div>
 
-> [!WARNING]
-> Ultralytics HUB was deprecated and shut down on July 31, 2026. It has been fully replaced by [Ultralytics Platform](https://platform.ultralytics.com). The managed HUB-to-Platform migration was completed during Q2 2026 before the HUB shutdown.
+> [!IMPORTANT]
+> Ultralytics HUB shut down on July 31, 2026, after the managed HUB-to-Platform migration completed successfully during Q2 2026. Your migrated work now lives in [Ultralytics Platform](https://platform.ultralytics.com). Legacy HUB APIs and API keys no longer work.
 
-Legacy HUB API keys do not work with Platform. Sign in to your migrated Platform account—or create one if you are new—then create a new Platform API key for current training, inference, and automation workflows.
+Meet the new **Ultralytics Platform**—the faster, more powerful home for the entire computer vision lifecycle. Go from raw images to production endpoints in one beautiful workspace, with a meaningful **Free plan** that makes advanced computer vision accessible to everyone.
 
-## A More Capable Platform, Free to Start
+<p align="center">
+  <a href="https://platform.ultralytics.com"><img width="100%" src="https://cdn.ul.run/i/2990f4be3ba5e24b885f6a1ea278a793.avif" alt="Ultralytics Platform dataset workspace"></a>
+</p>
 
-Ultralytics Platform is the direct replacement for HUB and delivers a substantially more capable workflow in one workspace. A meaningful Free plan lets individuals get started, while [Platform pricing](https://www.ultralytics.com/pricing) remains the source of truth for current limits and optional usage-based credits.
+## ✨ Annotate
 
-| Capability | Ultralytics Platform improvement                                                                                      |
-| ---------- | --------------------------------------------------------------------------------------------------------------------- |
-| Data       | Upload and validate rich computer vision datasets with built-in statistics and workspace organization                 |
-| Annotation | Label supported YOLO annotation task types with dedicated tools and Smart Annotation powered by SAM and YOLO models   |
-| Training   | Train on cloud GPUs or your own hardware while streaming metrics, logs, and system statistics into organized projects |
-| Models     | Test predictions in the browser and export models to supported deployment formats                                     |
-| Deployment | Launch and monitor dedicated inference endpoints                                                                      |
-| Automation | Use workspace-scoped Platform API keys and the REST API for datasets, models, training, exports, and deployments      |
+Turn raw data into training-ready datasets without leaving your browser. Draw boxes, polygons, keypoints, and oriented boxes—or accelerate labeling with Smart Annotation powered by SAM and YOLO models.
 
-## Move to Ultralytics Platform
+<p align="center">
+  <a href="https://docs.ultralytics.com/platform/data/annotation"><img width="100%" src="https://cdn.ul.run/i/fd13a4b1f4b8fad9ed5e736030a070cf.avif" alt="Ultralytics Platform annotation editor"></a>
+</p>
 
-[Ultralytics Platform](https://platform.ultralytics.com) provides the current end-to-end workflow for dataset management and annotation, cloud and remote training, model export, dedicated inference endpoints, and deployment monitoring.
+## 🚀 Train
 
-1. Sign in to your migrated Platform account, or follow the [Platform quickstart](https://docs.ultralytics.com/platform/quickstart) to create one if you are new.
-2. Add new work and any local dataset or model copies directly to Platform. The managed HUB migration concluded in Q2 2026.
-3. Create a new key under **Settings > API Keys** and follow the [Platform API key guide](https://docs.ultralytics.com/platform/account/api-keys).
-4. Use the [Platform REST API](https://docs.ultralytics.com/platform/api) for programmatic access.
+Launch cloud training in a few clicks or connect your own hardware. Compare experiments, stream live metrics and logs, and keep every model organized inside collaborative projects.
 
-Current Platform resources:
+<p align="center">
+  <a href="https://docs.ultralytics.com/platform/train"><img width="100%" src="https://cdn.ul.run/i/4ec82b7ca5d7c33caab98e08da93ea05.avif" alt="Ultralytics Platform model training"></a>
+</p>
 
-- [Platform overview](https://docs.ultralytics.com/platform)
-- [Dataset upload and management](https://docs.ultralytics.com/platform/data/datasets)
-- [Annotation](https://docs.ultralytics.com/platform/data/annotation)
-- [Cloud and remote training](https://docs.ultralytics.com/platform/train/cloud-training)
-- [Model export and deployment](https://docs.ultralytics.com/platform/deploy)
-- [REST API reference](https://docs.ultralytics.com/platform/api)
-- [Free, Pro, and Enterprise plans](https://www.ultralytics.com/plans)
+## 🌍 Deploy
 
-## Repository Status
+Test predictions in the browser, export models for production, and launch monitored inference endpoints worldwide. Move from trained weights to a live API without building the infrastructure yourself.
 
-This repository is retained as a historical reference only. HUB services cannot be restored through repository issues or pull requests, and new HUB features are not accepted. For current product help and feedback, use the **Help** page in [Ultralytics Platform](https://platform.ultralytics.com), the [Platform documentation](https://docs.ultralytics.com/platform), or the [Ultralytics community forum](https://community.ultralytics.com/).
+<p align="center">
+  <a href="https://docs.ultralytics.com/platform/deploy"><img width="100%" src="https://cdn.ul.run/i/e922afb2e2f7573c320821ec4fa62537.avif" alt="Ultralytics Platform deployment dashboard"></a>
+</p>
+
+## 🆓 Start Building for Free
+
+Platform is the direct replacement for HUB—and a major upgrade. Create your workspace, explore the complete workflow, and see current Free, Pro, and Enterprise options on the [Platform pricing page](https://www.ultralytics.com/pricing).
+
+<div align="center">
+
+### [Start with Ultralytics Platform →](https://platform.ultralytics.com)
+
+</div>
+
+## 💬 Help and Community
+
+For current product help and feedback, use the **Help** page inside Platform, explore the [Platform documentation](https://docs.ultralytics.com/platform), or join the [Ultralytics community](https://community.ultralytics.com/). This repository remains available as a historical reference for HUB.
+
+[![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
+
+<br>
+<div align="center">
+  <a href="https://github.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="Ultralytics GitHub"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://www.linkedin.com/company/ultralytics/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="3%" alt="Ultralytics LinkedIn"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://twitter.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-twitter.png" width="3%" alt="Ultralytics X"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://youtube.com/ultralytics?sub_confirmation=1"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-youtube.png" width="3%" alt="Ultralytics YouTube"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://www.tiktok.com/@ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-tiktok.png" width="3%" alt="Ultralytics TikTok"></a>
+  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://discord.com/invite/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="3%" alt="Ultralytics Discord"></a>
+</div>
