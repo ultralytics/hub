@@ -38,7 +38,7 @@ jobs:
 
             Ultralytics HUB was deprecated on July 31, 2026, and has been fully replaced by [Ultralytics Platform](https://platform.ultralytics.com), the end-to-end computer vision platform for uploading data, annotating, training YOLO models, exporting production formats, deploying endpoints, and monitoring results. All new projects should use Platform.
 
-            HUB APIs and the HUB-to-Platform migration service are no longer available. Legacy HUB API keys do not work with Platform. Create a new Platform account and Platform API key, then upload any local dataset or model copies you want to use.
+            The managed HUB-to-Platform migration was completed during Q2 2026 before the HUB shutdown. Legacy HUB API keys do not work with Platform. Create a new Platform account and Platform API key, then add new work or any local dataset and model copies directly to Platform.
 
             Please visit the [Ultralytics Platform Docs](https://docs.ultralytics.com/platform) to learn more:
             - [**Quickstart**](https://docs.ultralytics.com/platform/quickstart). Create a project, upload data, train a model, and deploy with Platform.

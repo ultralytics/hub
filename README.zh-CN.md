@@ -8,7 +8,7 @@
 </div>
 
 > [!WARNING]
-> Ultralytics HUB 已于 2026 年 7 月 31 日停用并关闭，现已由 [Ultralytics Platform](https://platform.ultralytics.com) 全面取代。HUB API、云端训练、导出、推理以及 HUB 到 Platform 的迁移服务均已停止提供。
+> Ultralytics HUB 已于 2026 年 7 月 31 日停用并关闭，现已由 [Ultralytics Platform](https://platform.ultralytics.com) 全面取代。HUB 到 Platform 的托管迁移已于 2026 年第二季度在 HUB 关闭前完成。
 
 旧版 HUB API key 无法用于 Platform。请创建新的 Platform 账号和 Platform API key，以使用当前的训练、推理和自动化工作流。
 
@@ -23,7 +23,7 @@ Ultralytics Platform 是 HUB 的直接替代产品，在统一工作区中提供
 | 数据   | 上传图片、视频、ZIP、TAR 和 NDJSON 数据集，自动完成校验和统计，并支持美国、欧洲或亚太区域的数据驻留             |
 | 标注   | 使用专用工具标注全部 YOLO 任务类型，并通过自定义姿态骨架以及由 SAM 和 YOLO 模型驱动的 Smart Annotation 提升效率 |
 | 训练   | 使用云端 GPU 或自有硬件训练，并在项目中实时同步指标、日志和系统统计信息                                         |
-| 模型   | 在浏览器中测试预测，并导出为包括 ONNX、TensorRT、CoreML、LiteRT 和 OpenVINO 在内的 20 种部署格式                |
+| 模型   | 在浏览器中测试预测，并导出为所有支持的部署格式，包括 ONNX、TensorRT、CoreML、LiteRT 和 OpenVINO                 |
 | 部署   | 在全球 42 个区域启动带监控和 scale-to-zero 的专用推理端点                                                       |
 | 自动化 | 使用新的 workspace-scoped Platform API key 和完整 REST API 管理数据集、模型、训练、导出与部署                   |
 
@@ -32,7 +32,7 @@ Ultralytics Platform 是 HUB 的直接替代产品，在统一工作区中提供
 [Ultralytics Platform](https://platform.ultralytics.com) 提供当前端到端工作流，包括数据集管理和标注、云端与远程训练、模型导出、专用推理端点和部署监控。
 
 1. 按照 [Platform 快速开始](https://docs.ultralytics.com/zh/platform/quickstart) 创建账号并选择数据区域。
-2. 将本地保存的数据集和模型权重上传到 Platform。原自动 HUB 迁移服务已停止提供。
+2. 将新工作以及本地保存的数据集或模型直接添加到 Platform。HUB 托管迁移已于 2026 年第二季度完成。
 3. 在 **Settings > API Keys** 中创建新 key，并参阅 [Platform API key 指南](https://docs.ultralytics.com/zh/platform/account/api-keys)。
 4. 使用 [Platform REST API](https://docs.ultralytics.com/zh/platform/api) 进行编程访问。
 

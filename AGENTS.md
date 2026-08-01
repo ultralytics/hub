@@ -39,18 +39,18 @@ ruff format --line-length 120 .
 npx prettier --write --print-width 120 "**/*.{md,yml,yaml,json}"
 ```
 
-- There is no unit-test suite, coverage, package build, or live HUB CI. The nightly lychee workflow in `links.yml` checks repository links.
+- There is no unit-test suite, coverage, package build, or live HUB CI. The manually dispatched lychee workflow in `links.yml` checks repository links.
 
 ## Architecture
 
-This is the historical repository for Ultralytics HUB, which was deprecated and shut down on July 31, 2026, and fully replaced by Ultralytics Platform. HUB APIs, services, migration, and API keys no longer work. The repository contains no Python package: just the Platform redirect READMEs, sample datasets in `example_datasets/` (zips plus extracted directories: YOLO-format coco8/coco8-human/coco8-pose/coco8-seg/dota8 and a classification folder layout in imagenet10), and `.github/`. There is no release or publish pipeline — nothing is versioned or shipped from here.
+This is the historical repository for Ultralytics HUB, which was deprecated and shut down on July 31, 2026, and fully replaced by Ultralytics Platform. The managed HUB-to-Platform migration was completed during Q2 2026 before shutdown; HUB APIs, services, and API keys no longer work. The repository contains no Python package: just the Platform redirect READMEs, sample datasets in `example_datasets/` (zips plus extracted directories: YOLO-format coco8/coco8-human/coco8-pose/coco8-seg/dota8 and a classification folder layout in imagenet10), and `.github/`. There is no release or publish pipeline — nothing is versioned or shipped from here.
 
-`format.yml` runs Ultralytics Actions on issue opens and PR events: it pushes auto-format commits to PR branches and adds AI labels, summaries, and a HUB shutdown/Platform replacement response. `links.yml` (nightly/dispatch) checks links with lychee; `cla.yml` and `stale.yml` handle CLA signing and stale issues.
+`format.yml` runs Ultralytics Actions on issue opens and PR events: it pushes auto-format commits to PR branches and adds AI labels, summaries, and a HUB shutdown/Platform replacement response. `links.yml` checks links by manual dispatch; `cla.yml` and `stale.yml` handle CLA signing and stale issues.
 
 ## Conventions
 
 - License header (`# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license`) tops every `.py`/`.yml` file — Ultralytics Actions adds it automatically; don't add or revert it manually.
-- Python follows Ruff formatting at line length 120 with a docstring on every function (see `.github/scripts/run_hub_exports.py`); Prettier formats Markdown/YAML/JSON.
-- Do not add or recommend HUB APIs, training, inference, exports, migration, or API keys. Platform behavior is owned and tested outside this historical repository.
+- Python follows Ruff formatting at line length 120 with a docstring on every function; Prettier formats Markdown/YAML/JSON.
+- Do not add or recommend HUB APIs, training, inference, exports, or API keys, and never present the completed Q2 2026 migration as ongoing. Platform behavior is owned and tested outside this historical repository.
 - No repo version, dependency installation, or automated dependency update exists; the repository is a historical Platform redirect.
 - `README.md` and `README.zh-CN.md` mirror each other — apply content edits to both.

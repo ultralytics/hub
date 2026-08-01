@@ -20,7 +20,7 @@ jobs:
           stale-issue-message: |
             👋 Hello there! We wanted to give you a friendly reminder that this issue has not had any recent activity and may be closed soon, but don't worry - you can always reopen it if needed. If you still have any questions or concerns, please feel free to let us know how we can help.
 
-            Ultralytics HUB and its migration service shut down on July 31, 2026. Legacy HUB API keys no longer work. Create a new account and API key for Ultralytics Platform, then use these current resources:
+            The managed HUB-to-Platform migration was completed during Q2 2026, and HUB shut down on July 31, 2026. Legacy HUB API keys no longer work. Create a new account and API key for Ultralytics Platform, then use these current resources:
 
             - **Platform**: https://platform.ultralytics.com
             - **Platform Docs**: https://docs.ultralytics.com/platform
@@ -33,7 +33,7 @@ jobs:
 
             We hope you understand our decision, and please don't let it discourage you from contributing to open source projects in the future. We value all of our community members and their contributions, and we encourage you to keep exploring new projects and ways to get involved.
 
-            Ultralytics HUB and its migration service shut down on July 31, 2026. New work belongs on Ultralytics Platform:
+            The managed HUB-to-Platform migration was completed during Q2 2026, and HUB shut down on July 31, 2026. New work belongs on Ultralytics Platform:
 
             - **Platform**: https://platform.ultralytics.com
             - **Platform Docs**: https://docs.ultralytics.com/platform
