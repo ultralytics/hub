@@ -62,6 +62,13 @@ Platform 是 HUB 的直接替代产品，也是一次重大升级。立即创建
 
 [![Ultralytics 开源贡献者](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
 
+## 📄 许可证
+
+Ultralytics 提供两种许可证选项，以适配不同使用场景：
+
+- **AGPL-3.0 许可证**：这是一个经 [OSI 批准](https://opensource.org/license/agpl-3.0)的开源许可证，非常适合重视开放协作与知识共享的学生、研究人员和爱好者。详情请参阅 [LICENSE](LICENSE) 文件。
+- **Ultralytics 企业许可证**：适用于商业用途，允许将 Ultralytics 软件和 AI 模型无缝集成到商业产品与服务中，而无需遵循 AGPL-3.0 的开源要求。如需商业授权，请通过 [Ultralytics 授权许可](https://www.ultralytics.com/license)与我们联系。
+
 <br>
 <div align="center">
   <a href="https://github.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="Ultralytics GitHub"></a>
