@@ -8,6 +8,9 @@ contact_links:
   - name: 📄 Platform Docs
     url: https://docs.ultralytics.com/platform/
     about: Learn how to upload, annotate, train, export, and deploy with Platform
+  - name: 🐛 Platform SDK Issues
+    url: https://github.com/ultralytics/sdk/issues
+    about: Report bugs and request features for the Ultralytics Platform SDKs
   - name: 💬 Forum
     url: https://community.ultralytics.com/
     about: Ask on Ultralytics Community Forum

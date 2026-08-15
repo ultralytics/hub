@@ -11,6 +11,8 @@ body:
       value: |
         Thank you for submitting an Ultralytics 🚀 Feature Request!
 
+        Ultralytics HUB was retired on 2026-07-31; this repository is kept for historical reference. For active support and bugs with the Ultralytics Platform, see the [Platform API reference](https://platform.ultralytics.com/api/docs) and open issues at [ultralytics/sdk](https://github.com/ultralytics/sdk/issues). Use this form only for issues with the historical HUB repository or its redirect content.
+
   - type: checkboxes
     attributes:
       label: Search before asking
