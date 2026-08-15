@@ -6,6 +6,8 @@
 name: Ultralytics Actions
 
 on:
+  issues:
+    types: [opened]
   pull_request:
     branches: [main]
     types: [opened, closed, synchronize, review_requested]
@@ -13,6 +15,7 @@ on:
 permissions:
   contents: write # Modify code in PRs
   pull-requests: write # Add comments and labels to PRs
+  issues: write # Add comments and labels to issues
 
 jobs:
   actions:
