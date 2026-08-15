@@ -1,6 +1,6 @@
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
   - name: 🚀 Ultralytics Platform
     url: https://platform.ultralytics.com/
@@ -14,3 +14,6 @@ contact_links:
   - name: 🎧 Discord
     url: https://ultralytics.com/discord
     about: Ask on Ultralytics Discord
+  - name: ⌨️ Reddit
+    url: https://reddit.com/r/ultralytics
+    about: Ask on Ultralytics Subreddit
