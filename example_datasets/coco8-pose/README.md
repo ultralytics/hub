@@ -1,4 +1,4 @@
-<a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+<a href="https://www.ultralytics.com"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
 
 # Ultralytics COCO8-pose Dataset
 
@@ -23,11 +23,11 @@ Below are examples showcasing images from the COCO8-pose dataset, visualized in 
 Enhance your experience with COCO8-pose and Ultralytics tools using these valuable resources:
 
 - [Ultralytics Platform Datasets](https://docs.ultralytics.com/platform/data/datasets): Step-by-step guide to uploading, analyzing, and preparing datasets like COCO8-pose.
-- [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
+- [Ultralytics Documentation](https://docs.ultralytics.com): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
-- [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
+- [Ultralytics Community Forums](https://community.ultralytics.com): Share your projects, ask questions, and engage with the broader Ultralytics community.
 - [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks): Learn about supported computer vision tasks, including detection, segmentation, and more.
 - [Ultralytics Model Training Tips](https://docs.ultralytics.com/guides/model-training-tips): Best practices for efficient and effective model training.
 - [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.

@@ -1,4 +1,4 @@
-<a href="https://www.ultralytics.com/"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
+<a href="https://www.ultralytics.com"><img src="https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Original.svg" width="320" alt="Ultralytics logo"></a>
 
 # Ultralytics coco8-human Dataset
 
@@ -19,20 +19,20 @@ This dataset is fully compatible with the Ultralytics framework and integrates s
 
 Ultralytics HUB shut down on July 31, 2026, after the managed migration completed in Q2. Use [Ultralytics Platform](https://platform.ultralytics.com) for current dataset, training, export, and deployment workflows.
 
-For more information on datasets, model training, and best practices, explore the [Ultralytics documentation](https://docs.ultralytics.com/), learn about [data annotation and collection](https://docs.ultralytics.com/guides/data-collection-and-annotation), or discover [object detection solutions](https://www.ultralytics.com/solutions/ai-in-automotive). If you're interested in the latest trends in computer vision, check out the [Ultralytics blog](https://www.ultralytics.com/blog/a-guide-to-deep-dive-into-object-detection-in-2025).
+For more information on datasets, model training, and best practices, explore the [Ultralytics documentation](https://docs.ultralytics.com), learn about [data annotation and collection](https://docs.ultralytics.com/guides/data-collection-and-annotation), or discover [object detection solutions](https://www.ultralytics.com/solutions/computer-vision-in-automotive). If you're interested in the latest trends in computer vision, check out the [Ultralytics blog](https://www.ultralytics.com/blog/a-guide-to-deep-dive-into-object-detection-in-2025).
 
-Join the discussion and get support from the community at the [Ultralytics Community Forums](https://community.ultralytics.com/) or connect with other users on [Ultralytics Discord](https://discord.com/invite/ultralytics).
+Join the discussion and get support from the community at the [Ultralytics Community Forums](https://community.ultralytics.com) or connect with other users on [Ultralytics Discord](https://discord.com/invite/ultralytics).
 
 ## 📚 Resources
 
 Enhance your experience with COCO8-human and Ultralytics tools using these valuable resources:
 
 - [Ultralytics Platform Datasets](https://docs.ultralytics.com/platform/data/datasets): Step-by-step guide to uploading, analyzing, and preparing datasets like COCO8-human.
-- [Ultralytics Documentation](https://docs.ultralytics.com/): Comprehensive guides on model usage, best practices, and advanced features.
+- [Ultralytics Documentation](https://docs.ultralytics.com): Comprehensive guides on model usage, best practices, and advanced features.
 - [COCO Dataset Overview](https://docs.ultralytics.com/datasets/detect/coco): Learn more about the full COCO dataset and its applications in computer vision.
 - [Ultralytics Models](https://docs.ultralytics.com/models): Explore available YOLO models for object detection, segmentation, and more.
 - [Ultralytics Discord Community](https://discord.com/invite/ultralytics): Connect with users, developers, and the Ultralytics team for real-time discussions.
-- [Ultralytics Community Forums](https://community.ultralytics.com/): Share your projects, ask questions, and engage with the broader Ultralytics community.
+- [Ultralytics Community Forums](https://community.ultralytics.com): Share your projects, ask questions, and engage with the broader Ultralytics community.
 - [Ultralytics Tasks Overview](https://docs.ultralytics.com/tasks): Learn about supported computer vision tasks, including detection, segmentation, and more.
 - [Ultralytics Model Training Tips](https://docs.ultralytics.com/guides/model-training-tips): Best practices for efficient and effective model training.
 - [Ultralytics Model Evaluation Insights](https://docs.ultralytics.com/guides/model-evaluation-insights): Guidance on evaluating model performance and interpreting results.

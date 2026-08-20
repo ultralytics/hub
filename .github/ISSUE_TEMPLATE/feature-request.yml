@@ -17,7 +17,7 @@ body:
     attributes:
       label: Search before asking
       description: >
-        Please search the [Platform docs](https://docs.ultralytics.com/platform/) and [issues](https://github.com/ultralytics/hub/issues) to see if a similar feature request already exists.
+        Please search the [Platform docs](https://docs.ultralytics.com/platform) and [issues](https://github.com/ultralytics/hub/issues) to see if a similar feature request already exists.
       options:
         - label: >
             I have searched the Ultralytics [issues](https://github.com/ultralytics/hub/issues) and found no similar feature requests.
