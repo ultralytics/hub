@@ -10,7 +10,7 @@
 [![Open Ultralytics Platform](https://img.shields.io/badge/Open-Ultralytics_Platform-111F68?logo=ultralytics&logoColor=white)](https://platform.ultralytics.com)
 [![Platform Docs](https://img.shields.io/badge/Read-Platform_Docs-00AEEF?logo=readthedocs&logoColor=white)](https://docs.ultralytics.com/platform)
 [![Ultralytics Discord](https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=5865F2)](https://discord.com/invite/ultralytics)
-[![Ultralytics Forums](https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue)](https://community.ultralytics.com/)
+[![Ultralytics Forums](https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue)](https://community.ultralytics.com)
 
 </div>
 
@@ -59,7 +59,7 @@ Platform is the direct replacement for HUB—and a major upgrade. Create your wo
 
 ## 💬 Help and Community
 
-For current product help and feedback, use the **Help** page inside Platform, explore the [Platform documentation](https://docs.ultralytics.com/platform), or join the [Ultralytics community](https://community.ultralytics.com/). This repository remains available as a historical reference for HUB.
+For current product help and feedback, use the **Help** page inside Platform, explore the [Platform documentation](https://docs.ultralytics.com/platform), or join the [Ultralytics community](https://community.ultralytics.com). This repository remains available as a historical reference for HUB.
 
 [![Ultralytics open-source contributors](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
 

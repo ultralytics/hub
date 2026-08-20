@@ -58,7 +58,7 @@ Platform 是 HUB 的直接替代产品，也是一次重大升级。立即创建
 
 ## 💬 帮助与社区
 
-如需当前产品帮助或提交反馈，请使用 Platform 内的 **Help** 页面、浏览 [Platform 文档](https://docs.ultralytics.com/zh/platform)，或加入 [Ultralytics 社区](https://community.ultralytics.com/)。本仓库仅作为 HUB 的历史参考保留。
+如需当前产品帮助或提交反馈，请使用 Platform 内的 **Help** 页面、浏览 [Platform 文档](https://docs.ultralytics.com/zh/platform)，或加入 [Ultralytics 社区](https://community.ultralytics.com)。本仓库仅作为 HUB 的历史参考保留。
 
 [![Ultralytics 开源贡献者](https://raw.githubusercontent.com/ultralytics/assets/main/im/image-contributors.png)](https://github.com/ultralytics/ultralytics/graphs/contributors)
 

@@ -3,16 +3,16 @@
 blank_issues_enabled: true
 contact_links:
   - name: 🚀 Ultralytics Platform
-    url: https://platform.ultralytics.com/
+    url: https://platform.ultralytics.com
     about: Start all new computer vision work on Ultralytics Platform
   - name: 📄 Platform Docs
-    url: https://docs.ultralytics.com/platform/
+    url: https://docs.ultralytics.com/platform
     about: Learn how to upload, annotate, train, export, and deploy with Platform
   - name: 🐛 Platform SDK Issues
     url: https://github.com/ultralytics/sdk/issues
     about: Report bugs and request features for the Ultralytics Platform SDKs
   - name: 💬 Forum
-    url: https://community.ultralytics.com/
+    url: https://community.ultralytics.com
     about: Ask on Ultralytics Community Forum
   - name: 🎧 Discord
     url: https://ultralytics.com/discord
